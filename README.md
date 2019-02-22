@@ -14,5 +14,17 @@ Please see our preprint for more information:
 If you use XY_RNAseq or discuss/correct for bias in mapping on the sex chromosomes, please cite this preprint.
 
 ## Contents:
-1. SexChromosomeComplementRefernceGenomes - Download and create sex chromosome complement reference genomes and gene annotation files
-2. DifferentialExpression - Suggested pipeline for processing raw RNAseq fastq files for differential expression with HISAT and STAR read aligners followed by limma/voom for differential expression analysis
+1. Sex chromosome complement refernce genomes - Download and create sex chromosome complement reference genomes and gene annotation files
+
+2. Differential expression pipeline - Suggested pipeline for processing raw RNAseq fastq files for differential expression with HISAT and STAR read aligners followed by limma/voom for differential expression analysis
+
+
+## Group Members
+Name | email | github ID
+--- | --- |  ---
+Kimberly Olney | olneykimberly@gmail.com | @olneykimberly
+Sarah Brotman |
+Valeria Valverde-Vesling |
+Jocelyn Andrews |
+Melissa A. Wilson | melissa.wilsonsayres@asu.edu | @mwilsonsayres
+
