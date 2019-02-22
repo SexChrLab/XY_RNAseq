@@ -9,7 +9,7 @@ The human X and Y chromosomes share an evolutionary origin and sequence homology
 
 Please see our preprint for more information:
 
-*Aligning RNA-Seq reads to a sex chromosome informed reference genome increases ability to detect sex differences in gene expression* 2019. Olney KC;Brotman SM; Valverde-Vesling V; Andrews J; Wilson MA. 
+*Aligning RNA-Seq reads to a sex chromosome informed reference genome increases ability to detect sex differences in gene expression* 2019. Olney KC; Brotman SM; Valverde-Vesling V; Andrews J; Wilson MA. 
 
 If you use XY_RNAseq or discuss/correct for bias in mapping on the sex chromosomes, please cite this preprint.
 
@@ -17,6 +17,17 @@ If you use XY_RNAseq or discuss/correct for bias in mapping on the sex chromosom
 1. Sex chromosome complement refernce genomes - Download and create sex chromosome complement reference genomes and gene annotation files
 
 2. Differential expression pipeline - Suggested pipeline for processing raw RNAseq fastq files for differential expression with HISAT and STAR read aligners followed by limma/voom for differential expression analysis
+
+### Sex chromosome complement refernce genomes:
+Creating sex chromosome complement reference genomes for genetic male XY and genetic female XX samples. 
+Run the following command to download the ensembl GRCh38 human reference genome and create two sex chromosome complement reference genomes. 
+Y-masked for aligning genetic female XX individuals 
+YPARs-masked for aligning genetic male XX individuals 
+
+
+The GRCh38 human reference genome is large and will take several hours to download depending on processing and memory available. 
+
+
 
 
 ## Group Members
