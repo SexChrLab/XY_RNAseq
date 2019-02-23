@@ -31,13 +31,13 @@ default | the default ensemble GRCh38 human refernce genome will include sequenc
 
 To download and create the sex chromosome complement reference genomes run the following script:
 
-  'sh downloadGRCh38HumanReferenceGenomeCreateSexChrComplement.sh'
+`sh downloadGRCh38HumanReferenceGenomeCreateSexChrComplement.sh`
 
 Note: The GRCh38 human reference genome is large and will take several hours to download depending on processing and memory available. 
 
 
 ### 2. Differential expression pipeline:
-We have put together a pipeline for inferring differential expression between males XY and females XX using two read aligners, HISAT and STAR, and limma/voom for computing differential expression. These tools are publicly available and we ask that if you use this pipeline to cite the tools used listed in the table below. 
+We have put together a workflow for inferring differential expression between males XY and females XX using two read aligners, HISAT and STAR, and limma/voom for computing differential expression. These tools are publicly available and we ask that if you use this workflow to cite the tools used listed in the table below. 
 
 To run our suggested workflow for differential expression please see differentialExpression_README
 
@@ -47,6 +47,7 @@ Tool | usage | citation
 Trimmomatic | |
 HISAT | |
 STAR | |
+bamtools | |
 Limma/voom | |
 
 
