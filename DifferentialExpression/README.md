@@ -246,3 +246,61 @@ For each sample get the read stats for the remove duplicates and add read groups
 - ">" - directs output     
 - sampleID_pass2.txt - indicated output file name
 
+## 14. Get raw transcript counts
+For each sample get the read stats for the remove duplicates and add read groups BAM files. Statistics on the BAM files should be the same as before the previous step when read groups were modified. Compare stat results for each sample to the markdup.bam file (sanity check: is there the same number of reads as the original BAM file?)
+
+`featureCounts -T 8 --primary -p -s 0 -t gene -g gene_name -a Homo_sapiens.GRCh38.89.gtf -o sampleID_FC.txt sampleID.sorted.markdup.addReadGr.bam`
+
+- featureCounts - package 
+- -T 8- command to get general - alignment statistics
+- --primary
+- -p 
+- -s 0    
+- -t gene
+- -g gene_name
+- -a Homo_sapiens.GRCh38.89.gtf
+
+
+## 15. Create gene chromosome CSV file
+
+create a file containing each gene of interest, and which chromosome(S) it is located on. There will be one file total. 
+
+- gene	Chr
+- DDX11L1	1
+- WASH7P	1
+- MIR6859-1	1
+- MIR1302-2HG	1
+
+
+## 16. Create phenotype CSV file
+
+create a file containing each sampleID, sex of the sample, genome the sample is aligned to, and which aligner was used. Thre will be a different file for each tissue used. 
+
+- sampleID	sex	genome	aligner
+- SRRID  male  default HI
+- SRRID  male  SS  HI
+- SRRID  male  default STAR
+- SRRID  male  SS  STAR
+- SRRID  female  default HI
+- SRRID  female  SS  HI
+- SRRID  female  default STAR
+- SRRID  female  SS   STAR
+
+## 17. Create counts TSV file
+
+Create a file containing each sampleID.sorted.markdup.addReadGr.bam file for a specific tissue. Use all sample for that specific tissue including male, female, STAR, HISAT, whole genome, and sex specific. there will be a different file for each tissue. 
+
+- sampleID1 sampleID2 sampleID3 SampleID4
+- 5 10  4 3
+- 0 0 0 0
+- 3 0 6 8
+- 8 0 6 4
+
+## 18. Differential expression using LimmaVoom
+Designed to assign mapped reads or fragments from pair-end genomic features from genes, exons, and promoters, featureCounts with the limma/voom (Law et al. 2014) differential expression pipeline is highly rated as one of the best-performing pipelines for the analyses of RNAseq data (SEQC/MAQC-III Consortium 2014) and was therefore chosen for our analysis.  
+
+A gene-level information file associated with the rows of the counts matrix was created using the Homo_sapiens.GRCh38.89.gtf gene annotation file, which was used in the subread featureCounts to generate the gene count data, the gene-level.csv file contains unique gene ids for each row and the corresponding chromosome location of the gene. The gene order is the same in both the annotation Homo_sapiens.GRCh38.89.gtf and the DGEList gene-level.csv data object. 
+
+The limma/voom vebayesfit is an empirical Bayes moderation that takes information from all genes to obtain a more precise estimate of gene-wise variability and is recommended for RNAseq analysis (Law et al. 2014). 
+
+LimmaVoom uses an R script for  differential expression analysis. The R scripts used in this analysis are located in the R folder. 
