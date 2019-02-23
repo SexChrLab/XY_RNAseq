@@ -39,7 +39,7 @@ Note: The GRCh38 human reference genome is large and will take several hours to 
 ### 2. Differential expression pipeline:
 We have put together a workflow for inferring differential expression between males XY and females XX using two read aligners, HISAT and STAR, and limma/voom for computing differential expression. These tools are publicly available and we ask that if you use this workflow to cite the tools used listed in the table below. 
 
-To run our suggested workflow for differential expression please see differentialExpression_README
+To run our suggested workflow for differential expression please see DifferentialExpression folder. 
 
 ### publicly available tools used in this analysis
 Tool | usage | citation
