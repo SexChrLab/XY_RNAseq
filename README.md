@@ -23,7 +23,7 @@ Creating sex chromosome complement reference genomes for genetic male XY and gen
 Run the following command to download the ensembl GRCh38 human reference genome and create two sex chromosome complement reference genomes. 
 
 ### Sex chromosome complement reference genomes 
-reference genome | usage
+Reference genome | usage
 --- | --- 
 Y-masked | for aligning genetic female XX individuals 
 YPARs-masked | for aligning genetic male XX individuals 
@@ -37,7 +37,9 @@ Note: The GRCh38 human reference genome is large and will take several hours to 
 
 
 ### 2. Differential expression pipeline:
-We have put together a pipeline for inferring differential expression between males XY and females XX using two read aligners, HISAT and STAR, and limma/voom for computing differential expression. These tools are publicly available and we ask that if you use this pipeline to cite the tools used:
+We have put together a pipeline for inferring differential expression between males XY and females XX using two read aligners, HISAT and STAR, and limma/voom for computing differential expression. These tools are publicly available and we ask that if you use this pipeline to cite the tools used listed in the table below. 
+
+To run our suggested workflow for differential expression please see differentialExpression_README
 
 ### publicly available tools used in this analysis
 Tool | usage | citation
