@@ -23,10 +23,11 @@ Creating sex chromosome complement reference genomes for genetic male XY and gen
 Run the following command to download the ensembl GRCh38 human reference genome and create two sex chromosome complement reference genomes. 
 
 ### Sex chromosome complement reference genomes 
---- | --- |
-Y-masked | for aligning genetic female XX individuals |
-YPARs-masked | for aligning genetic male XX individuals |
-default | the default ensemble GRCh38 human refernce genome will include sequences for all chromosomes including the sex chromosomes, X and Y |
+reference genome | usage
+--- | --- 
+Y-masked | for aligning genetic female XX individuals 
+YPARs-masked | for aligning genetic male XX individuals 
+default | the default ensemble GRCh38 human refernce genome will include sequences for all chromosomes including the sex chromosomes, X and Y 
 
 To download and create the sex chromosome complement reference genomes run the following script:
 
