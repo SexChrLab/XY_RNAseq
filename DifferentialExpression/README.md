@@ -87,8 +87,7 @@ Fastqc reads sequence data from high throughput sequencers and runs a set of qua
 - sampleID.fastq - path and name of sampleID in fastq format, may also be in fastq.gz format
 
 # MULTIQC
-`cd /project/MULTIQC/ 
-multiqc sampleID1_output_1_paired_fastqc/ sampleID1_output_2_paired_fastqc/ sampleID2_output_1_paired_fastqc/ etc...`
+`cd multiqc sampleID1_output_1_paired_fastqc/ sampleID1_output_2_paired_fastqc/ sampleID2_output_1_paired_fastqc/ etc...`
 
 ## 6. Aligning to the reference genomes using STAR
 STAR read aligner is a 2 pass process. The user supplies the genome files generated in the pervious step (generate genome indexes), as well as the RNA-seq reads (sequences) in the form of FASTA or FASTQ files. STAR maps the reads to the genome, and writes several output files, such as alignments (SAM/BAM), mapping summary statistics, splice junctions, unmapped reads, signal (wiggle) tracks etc. Mapping is controlled by a variety of input parameters (options). STAR highly recommends using --sjdbGTFfile which specifies the path to the file with annotated transcripts in the standard GTF format. Where STAR will extract splice junctions from this file and use them to greatly improve accuracy of the mapping. While this is optional, and STAR can be run without annotations, using annotations is highly recommended whenever they are available.However this option should not be included for projects that include hybrids, as this might cause a bias towards the reference. 
