@@ -274,7 +274,7 @@ create a file containing each gene of interest, and which chromosome(S) it is lo
 
 ## 16. Create phenotype CSV file
 
-create a file containing each sampleID, sex of the sample, genome the sample is aligned to, and which aligner was used. Thre will be a different file for each tissue used. 
+create a file containing each sampleID, sex of the sample, genome the sample is aligned to, and which aligner was used. There will be a different file for each tissue used. 
 
 - sampleID	sex	genome	aligner
 - SRRID  male  default HI
