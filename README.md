@@ -14,11 +14,11 @@ Please see our preprint for more information:
 If you use XY_RNAseq or discuss/correct for bias in mapping on the sex chromosomes, please cite this preprint.
 
 ## Contents:
-1. Sex chromosome complement refernce genomes - Download and create sex chromosome complement reference genomes and gene annotation files
+1. Sex chromosome complement reference genomes - Download and create sex chromosome complement reference genomes and gene annotation files
 
 2. Differential expression pipeline - Suggested pipeline for processing raw RNAseq fastq files for differential expression with HISAT and STAR read aligners followed by limma/voom for differential expression analysis
 
-### 1. Sex chromosome complement refernce genomes:
+### 1. Sex chromosome complement reference genomes:
 Creating sex chromosome complement reference genomes for genetic male XY and genetic female XX samples. 
 Run the following command to download the ensembl GRCh38 human reference genome and create two sex chromosome complement reference genomes. 
 
@@ -27,7 +27,7 @@ Reference genome | usage
 --- | --- 
 Y-masked | for aligning genetic female XX individuals 
 YPARs-masked | for aligning genetic male XX individuals 
-default | the default ensemble GRCh38 human refernce genome will include sequences for all chromosomes including the sex chromosomes, X and Y 
+default | the default ensemble GRCh38 human reference genome will include sequences for all chromosomes including the sex chromosomes, X and Y 
 
 To download and create the sex chromosome complement reference genomes run the following script:
 
@@ -57,7 +57,7 @@ Limma/voom | differenital expression analysis | Law CW, Chen Y, Shi W, Smyth GK.
 Name | email | github ID
 --- | --- |  ---
 Kimberly Olney | olneykimberly@gmail.com | @olneykimberly
-Sarah Brotman |
+Sarah Brotman | sarah.brotman13@gmail.com | @sarahbrotman
 Valeria Valverde-Vesling |
 Jocelyn Andrews |
 Melissa A. Wilson | melissa.wilsonsayres@asu.edu | @mwilsonsayres
