@@ -1,6 +1,6 @@
 #!/bin/bash
 #################
-# This script will download and rreate the following GRCh38 human reference genomes:
+# This script will download and create the following GRCh38 human reference genomes:
 #	YPARs-masked GRCh38 1-22,MT,X,YPARsN,nonchromosomal regions
 #	Y-Masked GRCh38 1-22,MT,X,YN,nonchromosomal regions
 #	
