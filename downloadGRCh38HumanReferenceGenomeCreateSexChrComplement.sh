@@ -3,7 +3,7 @@
 # This script will download and create the following GRCh38 human reference genomes:
 #	YPARs-masked GRCh38 1-22,MT,X,YPARsN,nonchromosomal regions
 #	Y-Masked GRCh38 1-22,MT,X,YN,nonchromosomal regions
-#	
+#	YPARs are defined here: https://useast.ensembl.org/info/genome/genebuild/human_PARS.html
 # Will need access to the internet
 # The use of following bash commands: 
 #	wget 
