@@ -1,0 +1,1681 @@
+{
+  "Commment_Input_Output_Directories": "The following section specifies the input and output directories for the files to be used in the script
+        Orginal input folder /mnt/storage/public/dbgap-8834/brain_cortex/",
+  "Trimmed_FastQC_Input_File_Directory": "/mnt/storage/SAYRES/XY_Trim_Ref/BRAIN_CORTEX/trimmed/",
+  "Output_File_Directory": "/mnt/storage/SAYRES/XY_Trim_Ref/BRAIN_CORTEX/",
+
+  "Comment_Transcriptome_Index": "The following section specified the location of the index file for Salmon",
+  "HG38_Transcriptome_Index_HISAT_Path_male": "/mnt/storage/SAYRES/XY_Trim_Ref/ensemble_HISAT2_references/YPARs_masked/GRCh38_YPARs_masked_reference_HISAT2",
+  "HG38_Transcriptome_Index_HISAT_Path_female": "/mnt/storage/SAYRES/XY_Trim_Ref/ensemble_HISAT2_references/Y_masked/GRCh38_Ymasked_reference_HISAT2",
+  "HG38_Transcriptome_Index_HISAT_Path_DEF": "/mnt/storage/SAYRES/XY_Trim_Ref/ensemble_HISAT2_references/wholeGenome/GRCh38_wholeGenome_reference_HISAT2",
+
+  "HG38_Transcriptome_Index_STAR_Path_male": "/mnt/storage/SAYRES/XY_Trim_Ref/ensemble_references/ensemble.GRCh38.YPARs_masked",
+  "HG38_Transcriptome_Index_STAR_Path_female": "/mnt/storage/SAYRES/XY_Trim_Ref/ensemble_references/ensemble.GRCh38.Y_masked",
+  "HG38_Transcriptome_Index_STAR_Path_DEF": "/mnt/storage/SAYRES/XY_Trim_Ref/ensemble_references/ensemble.GRCh38.wholeGenome",
+
+
+  "Comment_GTF_gencode.v29.": "The following section is the specified location for the gencode gene annotation file",
+  "gencode.v29.annotation.gtf_path": "/mnt/storage/SAYRES/XY_Trim_Ref/ensemble_HISAT2_references/YPARs_masked/Homo_sapiens.GRCh38.89.gtf",
+  "ensemble.gtf": "/mnt/storage/SAYRES/XY_Trim_Ref/ensemble_HISAT2_references/YPARs_masked/Homo_sapiens.GRCh38.89.gtf",
+
+  "Comment_Sample_Info": "The following section lists the samples that are to be analyzed",
+  "sample_names_ALL": ["GTEX-14A5I-2926-SM-5Q5CQ", "GTEX-N7MT-1126-SM-5SI7V", "GTEX-ZAJG-3126-SM-5HL9J", "GTEX-YFC4-3126-SM-5PNV6", "GTEX-131XW-3126-SM-5LZUC", 
+            "GTEX-ZAK1-3026-SM-5S2MJ", "GTEX-WWYW-3126-SM-3NB39", "GTEX-145LS-3126-SM-5Q5BY", "GTEX-OHPN-2526-SM-2I5H3", "GTEX-T2IS-3026-SM-32QPM", 
+            "GTEX-QVJO-1426-SM-2S1QY", "GTEX-11GSP-3226-SM-5986O", "GTEX-13S7M-3126-SM-5RQJQ", "GTEX-1117F-3226-SM-5N9CT", "GTEX-13JUV-2926-SM-5LZX7", 
+            "GTEX-1313W-3126-SM-5LZUI", "GTEX-ZE7O-3126-SM-5HL5X", "GTEX-12WSD-3126-SM-5HL7P", "GTEX-1128S-2726-SM-5H12C", "GTEX-RNOR-2326-SM-2TF4I", 
+            "GTEX-13QIC-2926-SM-5J2NF", "GTEX-13PL6-3126-SM-5LUAR", "GTEX-PWO3-0926-SM-2I5EY", "GTEX-13O3O-3126-SM-5KM3H", "GTEX-Q2AG-2926-SM-2HMJ3", 
+            "GTEX-13X6K-2926-SM-5Q5D5", "GTEX-12ZZX-2926-SM-5GCOQ", "GTEX-QDT8-2926-SM-32PKC", "GTEX-NPJ7-2726-SM-2I3FT", "GTEX-ZVT3-3026-SM-5E43N", 
+            "GTEX-13OVJ-2826-SM-5L3GW", "GTEX-QVUS-2826-SM-3GADB", "GTEX-ZYY3-3126-SM-5SI9L", "GTEX-131YS-3126-SM-5KLYT", "GTEX-13SLX-3126-SM-5S2Q5", 
+            "GTEX-RU72-3026-SM-5SI7Y", "GTEX-TSE9-3026-SM-3DB76", "GTEX-11TTK-2926-SM-5PNYP", "GTEX-11EMC-3226-SM-5EGKW", "GTEX-12WS9-2926-SM-5EGL8",
+            "GTEX-XLM4-3026-SM-4AT6L", "GTEX-ZUA1-3026-SM-59HJC", "GTEX-13FLW-1426-SM-5K7YE", "GTEX-13OW6-3026-SM-5J2MI", "GTEX-145MG-3026-SM-5RQJA", 
+            "GTEX-145MF-2726-SM-5O995", "GTEX-YJ89-3026-SM-5IFJI", "GTEX-13NYS-3126-SM-5KLYV", "GTEX-13O3Q-2926-SM-5KM45", "GTEX-11O72-2926-SM-5BC4V", 
+            "GTEX-ZE9C-3026-SM-4WKHB", "GTEX-ZZPT-3026-SM-5GZXH", "GTEX-ZYFD-3026-SM-5E44C", "GTEX-11GSO-2926-SM-5HL73", "GTEX-WHSE-3026-SM-3P5ZH", 
+            "GTEX-145MH-3026-SM-5Q5DZ", "GTEX-139T8-1026-SM-5J2MC", "GTEX-14BMV-3026-SM-5S2PQ", "GTEX-12WSC-3026-SM-5GCNF", "GTEX-12WSA-2926-SM-5EQ4D", 
+            "GTEX-111FC-3126-SM-5GZZ2", "GTEX-13G51-3026-SM-5IJB8", "GTEX-12ZZW-2926-SM-5LZUP", "GTEX-OXRN-2426-SM-2I5EQ", "GTEX-WZTO-2926-SM-3NM9I", 
+            "GTEX-12696-2926-SM-5FQTG", "GTEX-13OW7-3026-SM-5L3GY", "GTEX-P44G-2426-SM-2I5ER", "GTEX-Y111-2726-SM-4TT3N", "GTEX-144GL-3026-SM-5Q5CW", 
+            "GTEX-11OF3-2926-SM-5HL78", "GTEX-11NUK-2926-SM-5A5MD", "GTEX-13FHO-3026-SM-5J1O9", "GTEX-XMD1-2926-SM-4AT42", "GTEX-11TUW-3126-SM-5GU4Y", 
+            "GTEX-T6MN-2626-SM-32PMQ", "GTEX-QMR6-1426-SM-32PLA", "GTEX-12ZZZ-3026-SM-5BC67", "GTEX-11PRG-2926-SM-5987A", "GTEX-11ONC-2926-SM-5P9JM", 
+            "GTEX-ZF28-3026-SM-4WKHP", "GTEX-WL46-2926-SM-3LK82", "GTEX-Z93S-2926-SM-57WB9", "GTEX-11NV4-2126-SM-5N9DS", "GTEX-PVOW-2526-SM-2XCF7", 
+            "GTEX-12WSH-3026-SM-5CVNI", "GTEX-11ZUS-2926-SM-5FQSL", "GTEX-XOTO-3026-SM-4B65M", "GTEX-11WQK-3026-SM-5EQL6", "GTEX-13JVG-3126-SM-5L3FH", 
+            "GTEX-13OW8-2826-SM-5L3GC", "GTEX-X4XX-3026-SM-3NMB2", "GTEX-UTHO-3026-SM-3GAFB", "GTEX-1399T-3026-SM-5KLZC", "GTEX-Y8DK-0826-SM-4TT3T", 
+            "GTEX-13OVH-3026-SM-5MR4N", "GTEX-117XS-3026-SM-5N9CA", "GTEX-X585-3026-SM-46MWF", "GTEX-11GS4-3126-SM-5A5LH", "GTEX-ZDXO-2126-SM-4WKFI", 
+            "GTEX-144FL-3026-SM-5O99C", "GTEX-13IVO-2926-SM-5L3CZ", "GTEX-13NYB-3026-SM-5IJD7", "GTEX-147GR-3026-SM-5S2ML", "GTEX-13NYC-2826-SM-5K7WR", 
+            "GTEX-11EI6-3026-SM-5GZZO", "GTEX-R55F-1326-SM-5S2V4", "GTEX-13VXU-2926-SM-5LU5C", "GTEX-13PVQ-3026-SM-5SI93", "GTEX-12ZZY-3026-SM-5GCOU", 
+            "GTEX-11OC5-0726-SM-5P9JK", "GTEX-13FXS-3126-SM-5J2NN", "GTEX-13FHP-3026-SM-5IJBS", "GTEX-12126-1026-SM-5P9JJ", "GTEX-14ASI-3026-SM-5S2PN", 
+            "GTEX-T5JC-2426-SM-3NMDB", "GTEX-1192X-3126-SM-5N9BY", "GTEX-139UC-3126-SM-5J1OY", "GTEX-WVLH-3026-SM-3MJG9", "GTEX-132Q8-3026-SM-5PNVG", 
+            "GTEX-1445S-3026-SM-5O9BR", "GTEX-13X6J-3026-SM-5Q5CU", "GTEX-11DXW-1126-SM-5H12Q"],
+    
+    "sample_names": ["GTEX-11WQK-3026-SM-5EQL6", "GTEX-13PVQ-3026-SM-5SI93", "GTEX-145MH-3026-SM-5Q5DZ", "GTEX-1117F-3226-SM-5N9CT", "GTEX-11TTK-2926-SM-5PNYP", "GTEX-12WS9-2926-SM-5EGL8", "GTEX-12WSD-3126-SM-5HL7P", "GTEX-131YS-3126-SM-5KLYT", "GTEX-13O3O-3126-SM-5KM3H", "GTEX-13OVJ-2826-SM-5L3GW", "GTEX-13QIC-2926-SM-5J2NF", "GTEX-13S7M-3126-SM-5RQJQ", "GTEX-13SLX-3126-SM-5S2Q5", "GTEX-13X6K-2926-SM-5Q5D5", "GTEX-145LS-3126-SM-5Q5BY", "GTEX-N7MT-1126-SM-5SI7V", "GTEX-RU72-3026-SM-5SI7Y", "GTEX-TSE9-3026-SM-3DB76", "GTEX-ZAJG-3126-SM-5HL9J", "GTEX-ZAK1-3026-SM-5S2MJ", "GTEX-ZE7O-3126-SM-5HL5X", "GTEX-ZVT3-3026-SM-5E43N", "GTEX-ZYY3-3126-SM-5SI9L", "GTEX-11GS4-3126-SM-5A5LH", "GTEX-11NV4-2126-SM-5N9DS", "GTEX-11TUW-3126-SM-5GU4Y", "GTEX-12WSA-2926-SM-5EQ4D", "GTEX-132Q8-3026-SM-5PNVG", "GTEX-139UC-3126-SM-5J1OY", "GTEX-13FHO-3026-SM-5J1O9", "GTEX-13FLW-1426-SM-5K7YE", "GTEX-13FXS-3126-SM-5J2NN", "GTEX-13OW8-2826-SM-5L3GC", "GTEX-147GR-3026-SM-5S2ML", "GTEX-UTHO-3026-SM-3GAFB", "GTEX-WVLH-3026-SM-3MJG9", "GTEX-X4XX-3026-SM-3NMB2", "GTEX-XMD1-2926-SM-4AT42", "GTEX-YJ89-3026-SM-5IFJI", "GTEX-ZYFD-3026-SM-5E44C"],
+    
+    "females": ["GTEX-1117F-3226-SM-5N9CT", "GTEX-11TTK-2926-SM-5PNYP", "GTEX-12WS9-2926-SM-5EGL8", "GTEX-12WSD-3126-SM-5HL7P", "GTEX-131YS-3126-SM-5KLYT", "GTEX-13O3O-3126-SM-5KM3H", "GTEX-13OVJ-2826-SM-5L3GW", "GTEX-13QIC-2926-SM-5J2NF", "GTEX-13S7M-3126-SM-5RQJQ", "GTEX-13SLX-3126-SM-5S2Q5", "GTEX-13X6K-2926-SM-5Q5D5", "GTEX-145LS-3126-SM-5Q5BY", "GTEX-N7MT-1126-SM-5SI7V", "GTEX-RU72-3026-SM-5SI7Y", "GTEX-TSE9-3026-SM-3DB76", "GTEX-ZAJG-3126-SM-5HL9J", "GTEX-ZAK1-3026-SM-5S2MJ", "GTEX-ZE7O-3126-SM-5HL5X", "GTEX-ZVT3-3026-SM-5E43N", "GTEX-ZYY3-3126-SM-5SI9L"],
+    
+    "males": ["GTEX-11WQK-3026-SM-5EQL6", "GTEX-13PVQ-3026-SM-5SI93", "GTEX-145MH-3026-SM-5Q5DZ", "GTEX-11GS4-3126-SM-5A5LH", "GTEX-11NV4-2126-SM-5N9DS", "GTEX-11TUW-3126-SM-5GU4Y", "GTEX-12WSA-2926-SM-5EQ4D", "GTEX-132Q8-3026-SM-5PNVG", "GTEX-139UC-3126-SM-5J1OY", "GTEX-13FHO-3026-SM-5J1O9", "GTEX-13FLW-1426-SM-5K7YE", "GTEX-13FXS-3126-SM-5J2NN", "GTEX-13OW8-2826-SM-5L3GC", "GTEX-147GR-3026-SM-5S2ML", "GTEX-UTHO-3026-SM-3GAFB", "GTEX-WVLH-3026-SM-3MJG9", "GTEX-X4XX-3026-SM-3NMB2", "GTEX-XMD1-2926-SM-4AT42", "GTEX-YJ89-3026-SM-5IFJI", "GTEX-ZYFD-3026-SM-5E44C"],
+  
+  "females_ALL": ["GTEX-14A5I-2926-SM-5Q5CQ", "GTEX-N7MT-1126-SM-5SI7V", "GTEX-ZAJG-3126-SM-5HL9J", "GTEX-YFC4-3126-SM-5PNV6", "GTEX-131XW-3126-SM-5LZUC", 
+            "GTEX-ZAK1-3026-SM-5S2MJ", "GTEX-WWYW-3126-SM-3NB39", "GTEX-145LS-3126-SM-5Q5BY", "GTEX-OHPN-2526-SM-2I5H3", "GTEX-T2IS-3026-SM-32QPM", 
+            "GTEX-QVJO-1426-SM-2S1QY", "GTEX-11GSP-3226-SM-5986O", "GTEX-13S7M-3126-SM-5RQJQ", "GTEX-1117F-3226-SM-5N9CT", "GTEX-13JUV-2926-SM-5LZX7", 
+            "GTEX-1313W-3126-SM-5LZUI", "GTEX-ZE7O-3126-SM-5HL5X", "GTEX-12WSD-3126-SM-5HL7P", "GTEX-1128S-2726-SM-5H12C", "GTEX-RNOR-2326-SM-2TF4I", 
+            "GTEX-13QIC-2926-SM-5J2NF", "GTEX-13PL6-3126-SM-5LUAR", "GTEX-PWO3-0926-SM-2I5EY", "GTEX-13O3O-3126-SM-5KM3H", "GTEX-Q2AG-2926-SM-2HMJ3", 
+            "GTEX-13X6K-2926-SM-5Q5D5", "GTEX-12ZZX-2926-SM-5GCOQ", "GTEX-QDT8-2926-SM-32PKC", "GTEX-NPJ7-2726-SM-2I3FT", "GTEX-ZVT3-3026-SM-5E43N", 
+            "GTEX-13OVJ-2826-SM-5L3GW", "GTEX-QVUS-2826-SM-3GADB", "GTEX-ZYY3-3126-SM-5SI9L", "GTEX-131YS-3126-SM-5KLYT", "GTEX-13SLX-3126-SM-5S2Q5", 
+            "GTEX-RU72-3026-SM-5SI7Y", "GTEX-TSE9-3026-SM-3DB76", "GTEX-11TTK-2926-SM-5PNYP", "GTEX-11EMC-3226-SM-5EGKW", "GTEX-12WS9-2926-SM-5EGL8"],
+
+  "males_ALL": ["GTEX-XLM4-3026-SM-4AT6L", "GTEX-ZUA1-3026-SM-59HJC", "GTEX-13FLW-1426-SM-5K7YE", "GTEX-13OW6-3026-SM-5J2MI", "GTEX-145MG-3026-SM-5RQJA", 
+            "GTEX-145MF-2726-SM-5O995", "GTEX-YJ89-3026-SM-5IFJI", "GTEX-13NYS-3126-SM-5KLYV", "GTEX-13O3Q-2926-SM-5KM45", "GTEX-11O72-2926-SM-5BC4V", 
+            "GTEX-ZE9C-3026-SM-4WKHB", "GTEX-ZZPT-3026-SM-5GZXH", "GTEX-ZYFD-3026-SM-5E44C", "GTEX-11GSO-2926-SM-5HL73", "GTEX-WHSE-3026-SM-3P5ZH", 
+            "GTEX-145MH-3026-SM-5Q5DZ", "GTEX-139T8-1026-SM-5J2MC", "GTEX-14BMV-3026-SM-5S2PQ", "GTEX-12WSC-3026-SM-5GCNF", "GTEX-12WSA-2926-SM-5EQ4D", 
+            "GTEX-111FC-3126-SM-5GZZ2", "GTEX-13G51-3026-SM-5IJB8", "GTEX-12ZZW-2926-SM-5LZUP", "GTEX-OXRN-2426-SM-2I5EQ", "GTEX-WZTO-2926-SM-3NM9I", 
+            "GTEX-12696-2926-SM-5FQTG", "GTEX-13OW7-3026-SM-5L3GY", "GTEX-P44G-2426-SM-2I5ER", "GTEX-Y111-2726-SM-4TT3N", "GTEX-144GL-3026-SM-5Q5CW", 
+            "GTEX-11OF3-2926-SM-5HL78", "GTEX-11NUK-2926-SM-5A5MD", "GTEX-13FHO-3026-SM-5J1O9", "GTEX-XMD1-2926-SM-4AT42", "GTEX-11TUW-3126-SM-5GU4Y", 
+            "GTEX-T6MN-2626-SM-32PMQ", "GTEX-QMR6-1426-SM-32PLA", "GTEX-12ZZZ-3026-SM-5BC67", "GTEX-11PRG-2926-SM-5987A", "GTEX-11ONC-2926-SM-5P9JM", 
+            "GTEX-ZF28-3026-SM-4WKHP", "GTEX-WL46-2926-SM-3LK82", "GTEX-Z93S-2926-SM-57WB9", "GTEX-11NV4-2126-SM-5N9DS", "GTEX-PVOW-2526-SM-2XCF7", 
+            "GTEX-12WSH-3026-SM-5CVNI", "GTEX-11ZUS-2926-SM-5FQSL", "GTEX-XOTO-3026-SM-4B65M", "GTEX-11WQK-3026-SM-5EQL6", "GTEX-13JVG-3126-SM-5L3FH", 
+            "GTEX-13OW8-2826-SM-5L3GC", "GTEX-X4XX-3026-SM-3NMB2", "GTEX-UTHO-3026-SM-3GAFB", "GTEX-1399T-3026-SM-5KLZC", "GTEX-Y8DK-0826-SM-4TT3T", 
+            "GTEX-13OVH-3026-SM-5MR4N", "GTEX-117XS-3026-SM-5N9CA", "GTEX-X585-3026-SM-46MWF", "GTEX-11GS4-3126-SM-5A5LH", "GTEX-ZDXO-2126-SM-4WKFI", 
+            "GTEX-144FL-3026-SM-5O99C", "GTEX-13IVO-2926-SM-5L3CZ", "GTEX-13NYB-3026-SM-5IJD7", "GTEX-147GR-3026-SM-5S2ML", "GTEX-13NYC-2826-SM-5K7WR", 
+            "GTEX-11EI6-3026-SM-5GZZO", "GTEX-R55F-1326-SM-5S2V4", "GTEX-13VXU-2926-SM-5LU5C", "GTEX-13PVQ-3026-SM-5SI93", "GTEX-12ZZY-3026-SM-5GCOU", 
+            "GTEX-11OC5-0726-SM-5P9JK", "GTEX-13FXS-3126-SM-5J2NN", "GTEX-13FHP-3026-SM-5IJBS", "GTEX-12126-1026-SM-5P9JJ", "GTEX-14ASI-3026-SM-5S2PN", 
+            "GTEX-T5JC-2426-SM-3NMDB", "GTEX-1192X-3126-SM-5N9BY", "GTEX-139UC-3126-SM-5J1OY", "GTEX-WVLH-3026-SM-3MJG9", "GTEX-132Q8-3026-SM-5PNVG", 
+            "GTEX-1445S-3026-SM-5O9BR", "GTEX-13X6J-3026-SM-5Q5CU", "GTEX-11DXW-1126-SM-5H12Q"],
+
+    "GTEX-14A5I-2926-SM-5Q5CQ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-14A5I-2926-SM-5Q5CQ/GTEX-14A5I-2926-SM-5Q5CQ_1.fastq",
+        "fq2": "GTEX-14A5I-2926-SM-5Q5CQ/GTEX-14A5I-2926-SM-5Q5CQ_2.fastq",
+        "fq1_sy": "GTEX-14A5I-2926-SM-5Q5CQ_1.fastq",
+        "fq2_sy": "GTEX-14A5I-2926-SM-5Q5CQ_2.fastq",
+        "ID": "GTEX-14A5I-2926-SM-5Q5CQ",
+        "SM": "GTEX-14A5I-2926-SM-5Q5CQ",
+        "LB": "GTEX-14A5I-2926-SM-5Q5CQ",
+        "PU": "GTEX-14A5I-2926-SM-5Q5CQ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-N7MT-1126-SM-5SI7V":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-N7MT-1126-SM-5SI7V/GTEX-N7MT-1126-SM-5SI7V_1.fastq",
+        "fq2": "GTEX-N7MT-1126-SM-5SI7V/GTEX-N7MT-1126-SM-5SI7V_2.fastq",
+        "fq1_sy": "GTEX-N7MT-1126-SM-5SI7V_1.fastq",
+        "fq2_sy": "GTEX-N7MT-1126-SM-5SI7V_2.fastq",
+        "ID": "GTEX-N7MT-1126-SM-5SI7V",
+        "SM": "GTEX-N7MT-1126-SM-5SI7V",
+        "LB": "GTEX-N7MT-1126-SM-5SI7V",
+        "PU": "GTEX-N7MT-1126-SM-5SI7V",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZAJG-3126-SM-5HL9J":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-ZAJG-3126-SM-5HL9J/GTEX-ZAJG-3126-SM-5HL9J_1.fastq",
+        "fq2": "GTEX-ZAJG-3126-SM-5HL9J/GTEX-ZAJG-3126-SM-5HL9J_2.fastq",
+        "fq1_sy": "GTEX-ZAJG-3126-SM-5HL9J_1.fastq",
+        "fq2_sy": "GTEX-ZAJG-3126-SM-5HL9J_2.fastq",
+        "ID": "GTEX-ZAJG-3126-SM-5HL9J",
+        "SM": "GTEX-ZAJG-3126-SM-5HL9J",
+        "LB": "GTEX-ZAJG-3126-SM-5HL9J",
+        "PU": "GTEX-ZAJG-3126-SM-5HL9J",
+        "PL": "Illumina"
+    },
+
+    "GTEX-YFC4-3126-SM-5PNV6":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-YFC4-3126-SM-5PNV6/GTEX-YFC4-3126-SM-5PNV6_1.fastq",
+        "fq2": "GTEX-YFC4-3126-SM-5PNV6/GTEX-YFC4-3126-SM-5PNV6_2.fastq",
+        "fq1_sy": "GTEX-YFC4-3126-SM-5PNV6_1.fastq",
+        "fq2_sy": "GTEX-YFC4-3126-SM-5PNV6_2.fastq",
+        "ID": "GTEX-YFC4-3126-SM-5PNV6",
+        "SM": "GTEX-YFC4-3126-SM-5PNV6",
+        "LB": "GTEX-YFC4-3126-SM-5PNV6",
+        "PU": "GTEX-YFC4-3126-SM-5PNV6",
+        "PL": "Illumina"
+    },
+
+    "GTEX-131XW-3126-SM-5LZUC":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-131XW-3126-SM-5LZUC/GTEX-131XW-3126-SM-5LZUC_1.fastq",
+        "fq2": "GTEX-131XW-3126-SM-5LZUC/GTEX-131XW-3126-SM-5LZUC_2.fastq",
+        "fq1_sy": "GTEX-131XW-3126-SM-5LZUC_1.fastq",
+        "fq2_sy": "GTEX-131XW-3126-SM-5LZUC_2.fastq",
+        "ID": "GTEX-131XW-3126-SM-5LZUC",
+        "SM": "GTEX-131XW-3126-SM-5LZUC",
+        "LB": "GTEX-131XW-3126-SM-5LZUC",
+        "PU": "GTEX-131XW-3126-SM-5LZUC",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZAK1-3026-SM-5S2MJ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-ZAK1-3026-SM-5S2MJ/GTEX-ZAK1-3026-SM-5S2MJ_1.fastq",
+        "fq2": "GTEX-ZAK1-3026-SM-5S2MJ/GTEX-ZAK1-3026-SM-5S2MJ_2.fastq",
+        "fq1_sy": "GTEX-ZAK1-3026-SM-5S2MJ_1.fastq",
+        "fq2_sy": "GTEX-ZAK1-3026-SM-5S2MJ_2.fastq",
+        "ID": "GTEX-ZAK1-3026-SM-5S2MJ",
+        "SM": "GTEX-ZAK1-3026-SM-5S2MJ",
+        "LB": "GTEX-ZAK1-3026-SM-5S2MJ",
+        "PU": "GTEX-ZAK1-3026-SM-5S2MJ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-WWYW-3126-SM-3NB39":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-WWYW-3126-SM-3NB39/GTEX-WWYW-3126-SM-3NB39_1.fastq",
+        "fq2": "GTEX-WWYW-3126-SM-3NB39/GTEX-WWYW-3126-SM-3NB39_2.fastq",
+        "fq1_sy": "GTEX-WWYW-3126-SM-3NB39_1.fastq",
+        "fq2_sy": "GTEX-WWYW-3126-SM-3NB39_2.fastq",
+        "ID": "GTEX-WWYW-3126-SM-3NB39",
+        "SM": "GTEX-WWYW-3126-SM-3NB39",
+        "LB": "GTEX-WWYW-3126-SM-3NB39",
+        "PU": "GTEX-WWYW-3126-SM-3NB39",
+        "PL": "Illumina"
+    },
+
+    "GTEX-145LS-3126-SM-5Q5BY":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-145LS-3126-SM-5Q5BY/GTEX-145LS-3126-SM-5Q5BY_1.fastq",
+        "fq2": "GTEX-145LS-3126-SM-5Q5BY/GTEX-145LS-3126-SM-5Q5BY_2.fastq",
+        "fq1_sy": "GTEX-145LS-3126-SM-5Q5BY_1.fastq",
+        "fq2_sy": "GTEX-145LS-3126-SM-5Q5BY_2.fastq",
+        "ID": "GTEX-145LS-3126-SM-5Q5BY",
+        "SM": "GTEX-145LS-3126-SM-5Q5BY",
+        "LB": "GTEX-145LS-3126-SM-5Q5BY",
+        "PU": "GTEX-145LS-3126-SM-5Q5BY",
+        "PL": "Illumina"
+    },
+
+    "GTEX-OHPN-2526-SM-2I5H3":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-OHPN-2526-SM-2I5H3/GTEX-OHPN-2526-SM-2I5H3_1.fastq",
+        "fq2": "GTEX-OHPN-2526-SM-2I5H3/GTEX-OHPN-2526-SM-2I5H3_2.fastq",
+        "fq1_sy": "GTEX-OHPN-2526-SM-2I5H3_1.fastq",
+        "fq2_sy": "GTEX-OHPN-2526-SM-2I5H3_2.fastq",
+        "ID": "GTEX-OHPN-2526-SM-2I5H3",
+        "SM": "GTEX-OHPN-2526-SM-2I5H3",
+        "LB": "GTEX-OHPN-2526-SM-2I5H3",
+        "PU": "GTEX-OHPN-2526-SM-2I5H3",
+        "PL": "Illumina"
+    },
+
+    "GTEX-T2IS-3026-SM-32QPM":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-T2IS-3026-SM-32QPM/GTEX-T2IS-3026-SM-32QPM_1.fastq",
+        "fq2": "GTEX-T2IS-3026-SM-32QPM/GTEX-T2IS-3026-SM-32QPM_2.fastq",
+        "fq1_sy": "GTEX-T2IS-3026-SM-32QPM_1.fastq",
+        "fq2_sy": "GTEX-T2IS-3026-SM-32QPM_2.fastq",
+        "ID": "GTEX-T2IS-3026-SM-32QPM",
+        "SM": "GTEX-T2IS-3026-SM-32QPM",
+        "LB": "GTEX-T2IS-3026-SM-32QPM",
+        "PU": "GTEX-T2IS-3026-SM-32QPM",
+        "PL": "Illumina"
+    },
+
+    "GTEX-QVJO-1426-SM-2S1QY":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-QVJO-1426-SM-2S1QY/GTEX-QVJO-1426-SM-2S1QY_1.fastq",
+        "fq2": "GTEX-QVJO-1426-SM-2S1QY/GTEX-QVJO-1426-SM-2S1QY_2.fastq",
+        "fq1_sy": "GTEX-QVJO-1426-SM-2S1QY_1.fastq",
+        "fq2_sy": "GTEX-QVJO-1426-SM-2S1QY_2.fastq",
+        "ID": "GTEX-QVJO-1426-SM-2S1QY",
+        "SM": "GTEX-QVJO-1426-SM-2S1QY",
+        "LB": "GTEX-QVJO-1426-SM-2S1QY",
+        "PU": "GTEX-QVJO-1426-SM-2S1QY",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11GSP-3226-SM-5986O":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-11GSP-3226-SM-5986O/GTEX-11GSP-3226-SM-5986O_1.fastq",
+        "fq2": "GTEX-11GSP-3226-SM-5986O/GTEX-11GSP-3226-SM-5986O_2.fastq",
+        "fq1_sy": "GTEX-11GSP-3226-SM-5986O_1.fastq",
+        "fq2_sy": "GTEX-11GSP-3226-SM-5986O_2.fastq",
+        "ID": "GTEX-11GSP-3226-SM-5986O",
+        "SM": "GTEX-11GSP-3226-SM-5986O",
+        "LB": "GTEX-11GSP-3226-SM-5986O",
+        "PU": "GTEX-11GSP-3226-SM-5986O",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13S7M-3126-SM-5RQJQ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-13S7M-3126-SM-5RQJQ/GTEX-13S7M-3126-SM-5RQJQ_1.fastq",
+        "fq2": "GTEX-13S7M-3126-SM-5RQJQ/GTEX-13S7M-3126-SM-5RQJQ_2.fastq",
+        "fq1_sy": "GTEX-13S7M-3126-SM-5RQJQ_1.fastq",
+        "fq2_sy": "GTEX-13S7M-3126-SM-5RQJQ_2.fastq",
+        "ID": "GTEX-13S7M-3126-SM-5RQJQ",
+        "SM": "GTEX-13S7M-3126-SM-5RQJQ",
+        "LB": "GTEX-13S7M-3126-SM-5RQJQ",
+        "PU": "GTEX-13S7M-3126-SM-5RQJQ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-1117F-3226-SM-5N9CT":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-1117F-3226-SM-5N9CT/GTEX-1117F-3226-SM-5N9CT_1.fastq",
+        "fq2": "GTEX-1117F-3226-SM-5N9CT/GTEX-1117F-3226-SM-5N9CT_2.fastq",
+        "fq1_sy": "GTEX-1117F-3226-SM-5N9CT_1.fastq",
+        "fq2_sy": "GTEX-1117F-3226-SM-5N9CT_2.fastq",
+        "ID": "GTEX-1117F-3226-SM-5N9CT",
+        "SM": "GTEX-1117F-3226-SM-5N9CT",
+        "LB": "GTEX-1117F-3226-SM-5N9CT",
+        "PU": "GTEX-1117F-3226-SM-5N9CT",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13JUV-2926-SM-5LZX7":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-13JUV-2926-SM-5LZX7/GTEX-13JUV-2926-SM-5LZX7_1.fastq",
+        "fq2": "GTEX-13JUV-2926-SM-5LZX7/GTEX-13JUV-2926-SM-5LZX7_2.fastq",
+        "fq1_sy": "GTEX-13JUV-2926-SM-5LZX7_1.fastq",
+        "fq2_sy": "GTEX-13JUV-2926-SM-5LZX7_2.fastq",
+        "ID": "GTEX-13JUV-2926-SM-5LZX7",
+        "SM": "GTEX-13JUV-2926-SM-5LZX7",
+        "LB": "GTEX-13JUV-2926-SM-5LZX7",
+        "PU": "GTEX-13JUV-2926-SM-5LZX7",
+        "PL": "Illumina"
+    },
+
+    "GTEX-1313W-3126-SM-5LZUI":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-1313W-3126-SM-5LZUI/GTEX-1313W-3126-SM-5LZUI_1.fastq",
+        "fq2": "GTEX-1313W-3126-SM-5LZUI/GTEX-1313W-3126-SM-5LZUI_2.fastq",
+        "fq1_sy": "GTEX-1313W-3126-SM-5LZUI_1.fastq",
+        "fq2_sy": "GTEX-1313W-3126-SM-5LZUI_2.fastq",
+        "ID": "GTEX-1313W-3126-SM-5LZUI",
+        "SM": "GTEX-1313W-3126-SM-5LZUI",
+        "LB": "GTEX-1313W-3126-SM-5LZUI",
+        "PU": "GTEX-1313W-3126-SM-5LZUI",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZE7O-3126-SM-5HL5X":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-ZE7O-3126-SM-5HL5X/GTEX-ZE7O-3126-SM-5HL5X_1.fastq",
+        "fq2": "GTEX-ZE7O-3126-SM-5HL5X/GTEX-ZE7O-3126-SM-5HL5X_2.fastq",
+        "fq1_sy": "GTEX-ZE7O-3126-SM-5HL5X_1.fastq",
+        "fq2_sy": "GTEX-ZE7O-3126-SM-5HL5X_2.fastq",
+        "ID": "GTEX-ZE7O-3126-SM-5HL5X",
+        "SM": "GTEX-ZE7O-3126-SM-5HL5X",
+        "LB": "GTEX-ZE7O-3126-SM-5HL5X",
+        "PU": "GTEX-ZE7O-3126-SM-5HL5X",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12WSD-3126-SM-5HL7P":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-12WSD-3126-SM-5HL7P/GTEX-12WSD-3126-SM-5HL7P_1.fastq",
+        "fq2": "GTEX-12WSD-3126-SM-5HL7P/GTEX-12WSD-3126-SM-5HL7P_2.fastq",
+        "fq1_sy": "GTEX-12WSD-3126-SM-5HL7P_1.fastq",
+        "fq2_sy": "GTEX-12WSD-3126-SM-5HL7P_2.fastq",
+        "ID": "GTEX-12WSD-3126-SM-5HL7P",
+        "SM": "GTEX-12WSD-3126-SM-5HL7P",
+        "LB": "GTEX-12WSD-3126-SM-5HL7P",
+        "PU": "GTEX-12WSD-3126-SM-5HL7P",
+        "PL": "Illumina"
+    },
+
+    "GTEX-1128S-2726-SM-5H12C":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-1128S-2726-SM-5H12C/GTEX-1128S-2726-SM-5H12C_1.fastq",
+        "fq2": "GTEX-1128S-2726-SM-5H12C/GTEX-1128S-2726-SM-5H12C_2.fastq",
+        "fq1_sy": "GTEX-1128S-2726-SM-5H12C_1.fastq",
+        "fq2_sy": "GTEX-1128S-2726-SM-5H12C_2.fastq",
+        "ID": "GTEX-1128S-2726-SM-5H12C",
+        "SM": "GTEX-1128S-2726-SM-5H12C",
+        "LB": "GTEX-1128S-2726-SM-5H12C",
+        "PU": "GTEX-1128S-2726-SM-5H12C",
+        "PL": "Illumina"
+    },
+
+    "GTEX-RNOR-2326-SM-2TF4I":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-RNOR-2326-SM-2TF4I/GTEX-RNOR-2326-SM-2TF4I_1.fastq",
+        "fq2": "GTEX-RNOR-2326-SM-2TF4I/GTEX-RNOR-2326-SM-2TF4I_2.fastq",
+        "fq1_sy": "GTEX-RNOR-2326-SM-2TF4I_1.fastq",
+        "fq2_sy": "GTEX-RNOR-2326-SM-2TF4I_2.fastq",
+        "ID": "GTEX-RNOR-2326-SM-2TF4I",
+        "SM": "GTEX-RNOR-2326-SM-2TF4I",
+        "LB": "GTEX-RNOR-2326-SM-2TF4I",
+        "PU": "GTEX-RNOR-2326-SM-2TF4I",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13QIC-2926-SM-5J2NF":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-13QIC-2926-SM-5J2NF/GTEX-13QIC-2926-SM-5J2NF_1.fastq",
+        "fq2": "GTEX-13QIC-2926-SM-5J2NF/GTEX-13QIC-2926-SM-5J2NF_2.fastq",
+        "fq1_sy": "GTEX-13QIC-2926-SM-5J2NF_1.fastq",
+        "fq2_sy": "GTEX-13QIC-2926-SM-5J2NF_2.fastq",
+        "ID": "GTEX-13QIC-2926-SM-5J2NF",
+        "SM": "GTEX-13QIC-2926-SM-5J2NF",
+        "LB": "GTEX-13QIC-2926-SM-5J2NF",
+        "PU": "GTEX-13QIC-2926-SM-5J2NF",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13PL6-3126-SM-5LUAR":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-13PL6-3126-SM-5LUAR/GTEX-13PL6-3126-SM-5LUAR_1.fastq",
+        "fq2": "GTEX-13PL6-3126-SM-5LUAR/GTEX-13PL6-3126-SM-5LUAR_2.fastq",
+        "fq1_sy": "GTEX-13PL6-3126-SM-5LUAR_1.fastq",
+        "fq2_sy": "GTEX-13PL6-3126-SM-5LUAR_2.fastq",
+        "ID": "GTEX-13PL6-3126-SM-5LUAR",
+        "SM": "GTEX-13PL6-3126-SM-5LUAR",
+        "LB": "GTEX-13PL6-3126-SM-5LUAR",
+        "PU": "GTEX-13PL6-3126-SM-5LUAR",
+        "PL": "Illumina"
+    },
+
+    "GTEX-PWO3-0926-SM-2I5EY":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-PWO3-0926-SM-2I5EY/GTEX-PWO3-0926-SM-2I5EY_1.fastq",
+        "fq2": "GTEX-PWO3-0926-SM-2I5EY/GTEX-PWO3-0926-SM-2I5EY_2.fastq",
+        "fq1_sy": "GTEX-PWO3-0926-SM-2I5EY_1.fastq",
+        "fq2_sy": "GTEX-PWO3-0926-SM-2I5EY_2.fastq",
+        "ID": "GTEX-PWO3-0926-SM-2I5EY",
+        "SM": "GTEX-PWO3-0926-SM-2I5EY",
+        "LB": "GTEX-PWO3-0926-SM-2I5EY",
+        "PU": "GTEX-PWO3-0926-SM-2I5EY",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13O3O-3126-SM-5KM3H":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-13O3O-3126-SM-5KM3H/GTEX-13O3O-3126-SM-5KM3H_1.fastq",
+        "fq2": "GTEX-13O3O-3126-SM-5KM3H/GTEX-13O3O-3126-SM-5KM3H_2.fastq",
+        "fq1_sy": "GTEX-13O3O-3126-SM-5KM3H_1.fastq",
+        "fq2_sy": "GTEX-13O3O-3126-SM-5KM3H_2.fastq",
+        "ID": "GTEX-13O3O-3126-SM-5KM3H",
+        "SM": "GTEX-13O3O-3126-SM-5KM3H",
+        "LB": "GTEX-13O3O-3126-SM-5KM3H",
+        "PU": "GTEX-13O3O-3126-SM-5KM3H",
+        "PL": "Illumina"
+    },
+
+    "GTEX-Q2AG-2926-SM-2HMJ3":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-Q2AG-2926-SM-2HMJ3/GTEX-Q2AG-2926-SM-2HMJ3_1.fastq",
+        "fq2": "GTEX-Q2AG-2926-SM-2HMJ3/GTEX-Q2AG-2926-SM-2HMJ3_2.fastq",
+        "fq1_sy": "GTEX-Q2AG-2926-SM-2HMJ3_1.fastq",
+        "fq2_sy": "GTEX-Q2AG-2926-SM-2HMJ3_2.fastq",
+        "ID": "GTEX-Q2AG-2926-SM-2HMJ3",
+        "SM": "GTEX-Q2AG-2926-SM-2HMJ3",
+        "LB": "GTEX-Q2AG-2926-SM-2HMJ3",
+        "PU": "GTEX-Q2AG-2926-SM-2HMJ3",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13X6K-2926-SM-5Q5D5":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-13X6K-2926-SM-5Q5D5/GTEX-13X6K-2926-SM-5Q5D5_1.fastq",
+        "fq2": "GTEX-13X6K-2926-SM-5Q5D5/GTEX-13X6K-2926-SM-5Q5D5_2.fastq",
+        "fq1_sy": "GTEX-13X6K-2926-SM-5Q5D5_1.fastq",
+        "fq2_sy": "GTEX-13X6K-2926-SM-5Q5D5_2.fastq",
+        "ID": "GTEX-13X6K-2926-SM-5Q5D5",
+        "SM": "GTEX-13X6K-2926-SM-5Q5D5",
+        "LB": "GTEX-13X6K-2926-SM-5Q5D5",
+        "PU": "GTEX-13X6K-2926-SM-5Q5D5",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12ZZX-2926-SM-5GCOQ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-12ZZX-2926-SM-5GCOQ/GTEX-12ZZX-2926-SM-5GCOQ_1.fastq",
+        "fq2": "GTEX-12ZZX-2926-SM-5GCOQ/GTEX-12ZZX-2926-SM-5GCOQ_2.fastq",
+        "fq1_sy": "GTEX-12ZZX-2926-SM-5GCOQ_1.fastq",
+        "fq2_sy": "GTEX-12ZZX-2926-SM-5GCOQ_2.fastq",
+        "ID": "GTEX-12ZZX-2926-SM-5GCOQ",
+        "SM": "GTEX-12ZZX-2926-SM-5GCOQ",
+        "LB": "GTEX-12ZZX-2926-SM-5GCOQ",
+        "PU": "GTEX-12ZZX-2926-SM-5GCOQ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-QDT8-2926-SM-32PKC":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-QDT8-2926-SM-32PKC/GTEX-QDT8-2926-SM-32PKC_1.fastq",
+        "fq2": "GTEX-QDT8-2926-SM-32PKC/GTEX-QDT8-2926-SM-32PKC_2.fastq",
+        "fq1_sy": "GTEX-QDT8-2926-SM-32PKC_1.fastq",
+        "fq2_sy": "GTEX-QDT8-2926-SM-32PKC_2.fastq",
+        "ID": "GTEX-QDT8-2926-SM-32PKC",
+        "SM": "GTEX-QDT8-2926-SM-32PKC",
+        "LB": "GTEX-QDT8-2926-SM-32PKC",
+        "PU": "GTEX-QDT8-2926-SM-32PKC",
+        "PL": "Illumina"
+    },
+
+    "GTEX-NPJ7-2726-SM-2I3FT":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-NPJ7-2726-SM-2I3FT/GTEX-NPJ7-2726-SM-2I3FT_1.fastq",
+        "fq2": "GTEX-NPJ7-2726-SM-2I3FT/GTEX-NPJ7-2726-SM-2I3FT_2.fastq",
+        "fq1_sy": "GTEX-NPJ7-2726-SM-2I3FT_1.fastq",
+        "fq2_sy": "GTEX-NPJ7-2726-SM-2I3FT_2.fastq",
+        "ID": "GTEX-NPJ7-2726-SM-2I3FT",
+        "SM": "GTEX-NPJ7-2726-SM-2I3FT",
+        "LB": "GTEX-NPJ7-2726-SM-2I3FT",
+        "PU": "GTEX-NPJ7-2726-SM-2I3FT",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZVT3-3026-SM-5E43N":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-ZVT3-3026-SM-5E43N/GTEX-ZVT3-3026-SM-5E43N_1.fastq",
+        "fq2": "GTEX-ZVT3-3026-SM-5E43N/GTEX-ZVT3-3026-SM-5E43N_2.fastq",
+        "fq1_sy": "GTEX-ZVT3-3026-SM-5E43N_1.fastq",
+        "fq2_sy": "GTEX-ZVT3-3026-SM-5E43N_2.fastq",
+        "ID": "GTEX-ZVT3-3026-SM-5E43N",
+        "SM": "GTEX-ZVT3-3026-SM-5E43N",
+        "LB": "GTEX-ZVT3-3026-SM-5E43N",
+        "PU": "GTEX-ZVT3-3026-SM-5E43N",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13OVJ-2826-SM-5L3GW":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-13OVJ-2826-SM-5L3GW/GTEX-13OVJ-2826-SM-5L3GW_1.fastq",
+        "fq2": "GTEX-13OVJ-2826-SM-5L3GW/GTEX-13OVJ-2826-SM-5L3GW_2.fastq",
+        "fq1_sy": "GTEX-13OVJ-2826-SM-5L3GW_1.fastq",
+        "fq2_sy": "GTEX-13OVJ-2826-SM-5L3GW_2.fastq",
+        "ID": "GTEX-13OVJ-2826-SM-5L3GW",
+        "SM": "GTEX-13OVJ-2826-SM-5L3GW",
+        "LB": "GTEX-13OVJ-2826-SM-5L3GW",
+        "PU": "GTEX-13OVJ-2826-SM-5L3GW",
+        "PL": "Illumina"
+    },
+
+    "GTEX-QVUS-2826-SM-3GADB":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-QVUS-2826-SM-3GADB/GTEX-QVUS-2826-SM-3GADB_1.fastq",
+        "fq2": "GTEX-QVUS-2826-SM-3GADB/GTEX-QVUS-2826-SM-3GADB_2.fastq",
+        "fq1_sy": "GTEX-QVUS-2826-SM-3GADB_1.fastq",
+        "fq2_sy": "GTEX-QVUS-2826-SM-3GADB_2.fastq",
+        "ID": "GTEX-QVUS-2826-SM-3GADB",
+        "SM": "GTEX-QVUS-2826-SM-3GADB",
+        "LB": "GTEX-QVUS-2826-SM-3GADB",
+        "PU": "GTEX-QVUS-2826-SM-3GADB",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZYY3-3126-SM-5SI9L":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-ZYY3-3126-SM-5SI9L/GTEX-ZYY3-3126-SM-5SI9L_1.fastq",
+        "fq2": "GTEX-ZYY3-3126-SM-5SI9L/GTEX-ZYY3-3126-SM-5SI9L_2.fastq",
+        "fq1_sy": "GTEX-ZYY3-3126-SM-5SI9L_1.fastq",
+        "fq2_sy": "GTEX-ZYY3-3126-SM-5SI9L_2.fastq",
+        "ID": "GTEX-ZYY3-3126-SM-5SI9L",
+        "SM": "GTEX-ZYY3-3126-SM-5SI9L",
+        "LB": "GTEX-ZYY3-3126-SM-5SI9L",
+        "PU": "GTEX-ZYY3-3126-SM-5SI9L",
+        "PL": "Illumina"
+    },
+
+    "GTEX-131YS-3126-SM-5KLYT":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-131YS-3126-SM-5KLYT/GTEX-131YS-3126-SM-5KLYT_1.fastq",
+        "fq2": "GTEX-131YS-3126-SM-5KLYT/GTEX-131YS-3126-SM-5KLYT_2.fastq",
+        "fq1_sy": "GTEX-131YS-3126-SM-5KLYT_1.fastq",
+        "fq2_sy": "GTEX-131YS-3126-SM-5KLYT_2.fastq",
+        "ID": "GTEX-131YS-3126-SM-5KLYT",
+        "SM": "GTEX-131YS-3126-SM-5KLYT",
+        "LB": "GTEX-131YS-3126-SM-5KLYT",
+        "PU": "GTEX-131YS-3126-SM-5KLYT",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13SLX-3126-SM-5S2Q5":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-13SLX-3126-SM-5S2Q5/GTEX-13SLX-3126-SM-5S2Q5_1.fastq",
+        "fq2": "GTEX-13SLX-3126-SM-5S2Q5/GTEX-13SLX-3126-SM-5S2Q5_2.fastq",
+        "fq1_sy": "GTEX-13SLX-3126-SM-5S2Q5_1.fastq",
+        "fq2_sy": "GTEX-13SLX-3126-SM-5S2Q5_2.fastq",
+        "ID": "GTEX-13SLX-3126-SM-5S2Q5",
+        "SM": "GTEX-13SLX-3126-SM-5S2Q5",
+        "LB": "GTEX-13SLX-3126-SM-5S2Q5",
+        "PU": "GTEX-13SLX-3126-SM-5S2Q5",
+        "PL": "Illumina"
+    },
+
+    "GTEX-RU72-3026-SM-5SI7Y":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-RU72-3026-SM-5SI7Y/GTEX-RU72-3026-SM-5SI7Y_1.fastq",
+        "fq2": "GTEX-RU72-3026-SM-5SI7Y/GTEX-RU72-3026-SM-5SI7Y_2.fastq",
+        "fq1_sy": "GTEX-RU72-3026-SM-5SI7Y_1.fastq",
+        "fq2_sy": "GTEX-RU72-3026-SM-5SI7Y_2.fastq",
+        "ID": "GTEX-RU72-3026-SM-5SI7Y",
+        "SM": "GTEX-RU72-3026-SM-5SI7Y",
+        "LB": "GTEX-RU72-3026-SM-5SI7Y",
+        "PU": "GTEX-RU72-3026-SM-5SI7Y",
+        "PL": "Illumina"
+    },
+
+    "GTEX-TSE9-3026-SM-3DB76":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-TSE9-3026-SM-3DB76/GTEX-TSE9-3026-SM-3DB76_1.fastq",
+        "fq2": "GTEX-TSE9-3026-SM-3DB76/GTEX-TSE9-3026-SM-3DB76_2.fastq",
+        "fq1_sy": "GTEX-TSE9-3026-SM-3DB76_1.fastq",
+        "fq2_sy": "GTEX-TSE9-3026-SM-3DB76_2.fastq",
+        "ID": "GTEX-TSE9-3026-SM-3DB76",
+        "SM": "GTEX-TSE9-3026-SM-3DB76",
+        "LB": "GTEX-TSE9-3026-SM-3DB76",
+        "PU": "GTEX-TSE9-3026-SM-3DB76",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11TTK-2926-SM-5PNYP":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-11TTK-2926-SM-5PNYP/GTEX-11TTK-2926-SM-5PNYP_1.fastq",
+        "fq2": "GTEX-11TTK-2926-SM-5PNYP/GTEX-11TTK-2926-SM-5PNYP_2.fastq",
+        "fq1_sy": "GTEX-11TTK-2926-SM-5PNYP_1.fastq",
+        "fq2_sy": "GTEX-11TTK-2926-SM-5PNYP_2.fastq",
+        "ID": "GTEX-11TTK-2926-SM-5PNYP",
+        "SM": "GTEX-11TTK-2926-SM-5PNYP",
+        "LB": "GTEX-11TTK-2926-SM-5PNYP",
+        "PU": "GTEX-11TTK-2926-SM-5PNYP",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11EMC-3226-SM-5EGKW":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-11EMC-3226-SM-5EGKW/GTEX-11EMC-3226-SM-5EGKW_1.fastq",
+        "fq2": "GTEX-11EMC-3226-SM-5EGKW/GTEX-11EMC-3226-SM-5EGKW_2.fastq",
+        "fq1_sy": "GTEX-11EMC-3226-SM-5EGKW_1.fastq",
+        "fq2_sy": "GTEX-11EMC-3226-SM-5EGKW_2.fastq",
+        "ID": "GTEX-11EMC-3226-SM-5EGKW",
+        "SM": "GTEX-11EMC-3226-SM-5EGKW",
+        "LB": "GTEX-11EMC-3226-SM-5EGKW",
+        "PU": "GTEX-11EMC-3226-SM-5EGKW",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12WS9-2926-SM-5EGL8":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/FEMALE/",
+        "fq1": "GTEX-12WS9-2926-SM-5EGL8/GTEX-12WS9-2926-SM-5EGL8_1.fastq",
+        "fq2": "GTEX-12WS9-2926-SM-5EGL8/GTEX-12WS9-2926-SM-5EGL8_2.fastq",
+        "fq1_sy": "GTEX-12WS9-2926-SM-5EGL8_1.fastq",
+        "fq2_sy": "GTEX-12WS9-2926-SM-5EGL8_2.fastq",
+        "ID": "GTEX-12WS9-2926-SM-5EGL8",
+        "SM": "GTEX-12WS9-2926-SM-5EGL8",
+        "LB": "GTEX-12WS9-2926-SM-5EGL8",
+        "PU": "GTEX-12WS9-2926-SM-5EGL8",
+        "PL": "Illumina"
+    },
+
+    "GTEX-XLM4-3026-SM-4AT6L":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-XLM4-3026-SM-4AT6L/GTEX-XLM4-3026-SM-4AT6L_1.fastq",
+        "fq2": "GTEX-XLM4-3026-SM-4AT6L/GTEX-XLM4-3026-SM-4AT6L_2.fastq",
+        "fq1_sy": "GTEX-XLM4-3026-SM-4AT6L_1.fastq",
+        "fq2_sy": "GTEX-XLM4-3026-SM-4AT6L_2.fastq",
+        "ID": "GTEX-XLM4-3026-SM-4AT6L",
+        "SM": "GTEX-XLM4-3026-SM-4AT6L",
+        "LB": "GTEX-XLM4-3026-SM-4AT6L",
+        "PU": "GTEX-XLM4-3026-SM-4AT6L",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZUA1-3026-SM-59HJC":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-ZUA1-3026-SM-59HJC/GTEX-ZUA1-3026-SM-59HJC_1.fastq",
+        "fq2": "GTEX-ZUA1-3026-SM-59HJC/GTEX-ZUA1-3026-SM-59HJC_2.fastq",
+        "fq1_sy": "GTEX-ZUA1-3026-SM-59HJC_1.fastq",
+        "fq2_sy": "GTEX-ZUA1-3026-SM-59HJC_2.fastq",
+        "ID": "GTEX-ZUA1-3026-SM-59HJC",
+        "SM": "GTEX-ZUA1-3026-SM-59HJC",
+        "LB": "GTEX-ZUA1-3026-SM-59HJC",
+        "PU": "GTEX-ZUA1-3026-SM-59HJC",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13FLW-1426-SM-5K7YE":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13FLW-1426-SM-5K7YE/GTEX-13FLW-1426-SM-5K7YE_1.fastq",
+        "fq2": "GTEX-13FLW-1426-SM-5K7YE/GTEX-13FLW-1426-SM-5K7YE_2.fastq",
+        "fq1_sy": "GTEX-13FLW-1426-SM-5K7YE_1.fastq",
+        "fq2_sy": "GTEX-13FLW-1426-SM-5K7YE_2.fastq",
+        "ID": "GTEX-13FLW-1426-SM-5K7YE",
+        "SM": "GTEX-13FLW-1426-SM-5K7YE",
+        "LB": "GTEX-13FLW-1426-SM-5K7YE",
+        "PU": "GTEX-13FLW-1426-SM-5K7YE",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13OW6-3026-SM-5J2MI":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13OW6-3026-SM-5J2MI/GTEX-13OW6-3026-SM-5J2MI_1.fastq",
+        "fq2": "GTEX-13OW6-3026-SM-5J2MI/GTEX-13OW6-3026-SM-5J2MI_2.fastq",
+        "fq1_sy": "GTEX-13OW6-3026-SM-5J2MI_1.fastq",
+        "fq2_sy": "GTEX-13OW6-3026-SM-5J2MI_2.fastq",
+        "ID": "GTEX-13OW6-3026-SM-5J2MI",
+        "SM": "GTEX-13OW6-3026-SM-5J2MI",
+        "LB": "GTEX-13OW6-3026-SM-5J2MI",
+        "PU": "GTEX-13OW6-3026-SM-5J2MI",
+        "PL": "Illumina"
+    },
+
+    "GTEX-145MG-3026-SM-5RQJA":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-145MG-3026-SM-5RQJA/GTEX-145MG-3026-SM-5RQJA_1.fastq",
+        "fq2": "GTEX-145MG-3026-SM-5RQJA/GTEX-145MG-3026-SM-5RQJA_2.fastq",
+        "fq1_sy": "GTEX-145MG-3026-SM-5RQJA_1.fastq",
+        "fq2_sy": "GTEX-145MG-3026-SM-5RQJA_2.fastq",
+        "ID": "GTEX-145MG-3026-SM-5RQJA",
+        "SM": "GTEX-145MG-3026-SM-5RQJA",
+        "LB": "GTEX-145MG-3026-SM-5RQJA",
+        "PU": "GTEX-145MG-3026-SM-5RQJA",
+        "PL": "Illumina"
+    },
+
+    "GTEX-145MF-2726-SM-5O995":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-145MF-2726-SM-5O995/GTEX-145MF-2726-SM-5O995_1.fastq",
+        "fq2": "GTEX-145MF-2726-SM-5O995/GTEX-145MF-2726-SM-5O995_2.fastq",
+        "fq1_sy": "GTEX-145MF-2726-SM-5O995_1.fastq",
+        "fq2_sy": "GTEX-145MF-2726-SM-5O995_2.fastq",
+        "ID": "GTEX-145MF-2726-SM-5O995",
+        "SM": "GTEX-145MF-2726-SM-5O995",
+        "LB": "GTEX-145MF-2726-SM-5O995",
+        "PU": "GTEX-145MF-2726-SM-5O995",
+        "PL": "Illumina"
+    },
+
+    "GTEX-YJ89-3026-SM-5IFJI":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-YJ89-3026-SM-5IFJI/GTEX-YJ89-3026-SM-5IFJI_1.fastq",
+        "fq2": "GTEX-YJ89-3026-SM-5IFJI/GTEX-YJ89-3026-SM-5IFJI_2.fastq",
+        "fq1_sy": "GTEX-YJ89-3026-SM-5IFJI_1.fastq",
+        "fq2_sy": "GTEX-YJ89-3026-SM-5IFJI_2.fastq",
+        "ID": "GTEX-YJ89-3026-SM-5IFJI",
+        "SM": "GTEX-YJ89-3026-SM-5IFJI",
+        "LB": "GTEX-YJ89-3026-SM-5IFJI",
+        "PU": "GTEX-YJ89-3026-SM-5IFJI",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13NYS-3126-SM-5KLYV":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13NYS-3126-SM-5KLYV/GTEX-13NYS-3126-SM-5KLYV_1.fastq",
+        "fq2": "GTEX-13NYS-3126-SM-5KLYV/GTEX-13NYS-3126-SM-5KLYV_2.fastq",
+        "fq1_sy": "GTEX-13NYS-3126-SM-5KLYV_1.fastq",
+        "fq2_sy": "GTEX-13NYS-3126-SM-5KLYV_2.fastq",
+        "ID": "GTEX-13NYS-3126-SM-5KLYV",
+        "SM": "GTEX-13NYS-3126-SM-5KLYV",
+        "LB": "GTEX-13NYS-3126-SM-5KLYV",
+        "PU": "GTEX-13NYS-3126-SM-5KLYV",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13O3Q-2926-SM-5KM45":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13O3Q-2926-SM-5KM45/GTEX-13O3Q-2926-SM-5KM45_1.fastq",
+        "fq2": "GTEX-13O3Q-2926-SM-5KM45/GTEX-13O3Q-2926-SM-5KM45_2.fastq",
+        "fq1_sy": "GTEX-13O3Q-2926-SM-5KM45_1.fastq",
+        "fq2_sy": "GTEX-13O3Q-2926-SM-5KM45_2.fastq",
+        "ID": "GTEX-13O3Q-2926-SM-5KM45",
+        "SM": "GTEX-13O3Q-2926-SM-5KM45",
+        "LB": "GTEX-13O3Q-2926-SM-5KM45",
+        "PU": "GTEX-13O3Q-2926-SM-5KM45",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11O72-2926-SM-5BC4V":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-11O72-2926-SM-5BC4V/GTEX-11O72-2926-SM-5BC4V_1.fastq",
+        "fq2": "GTEX-11O72-2926-SM-5BC4V/GTEX-11O72-2926-SM-5BC4V_2.fastq",
+        "fq1_sy": "GTEX-11O72-2926-SM-5BC4V_1.fastq",
+        "fq2_sy": "GTEX-11O72-2926-SM-5BC4V_2.fastq",
+        "ID": "GTEX-11O72-2926-SM-5BC4V",
+        "SM": "GTEX-11O72-2926-SM-5BC4V",
+        "LB": "GTEX-11O72-2926-SM-5BC4V",
+        "PU": "GTEX-11O72-2926-SM-5BC4V",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZE9C-3026-SM-4WKHB":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-ZE9C-3026-SM-4WKHB/GTEX-ZE9C-3026-SM-4WKHB_1.fastq",
+        "fq2": "GTEX-ZE9C-3026-SM-4WKHB/GTEX-ZE9C-3026-SM-4WKHB_2.fastq",
+        "fq1_sy": "GTEX-ZE9C-3026-SM-4WKHB_1.fastq",
+        "fq2_sy": "GTEX-ZE9C-3026-SM-4WKHB_2.fastq",
+        "ID": "GTEX-ZE9C-3026-SM-4WKHB",
+        "SM": "GTEX-ZE9C-3026-SM-4WKHB",
+        "LB": "GTEX-ZE9C-3026-SM-4WKHB",
+        "PU": "GTEX-ZE9C-3026-SM-4WKHB",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZZPT-3026-SM-5GZXH":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-ZZPT-3026-SM-5GZXH/GTEX-ZZPT-3026-SM-5GZXH_1.fastq",
+        "fq2": "GTEX-ZZPT-3026-SM-5GZXH/GTEX-ZZPT-3026-SM-5GZXH_2.fastq",
+        "fq1_sy": "GTEX-ZZPT-3026-SM-5GZXH_1.fastq",
+        "fq2_sy": "GTEX-ZZPT-3026-SM-5GZXH_2.fastq",
+        "ID": "GTEX-ZZPT-3026-SM-5GZXH",
+        "SM": "GTEX-ZZPT-3026-SM-5GZXH",
+        "LB": "GTEX-ZZPT-3026-SM-5GZXH",
+        "PU": "GTEX-ZZPT-3026-SM-5GZXH",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZYFD-3026-SM-5E44C":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-ZYFD-3026-SM-5E44C/GTEX-ZYFD-3026-SM-5E44C_1.fastq",
+        "fq2": "GTEX-ZYFD-3026-SM-5E44C/GTEX-ZYFD-3026-SM-5E44C_2.fastq",
+        "fq1_sy": "GTEX-ZYFD-3026-SM-5E44C_1.fastq",
+        "fq2_sy": "GTEX-ZYFD-3026-SM-5E44C_2.fastq",
+        "ID": "GTEX-ZYFD-3026-SM-5E44C",
+        "SM": "GTEX-ZYFD-3026-SM-5E44C",
+        "LB": "GTEX-ZYFD-3026-SM-5E44C",
+        "PU": "GTEX-ZYFD-3026-SM-5E44C",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11GSO-2926-SM-5HL73":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-11GSO-2926-SM-5HL73/GTEX-11GSO-2926-SM-5HL73_1.fastq",
+        "fq2": "GTEX-11GSO-2926-SM-5HL73/GTEX-11GSO-2926-SM-5HL73_2.fastq",
+        "fq1_sy": "GTEX-11GSO-2926-SM-5HL73_1.fastq",
+        "fq2_sy": "GTEX-11GSO-2926-SM-5HL73_2.fastq",
+        "ID": "GTEX-11GSO-2926-SM-5HL73",
+        "SM": "GTEX-11GSO-2926-SM-5HL73",
+        "LB": "GTEX-11GSO-2926-SM-5HL73",
+        "PU": "GTEX-11GSO-2926-SM-5HL73",
+        "PL": "Illumina"
+    },
+
+    "GTEX-WHSE-3026-SM-3P5ZH":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-WHSE-3026-SM-3P5ZH/GTEX-WHSE-3026-SM-3P5ZH_1.fastq",
+        "fq2": "GTEX-WHSE-3026-SM-3P5ZH/GTEX-WHSE-3026-SM-3P5ZH_2.fastq",
+        "fq1_sy": "GTEX-WHSE-3026-SM-3P5ZH_1.fastq",
+        "fq2_sy": "GTEX-WHSE-3026-SM-3P5ZH_2.fastq",
+        "ID": "GTEX-WHSE-3026-SM-3P5ZH",
+        "SM": "GTEX-WHSE-3026-SM-3P5ZH",
+        "LB": "GTEX-WHSE-3026-SM-3P5ZH",
+        "PU": "GTEX-WHSE-3026-SM-3P5ZH",
+        "PL": "Illumina"
+    },
+
+    "GTEX-145MH-3026-SM-5Q5DZ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-145MH-3026-SM-5Q5DZ/GTEX-145MH-3026-SM-5Q5DZ_1.fastq",
+        "fq2": "GTEX-145MH-3026-SM-5Q5DZ/GTEX-145MH-3026-SM-5Q5DZ_2.fastq",
+        "fq1_sy": "GTEX-145MH-3026-SM-5Q5DZ_1.fastq",
+        "fq2_sy": "GTEX-145MH-3026-SM-5Q5DZ_2.fastq",
+        "ID": "GTEX-145MH-3026-SM-5Q5DZ",
+        "SM": "GTEX-145MH-3026-SM-5Q5DZ",
+        "LB": "GTEX-145MH-3026-SM-5Q5DZ",
+        "PU": "GTEX-145MH-3026-SM-5Q5DZ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-139T8-1026-SM-5J2MC":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-139T8-1026-SM-5J2MC/GTEX-139T8-1026-SM-5J2MC_1.fastq",
+        "fq2": "GTEX-139T8-1026-SM-5J2MC/GTEX-139T8-1026-SM-5J2MC_2.fastq",
+        "fq1_sy": "GTEX-139T8-1026-SM-5J2MC_1.fastq",
+        "fq2_sy": "GTEX-139T8-1026-SM-5J2MC_2.fastq",
+        "ID": "GTEX-139T8-1026-SM-5J2MC",
+        "SM": "GTEX-139T8-1026-SM-5J2MC",
+        "LB": "GTEX-139T8-1026-SM-5J2MC",
+        "PU": "GTEX-139T8-1026-SM-5J2MC",
+        "PL": "Illumina"
+    },
+
+    "GTEX-14BMV-3026-SM-5S2PQ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-14BMV-3026-SM-5S2PQ/GTEX-14BMV-3026-SM-5S2PQ_1.fastq",
+        "fq2": "GTEX-14BMV-3026-SM-5S2PQ/GTEX-14BMV-3026-SM-5S2PQ_2.fastq",
+        "fq1_sy": "GTEX-14BMV-3026-SM-5S2PQ_1.fastq",
+        "fq2_sy": "GTEX-14BMV-3026-SM-5S2PQ_2.fastq",
+        "ID": "GTEX-14BMV-3026-SM-5S2PQ",
+        "SM": "GTEX-14BMV-3026-SM-5S2PQ",
+        "LB": "GTEX-14BMV-3026-SM-5S2PQ",
+        "PU": "GTEX-14BMV-3026-SM-5S2PQ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12WSC-3026-SM-5GCNF":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-12WSC-3026-SM-5GCNF/GTEX-12WSC-3026-SM-5GCNF_1.fastq",
+        "fq2": "GTEX-12WSC-3026-SM-5GCNF/GTEX-12WSC-3026-SM-5GCNF_2.fastq",
+        "fq1_sy": "GTEX-12WSC-3026-SM-5GCNF_1.fastq",
+        "fq2_sy": "GTEX-12WSC-3026-SM-5GCNF_2.fastq",
+        "ID": "GTEX-12WSC-3026-SM-5GCNF",
+        "SM": "GTEX-12WSC-3026-SM-5GCNF",
+        "LB": "GTEX-12WSC-3026-SM-5GCNF",
+        "PU": "GTEX-12WSC-3026-SM-5GCNF",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12WSA-2926-SM-5EQ4D":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-12WSA-2926-SM-5EQ4D/GTEX-12WSA-2926-SM-5EQ4D_1.fastq",
+        "fq2": "GTEX-12WSA-2926-SM-5EQ4D/GTEX-12WSA-2926-SM-5EQ4D_2.fastq",
+        "fq1_sy": "GTEX-12WSA-2926-SM-5EQ4D_1.fastq",
+        "fq2_sy": "GTEX-12WSA-2926-SM-5EQ4D_2.fastq",
+        "ID": "GTEX-12WSA-2926-SM-5EQ4D",
+        "SM": "GTEX-12WSA-2926-SM-5EQ4D",
+        "LB": "GTEX-12WSA-2926-SM-5EQ4D",
+        "PU": "GTEX-12WSA-2926-SM-5EQ4D",
+        "PL": "Illumina"
+    },
+
+    "GTEX-111FC-3126-SM-5GZZ2":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-111FC-3126-SM-5GZZ2/GTEX-111FC-3126-SM-5GZZ2_1.fastq",
+        "fq2": "GTEX-111FC-3126-SM-5GZZ2/GTEX-111FC-3126-SM-5GZZ2_2.fastq",
+        "fq1_sy": "GTEX-111FC-3126-SM-5GZZ2_1.fastq",
+        "fq2_sy": "GTEX-111FC-3126-SM-5GZZ2_2.fastq",
+        "ID": "GTEX-111FC-3126-SM-5GZZ2",
+        "SM": "GTEX-111FC-3126-SM-5GZZ2",
+        "LB": "GTEX-111FC-3126-SM-5GZZ2",
+        "PU": "GTEX-111FC-3126-SM-5GZZ2",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13G51-3026-SM-5IJB8":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13G51-3026-SM-5IJB8/GTEX-13G51-3026-SM-5IJB8_1.fastq",
+        "fq2": "GTEX-13G51-3026-SM-5IJB8/GTEX-13G51-3026-SM-5IJB8_2.fastq",
+        "fq1_sy": "GTEX-13G51-3026-SM-5IJB8_1.fastq",
+        "fq2_sy": "GTEX-13G51-3026-SM-5IJB8_2.fastq",
+        "ID": "GTEX-13G51-3026-SM-5IJB8",
+        "SM": "GTEX-13G51-3026-SM-5IJB8",
+        "LB": "GTEX-13G51-3026-SM-5IJB8",
+        "PU": "GTEX-13G51-3026-SM-5IJB8",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12ZZW-2926-SM-5LZUP":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-12ZZW-2926-SM-5LZUP/GTEX-12ZZW-2926-SM-5LZUP_1.fastq",
+        "fq2": "GTEX-12ZZW-2926-SM-5LZUP/GTEX-12ZZW-2926-SM-5LZUP_2.fastq",
+        "fq1_sy": "GTEX-12ZZW-2926-SM-5LZUP_1.fastq",
+        "fq2_sy": "GTEX-12ZZW-2926-SM-5LZUP_2.fastq",
+        "ID": "GTEX-12ZZW-2926-SM-5LZUP",
+        "SM": "GTEX-12ZZW-2926-SM-5LZUP",
+        "LB": "GTEX-12ZZW-2926-SM-5LZUP",
+        "PU": "GTEX-12ZZW-2926-SM-5LZUP",
+        "PL": "Illumina"
+    },
+
+    "GTEX-OXRN-2426-SM-2I5EQ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-OXRN-2426-SM-2I5EQ/GTEX-OXRN-2426-SM-2I5EQ_1.fastq",
+        "fq2": "GTEX-OXRN-2426-SM-2I5EQ/GTEX-OXRN-2426-SM-2I5EQ_2.fastq",
+        "fq1_sy": "GTEX-OXRN-2426-SM-2I5EQ_1.fastq",
+        "fq2_sy": "GTEX-OXRN-2426-SM-2I5EQ_2.fastq",
+        "ID": "GTEX-OXRN-2426-SM-2I5EQ",
+        "SM": "GTEX-OXRN-2426-SM-2I5EQ",
+        "LB": "GTEX-OXRN-2426-SM-2I5EQ",
+        "PU": "GTEX-OXRN-2426-SM-2I5EQ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-WZTO-2926-SM-3NM9I":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-WZTO-2926-SM-3NM9I/GTEX-WZTO-2926-SM-3NM9I_1.fastq",
+        "fq2": "GTEX-WZTO-2926-SM-3NM9I/GTEX-WZTO-2926-SM-3NM9I_2.fastq",
+        "fq1_sy": "GTEX-WZTO-2926-SM-3NM9I_1.fastq",
+        "fq2_sy": "GTEX-WZTO-2926-SM-3NM9I_2.fastq",
+        "ID": "GTEX-WZTO-2926-SM-3NM9I",
+        "SM": "GTEX-WZTO-2926-SM-3NM9I",
+        "LB": "GTEX-WZTO-2926-SM-3NM9I",
+        "PU": "GTEX-WZTO-2926-SM-3NM9I",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12696-2926-SM-5FQTG":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-12696-2926-SM-5FQTG/GTEX-12696-2926-SM-5FQTG_1.fastq",
+        "fq2": "GTEX-12696-2926-SM-5FQTG/GTEX-12696-2926-SM-5FQTG_2.fastq",
+        "fq1_sy": "GTEX-12696-2926-SM-5FQTG_1.fastq",
+        "fq2_sy": "GTEX-12696-2926-SM-5FQTG_2.fastq",
+        "ID": "GTEX-12696-2926-SM-5FQTG",
+        "SM": "GTEX-12696-2926-SM-5FQTG",
+        "LB": "GTEX-12696-2926-SM-5FQTG",
+        "PU": "GTEX-12696-2926-SM-5FQTG",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13OW7-3026-SM-5L3GY":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13OW7-3026-SM-5L3GY/GTEX-13OW7-3026-SM-5L3GY_1.fastq",
+        "fq2": "GTEX-13OW7-3026-SM-5L3GY/GTEX-13OW7-3026-SM-5L3GY_2.fastq",
+        "fq1_sy": "GTEX-13OW7-3026-SM-5L3GY_1.fastq",
+        "fq2_sy": "GTEX-13OW7-3026-SM-5L3GY_2.fastq",
+        "ID": "GTEX-13OW7-3026-SM-5L3GY",
+        "SM": "GTEX-13OW7-3026-SM-5L3GY",
+        "LB": "GTEX-13OW7-3026-SM-5L3GY",
+        "PU": "GTEX-13OW7-3026-SM-5L3GY",
+        "PL": "Illumina"
+    },
+
+    "GTEX-P44G-2426-SM-2I5ER":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-P44G-2426-SM-2I5ER/GTEX-P44G-2426-SM-2I5ER_1.fastq",
+        "fq2": "GTEX-P44G-2426-SM-2I5ER/GTEX-P44G-2426-SM-2I5ER_2.fastq",
+        "fq1_sy": "GTEX-P44G-2426-SM-2I5ER_1.fastq",
+        "fq2_sy": "GTEX-P44G-2426-SM-2I5ER_2.fastq",
+        "ID": "GTEX-P44G-2426-SM-2I5ER",
+        "SM": "GTEX-P44G-2426-SM-2I5ER",
+        "LB": "GTEX-P44G-2426-SM-2I5ER",
+        "PU": "GTEX-P44G-2426-SM-2I5ER",
+        "PL": "Illumina"
+    },
+
+    "GTEX-Y111-2726-SM-4TT3N":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-Y111-2726-SM-4TT3N/GTEX-Y111-2726-SM-4TT3N_1.fastq",
+        "fq2": "GTEX-Y111-2726-SM-4TT3N/GTEX-Y111-2726-SM-4TT3N_2.fastq",
+        "fq1_sy": "GTEX-Y111-2726-SM-4TT3N_1.fastq",
+        "fq2_sy": "GTEX-Y111-2726-SM-4TT3N_2.fastq",
+        "ID": "GTEX-Y111-2726-SM-4TT3N",
+        "SM": "GTEX-Y111-2726-SM-4TT3N",
+        "LB": "GTEX-Y111-2726-SM-4TT3N",
+        "PU": "GTEX-Y111-2726-SM-4TT3N",
+        "PL": "Illumina"
+    },
+
+    "GTEX-144GL-3026-SM-5Q5CW":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-144GL-3026-SM-5Q5CW/GTEX-144GL-3026-SM-5Q5CW_1.fastq",
+        "fq2": "GTEX-144GL-3026-SM-5Q5CW/GTEX-144GL-3026-SM-5Q5CW_2.fastq",
+        "fq1_sy": "GTEX-144GL-3026-SM-5Q5CW_1.fastq",
+        "fq2_sy": "GTEX-144GL-3026-SM-5Q5CW_2.fastq",
+        "ID": "GTEX-144GL-3026-SM-5Q5CW",
+        "SM": "GTEX-144GL-3026-SM-5Q5CW",
+        "LB": "GTEX-144GL-3026-SM-5Q5CW",
+        "PU": "GTEX-144GL-3026-SM-5Q5CW",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11OF3-2926-SM-5HL78":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-11OF3-2926-SM-5HL78/GTEX-11OF3-2926-SM-5HL78_1.fastq",
+        "fq2": "GTEX-11OF3-2926-SM-5HL78/GTEX-11OF3-2926-SM-5HL78_2.fastq",
+        "fq1_sy": "GTEX-11OF3-2926-SM-5HL78_1.fastq",
+        "fq2_sy": "GTEX-11OF3-2926-SM-5HL78_2.fastq",
+        "ID": "GTEX-11OF3-2926-SM-5HL78",
+        "SM": "GTEX-11OF3-2926-SM-5HL78",
+        "LB": "GTEX-11OF3-2926-SM-5HL78",
+        "PU": "GTEX-11OF3-2926-SM-5HL78",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11NUK-2926-SM-5A5MD":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-11NUK-2926-SM-5A5MD/GTEX-11NUK-2926-SM-5A5MD_1.fastq",
+        "fq2": "GTEX-11NUK-2926-SM-5A5MD/GTEX-11NUK-2926-SM-5A5MD_2.fastq",
+        "fq1_sy": "GTEX-11NUK-2926-SM-5A5MD_1.fastq",
+        "fq2_sy": "GTEX-11NUK-2926-SM-5A5MD_2.fastq",
+        "ID": "GTEX-11NUK-2926-SM-5A5MD",
+        "SM": "GTEX-11NUK-2926-SM-5A5MD",
+        "LB": "GTEX-11NUK-2926-SM-5A5MD",
+        "PU": "GTEX-11NUK-2926-SM-5A5MD",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13FHO-3026-SM-5J1O9":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13FHO-3026-SM-5J1O9/GTEX-13FHO-3026-SM-5J1O9_1.fastq",
+        "fq2": "GTEX-13FHO-3026-SM-5J1O9/GTEX-13FHO-3026-SM-5J1O9_2.fastq",
+        "fq1_sy": "GTEX-13FHO-3026-SM-5J1O9_1.fastq",
+        "fq2_sy": "GTEX-13FHO-3026-SM-5J1O9_2.fastq",
+        "ID": "GTEX-13FHO-3026-SM-5J1O9",
+        "SM": "GTEX-13FHO-3026-SM-5J1O9",
+        "LB": "GTEX-13FHO-3026-SM-5J1O9",
+        "PU": "GTEX-13FHO-3026-SM-5J1O9",
+        "PL": "Illumina"
+    },
+
+    "GTEX-XMD1-2926-SM-4AT42":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-XMD1-2926-SM-4AT42/GTEX-XMD1-2926-SM-4AT42_1.fastq",
+        "fq2": "GTEX-XMD1-2926-SM-4AT42/GTEX-XMD1-2926-SM-4AT42_2.fastq",
+        "fq1_sy": "GTEX-XMD1-2926-SM-4AT42_1.fastq",
+        "fq2_sy": "GTEX-XMD1-2926-SM-4AT42_2.fastq",
+        "ID": "GTEX-XMD1-2926-SM-4AT42",
+        "SM": "GTEX-XMD1-2926-SM-4AT42",
+        "LB": "GTEX-XMD1-2926-SM-4AT42",
+        "PU": "GTEX-XMD1-2926-SM-4AT42",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11TUW-3126-SM-5GU4Y":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-11TUW-3126-SM-5GU4Y/GTEX-11TUW-3126-SM-5GU4Y_1.fastq",
+        "fq2": "GTEX-11TUW-3126-SM-5GU4Y/GTEX-11TUW-3126-SM-5GU4Y_2.fastq",
+        "fq1_sy": "GTEX-11TUW-3126-SM-5GU4Y_1.fastq",
+        "fq2_sy": "GTEX-11TUW-3126-SM-5GU4Y_2.fastq",
+        "ID": "GTEX-11TUW-3126-SM-5GU4Y",
+        "SM": "GTEX-11TUW-3126-SM-5GU4Y",
+        "LB": "GTEX-11TUW-3126-SM-5GU4Y",
+        "PU": "GTEX-11TUW-3126-SM-5GU4Y",
+        "PL": "Illumina"
+    },
+
+    "GTEX-T6MN-2626-SM-32PMQ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-T6MN-2626-SM-32PMQ/GTEX-T6MN-2626-SM-32PMQ_1.fastq",
+        "fq2": "GTEX-T6MN-2626-SM-32PMQ/GTEX-T6MN-2626-SM-32PMQ_2.fastq",
+        "fq1_sy": "GTEX-T6MN-2626-SM-32PMQ_1.fastq",
+        "fq2_sy": "GTEX-T6MN-2626-SM-32PMQ_2.fastq",
+        "ID": "GTEX-T6MN-2626-SM-32PMQ",
+        "SM": "GTEX-T6MN-2626-SM-32PMQ",
+        "LB": "GTEX-T6MN-2626-SM-32PMQ",
+        "PU": "GTEX-T6MN-2626-SM-32PMQ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-QMR6-1426-SM-32PLA":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-QMR6-1426-SM-32PLA/GTEX-QMR6-1426-SM-32PLA_1.fastq",
+        "fq2": "GTEX-QMR6-1426-SM-32PLA/GTEX-QMR6-1426-SM-32PLA_2.fastq",
+        "fq1_sy": "GTEX-QMR6-1426-SM-32PLA_1.fastq",
+        "fq2_sy": "GTEX-QMR6-1426-SM-32PLA_2.fastq",
+        "ID": "GTEX-QMR6-1426-SM-32PLA",
+        "SM": "GTEX-QMR6-1426-SM-32PLA",
+        "LB": "GTEX-QMR6-1426-SM-32PLA",
+        "PU": "GTEX-QMR6-1426-SM-32PLA",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12ZZZ-3026-SM-5BC67":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-12ZZZ-3026-SM-5BC67/GTEX-12ZZZ-3026-SM-5BC67_1.fastq",
+        "fq2": "GTEX-12ZZZ-3026-SM-5BC67/GTEX-12ZZZ-3026-SM-5BC67_2.fastq",
+        "fq1_sy": "GTEX-12ZZZ-3026-SM-5BC67_1.fastq",
+        "fq2_sy": "GTEX-12ZZZ-3026-SM-5BC67_2.fastq",
+        "ID": "GTEX-12ZZZ-3026-SM-5BC67",
+        "SM": "GTEX-12ZZZ-3026-SM-5BC67",
+        "LB": "GTEX-12ZZZ-3026-SM-5BC67",
+        "PU": "GTEX-12ZZZ-3026-SM-5BC67",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11PRG-2926-SM-5987A":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-11PRG-2926-SM-5987A/GTEX-11PRG-2926-SM-5987A_1.fastq",
+        "fq2": "GTEX-11PRG-2926-SM-5987A/GTEX-11PRG-2926-SM-5987A_2.fastq",
+        "fq1_sy": "GTEX-11PRG-2926-SM-5987A_1.fastq",
+        "fq2_sy": "GTEX-11PRG-2926-SM-5987A_2.fastq",
+        "ID": "GTEX-11PRG-2926-SM-5987A",
+        "SM": "GTEX-11PRG-2926-SM-5987A",
+        "LB": "GTEX-11PRG-2926-SM-5987A",
+        "PU": "GTEX-11PRG-2926-SM-5987A",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11ONC-2926-SM-5P9JM":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-11ONC-2926-SM-5P9JM/GTEX-11ONC-2926-SM-5P9JM_1.fastq",
+        "fq2": "GTEX-11ONC-2926-SM-5P9JM/GTEX-11ONC-2926-SM-5P9JM_2.fastq",
+        "fq1_sy": "GTEX-11ONC-2926-SM-5P9JM_1.fastq",
+        "fq2_sy": "GTEX-11ONC-2926-SM-5P9JM_2.fastq",
+        "ID": "GTEX-11ONC-2926-SM-5P9JM",
+        "SM": "GTEX-11ONC-2926-SM-5P9JM",
+        "LB": "GTEX-11ONC-2926-SM-5P9JM",
+        "PU": "GTEX-11ONC-2926-SM-5P9JM",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZF28-3026-SM-4WKHP":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-ZF28-3026-SM-4WKHP/GTEX-ZF28-3026-SM-4WKHP_1.fastq",
+        "fq2": "GTEX-ZF28-3026-SM-4WKHP/GTEX-ZF28-3026-SM-4WKHP_2.fastq",
+        "fq1_sy": "GTEX-ZF28-3026-SM-4WKHP_1.fastq",
+        "fq2_sy": "GTEX-ZF28-3026-SM-4WKHP_2.fastq",
+        "ID": "GTEX-ZF28-3026-SM-4WKHP",
+        "SM": "GTEX-ZF28-3026-SM-4WKHP",
+        "LB": "GTEX-ZF28-3026-SM-4WKHP",
+        "PU": "GTEX-ZF28-3026-SM-4WKHP",
+        "PL": "Illumina"
+    },
+
+    "GTEX-WL46-2926-SM-3LK82":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-WL46-2926-SM-3LK82/GTEX-WL46-2926-SM-3LK82_1.fastq",
+        "fq2": "GTEX-WL46-2926-SM-3LK82/GTEX-WL46-2926-SM-3LK82_2.fastq",
+        "fq1_sy": "GTEX-WL46-2926-SM-3LK82_1.fastq",
+        "fq2_sy": "GTEX-WL46-2926-SM-3LK82_2.fastq",
+        "ID": "GTEX-WL46-2926-SM-3LK82",
+        "SM": "GTEX-WL46-2926-SM-3LK82",
+        "LB": "GTEX-WL46-2926-SM-3LK82",
+        "PU": "GTEX-WL46-2926-SM-3LK82",
+        "PL": "Illumina"
+    },
+
+    "GTEX-Z93S-2926-SM-57WB9":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-Z93S-2926-SM-57WB9/GTEX-Z93S-2926-SM-57WB9_1.fastq",
+        "fq2": "GTEX-Z93S-2926-SM-57WB9/GTEX-Z93S-2926-SM-57WB9_2.fastq",
+        "fq1_sy": "GTEX-Z93S-2926-SM-57WB9_1.fastq",
+        "fq2_sy": "GTEX-Z93S-2926-SM-57WB9_2.fastq",
+        "ID": "GTEX-Z93S-2926-SM-57WB9",
+        "SM": "GTEX-Z93S-2926-SM-57WB9",
+        "LB": "GTEX-Z93S-2926-SM-57WB9",
+        "PU": "GTEX-Z93S-2926-SM-57WB9",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11NV4-2126-SM-5N9DS":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-11NV4-2126-SM-5N9DS/GTEX-11NV4-2126-SM-5N9DS_1.fastq",
+        "fq2": "GTEX-11NV4-2126-SM-5N9DS/GTEX-11NV4-2126-SM-5N9DS_2.fastq",
+        "fq1_sy": "GTEX-11NV4-2126-SM-5N9DS_1.fastq",
+        "fq2_sy": "GTEX-11NV4-2126-SM-5N9DS_2.fastq",
+        "ID": "GTEX-11NV4-2126-SM-5N9DS",
+        "SM": "GTEX-11NV4-2126-SM-5N9DS",
+        "LB": "GTEX-11NV4-2126-SM-5N9DS",
+        "PU": "GTEX-11NV4-2126-SM-5N9DS",
+        "PL": "Illumina"
+    },
+
+    "GTEX-PVOW-2526-SM-2XCF7":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-PVOW-2526-SM-2XCF7/GTEX-PVOW-2526-SM-2XCF7_1.fastq",
+        "fq2": "GTEX-PVOW-2526-SM-2XCF7/GTEX-PVOW-2526-SM-2XCF7_2.fastq",
+        "fq1_sy": "GTEX-PVOW-2526-SM-2XCF7_1.fastq",
+        "fq2_sy": "GTEX-PVOW-2526-SM-2XCF7_2.fastq",
+        "ID": "GTEX-PVOW-2526-SM-2XCF7",
+        "SM": "GTEX-PVOW-2526-SM-2XCF7",
+        "LB": "GTEX-PVOW-2526-SM-2XCF7",
+        "PU": "GTEX-PVOW-2526-SM-2XCF7",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12WSH-3026-SM-5CVNI":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-12WSH-3026-SM-5CVNI/GTEX-12WSH-3026-SM-5CVNI_1.fastq",
+        "fq2": "GTEX-12WSH-3026-SM-5CVNI/GTEX-12WSH-3026-SM-5CVNI_2.fastq",
+        "fq1_sy": "GTEX-12WSH-3026-SM-5CVNI_1.fastq",
+        "fq2_sy": "GTEX-12WSH-3026-SM-5CVNI_2.fastq",
+        "ID": "GTEX-12WSH-3026-SM-5CVNI",
+        "SM": "GTEX-12WSH-3026-SM-5CVNI",
+        "LB": "GTEX-12WSH-3026-SM-5CVNI",
+        "PU": "GTEX-12WSH-3026-SM-5CVNI",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11ZUS-2926-SM-5FQSL":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-11ZUS-2926-SM-5FQSL/GTEX-11ZUS-2926-SM-5FQSL_1.fastq",
+        "fq2": "GTEX-11ZUS-2926-SM-5FQSL/GTEX-11ZUS-2926-SM-5FQSL_2.fastq",
+        "fq1_sy": "GTEX-11ZUS-2926-SM-5FQSL_1.fastq",
+        "fq2_sy": "GTEX-11ZUS-2926-SM-5FQSL_2.fastq",
+        "ID": "GTEX-11ZUS-2926-SM-5FQSL",
+        "SM": "GTEX-11ZUS-2926-SM-5FQSL",
+        "LB": "GTEX-11ZUS-2926-SM-5FQSL",
+        "PU": "GTEX-11ZUS-2926-SM-5FQSL",
+        "PL": "Illumina"
+    },
+
+    "GTEX-XOTO-3026-SM-4B65M":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-XOTO-3026-SM-4B65M/GTEX-XOTO-3026-SM-4B65M_1.fastq",
+        "fq2": "GTEX-XOTO-3026-SM-4B65M/GTEX-XOTO-3026-SM-4B65M_2.fastq",
+        "fq1_sy": "GTEX-XOTO-3026-SM-4B65M_1.fastq",
+        "fq2_sy": "GTEX-XOTO-3026-SM-4B65M_2.fastq",
+        "ID": "GTEX-XOTO-3026-SM-4B65M",
+        "SM": "GTEX-XOTO-3026-SM-4B65M",
+        "LB": "GTEX-XOTO-3026-SM-4B65M",
+        "PU": "GTEX-XOTO-3026-SM-4B65M",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11WQK-3026-SM-5EQL6":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-11WQK-3026-SM-5EQL6/GTEX-11WQK-3026-SM-5EQL6_1.fastq",
+        "fq2": "GTEX-11WQK-3026-SM-5EQL6/GTEX-11WQK-3026-SM-5EQL6_2.fastq",
+        "fq1_sy": "GTEX-11WQK-3026-SM-5EQL6_1.fastq",
+        "fq2_sy": "GTEX-11WQK-3026-SM-5EQL6_2.fastq",
+        "ID": "GTEX-11WQK-3026-SM-5EQL6",
+        "SM": "GTEX-11WQK-3026-SM-5EQL6",
+        "LB": "GTEX-11WQK-3026-SM-5EQL6",
+        "PU": "GTEX-11WQK-3026-SM-5EQL6",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13JVG-3126-SM-5L3FH":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13JVG-3126-SM-5L3FH/GTEX-13JVG-3126-SM-5L3FH_1.fastq",
+        "fq2": "GTEX-13JVG-3126-SM-5L3FH/GTEX-13JVG-3126-SM-5L3FH_2.fastq",
+        "fq1_sy": "GTEX-13JVG-3126-SM-5L3FH_1.fastq",
+        "fq2_sy": "GTEX-13JVG-3126-SM-5L3FH_2.fastq",
+        "ID": "GTEX-13JVG-3126-SM-5L3FH",
+        "SM": "GTEX-13JVG-3126-SM-5L3FH",
+        "LB": "GTEX-13JVG-3126-SM-5L3FH",
+        "PU": "GTEX-13JVG-3126-SM-5L3FH",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13OW8-2826-SM-5L3GC":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13OW8-2826-SM-5L3GC/GTEX-13OW8-2826-SM-5L3GC_1.fastq",
+        "fq2": "GTEX-13OW8-2826-SM-5L3GC/GTEX-13OW8-2826-SM-5L3GC_2.fastq",
+        "fq1_sy": "GTEX-13OW8-2826-SM-5L3GC_1.fastq",
+        "fq2_sy": "GTEX-13OW8-2826-SM-5L3GC_2.fastq",
+        "ID": "GTEX-13OW8-2826-SM-5L3GC",
+        "SM": "GTEX-13OW8-2826-SM-5L3GC",
+        "LB": "GTEX-13OW8-2826-SM-5L3GC",
+        "PU": "GTEX-13OW8-2826-SM-5L3GC",
+        "PL": "Illumina"
+    },
+
+    "GTEX-X4XX-3026-SM-3NMB2":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-X4XX-3026-SM-3NMB2/GTEX-X4XX-3026-SM-3NMB2_1.fastq",
+        "fq2": "GTEX-X4XX-3026-SM-3NMB2/GTEX-X4XX-3026-SM-3NMB2_2.fastq",
+        "fq1_sy": "GTEX-X4XX-3026-SM-3NMB2_1.fastq",
+        "fq2_sy": "GTEX-X4XX-3026-SM-3NMB2_2.fastq",
+        "ID": "GTEX-X4XX-3026-SM-3NMB2",
+        "SM": "GTEX-X4XX-3026-SM-3NMB2",
+        "LB": "GTEX-X4XX-3026-SM-3NMB2",
+        "PU": "GTEX-X4XX-3026-SM-3NMB2",
+        "PL": "Illumina"
+    },
+
+    "GTEX-UTHO-3026-SM-3GAFB":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-UTHO-3026-SM-3GAFB/GTEX-UTHO-3026-SM-3GAFB_1.fastq",
+        "fq2": "GTEX-UTHO-3026-SM-3GAFB/GTEX-UTHO-3026-SM-3GAFB_2.fastq",
+        "fq1_sy": "GTEX-UTHO-3026-SM-3GAFB_1.fastq",
+        "fq2_sy": "GTEX-UTHO-3026-SM-3GAFB_2.fastq",
+        "ID": "GTEX-UTHO-3026-SM-3GAFB",
+        "SM": "GTEX-UTHO-3026-SM-3GAFB",
+        "LB": "GTEX-UTHO-3026-SM-3GAFB",
+        "PU": "GTEX-UTHO-3026-SM-3GAFB",
+        "PL": "Illumina"
+    },
+
+    "GTEX-1399T-3026-SM-5KLZC":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-1399T-3026-SM-5KLZC/GTEX-1399T-3026-SM-5KLZC_1.fastq",
+        "fq2": "GTEX-1399T-3026-SM-5KLZC/GTEX-1399T-3026-SM-5KLZC_2.fastq",
+        "fq1_sy": "GTEX-1399T-3026-SM-5KLZC_1.fastq",
+        "fq2_sy": "GTEX-1399T-3026-SM-5KLZC_2.fastq",
+        "ID": "GTEX-1399T-3026-SM-5KLZC",
+        "SM": "GTEX-1399T-3026-SM-5KLZC",
+        "LB": "GTEX-1399T-3026-SM-5KLZC",
+        "PU": "GTEX-1399T-3026-SM-5KLZC",
+        "PL": "Illumina"
+    },
+
+    "GTEX-Y8DK-0826-SM-4TT3T":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-Y8DK-0826-SM-4TT3T/GTEX-Y8DK-0826-SM-4TT3T_1.fastq",
+        "fq2": "GTEX-Y8DK-0826-SM-4TT3T/GTEX-Y8DK-0826-SM-4TT3T_2.fastq",
+        "fq1_sy": "GTEX-Y8DK-0826-SM-4TT3T_1.fastq",
+        "fq2_sy": "GTEX-Y8DK-0826-SM-4TT3T_2.fastq",
+        "ID": "GTEX-Y8DK-0826-SM-4TT3T",
+        "SM": "GTEX-Y8DK-0826-SM-4TT3T",
+        "LB": "GTEX-Y8DK-0826-SM-4TT3T",
+        "PU": "GTEX-Y8DK-0826-SM-4TT3T",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13OVH-3026-SM-5MR4N":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13OVH-3026-SM-5MR4N/GTEX-13OVH-3026-SM-5MR4N_1.fastq",
+        "fq2": "GTEX-13OVH-3026-SM-5MR4N/GTEX-13OVH-3026-SM-5MR4N_2.fastq",
+        "fq1_sy": "GTEX-13OVH-3026-SM-5MR4N_1.fastq",
+        "fq2_sy": "GTEX-13OVH-3026-SM-5MR4N_2.fastq",
+        "ID": "GTEX-13OVH-3026-SM-5MR4N",
+        "SM": "GTEX-13OVH-3026-SM-5MR4N",
+        "LB": "GTEX-13OVH-3026-SM-5MR4N",
+        "PU": "GTEX-13OVH-3026-SM-5MR4N",
+        "PL": "Illumina"
+    },
+
+    "GTEX-117XS-3026-SM-5N9CA":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-117XS-3026-SM-5N9CA/GTEX-117XS-3026-SM-5N9CA_1.fastq",
+        "fq2": "GTEX-117XS-3026-SM-5N9CA/GTEX-117XS-3026-SM-5N9CA_2.fastq",
+        "fq1_sy": "GTEX-117XS-3026-SM-5N9CA_1.fastq",
+        "fq2_sy": "GTEX-117XS-3026-SM-5N9CA_2.fastq",
+        "ID": "GTEX-117XS-3026-SM-5N9CA",
+        "SM": "GTEX-117XS-3026-SM-5N9CA",
+        "LB": "GTEX-117XS-3026-SM-5N9CA",
+        "PU": "GTEX-117XS-3026-SM-5N9CA",
+        "PL": "Illumina"
+    },
+
+    "GTEX-X585-3026-SM-46MWF":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-X585-3026-SM-46MWF/GTEX-X585-3026-SM-46MWF_1.fastq",
+        "fq2": "GTEX-X585-3026-SM-46MWF/GTEX-X585-3026-SM-46MWF_2.fastq",
+        "fq1_sy": "GTEX-X585-3026-SM-46MWF_1.fastq",
+        "fq2_sy": "GTEX-X585-3026-SM-46MWF_2.fastq",
+        "ID": "GTEX-X585-3026-SM-46MWF",
+        "SM": "GTEX-X585-3026-SM-46MWF",
+        "LB": "GTEX-X585-3026-SM-46MWF",
+        "PU": "GTEX-X585-3026-SM-46MWF",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11GS4-3126-SM-5A5LH":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-11GS4-3126-SM-5A5LH/GTEX-11GS4-3126-SM-5A5LH_1.fastq",
+        "fq2": "GTEX-11GS4-3126-SM-5A5LH/GTEX-11GS4-3126-SM-5A5LH_2.fastq",
+        "fq1_sy": "GTEX-11GS4-3126-SM-5A5LH_1.fastq",
+        "fq2_sy": "GTEX-11GS4-3126-SM-5A5LH_2.fastq",
+        "ID": "GTEX-11GS4-3126-SM-5A5LH",
+        "SM": "GTEX-11GS4-3126-SM-5A5LH",
+        "LB": "GTEX-11GS4-3126-SM-5A5LH",
+        "PU": "GTEX-11GS4-3126-SM-5A5LH",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZDXO-2126-SM-4WKFI":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-ZDXO-2126-SM-4WKFI/GTEX-ZDXO-2126-SM-4WKFI_1.fastq",
+        "fq2": "GTEX-ZDXO-2126-SM-4WKFI/GTEX-ZDXO-2126-SM-4WKFI_2.fastq",
+        "fq1_sy": "GTEX-ZDXO-2126-SM-4WKFI_1.fastq",
+        "fq2_sy": "GTEX-ZDXO-2126-SM-4WKFI_2.fastq",
+        "ID": "GTEX-ZDXO-2126-SM-4WKFI",
+        "SM": "GTEX-ZDXO-2126-SM-4WKFI",
+        "LB": "GTEX-ZDXO-2126-SM-4WKFI",
+        "PU": "GTEX-ZDXO-2126-SM-4WKFI",
+        "PL": "Illumina"
+    },
+
+    "GTEX-144FL-3026-SM-5O99C":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-144FL-3026-SM-5O99C/GTEX-144FL-3026-SM-5O99C_1.fastq",
+        "fq2": "GTEX-144FL-3026-SM-5O99C/GTEX-144FL-3026-SM-5O99C_2.fastq",
+        "fq1_sy": "GTEX-144FL-3026-SM-5O99C_1.fastq",
+        "fq2_sy": "GTEX-144FL-3026-SM-5O99C_2.fastq",
+        "ID": "GTEX-144FL-3026-SM-5O99C",
+        "SM": "GTEX-144FL-3026-SM-5O99C",
+        "LB": "GTEX-144FL-3026-SM-5O99C",
+        "PU": "GTEX-144FL-3026-SM-5O99C",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13IVO-2926-SM-5L3CZ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13IVO-2926-SM-5L3CZ/GTEX-13IVO-2926-SM-5L3CZ_1.fastq",
+        "fq2": "GTEX-13IVO-2926-SM-5L3CZ/GTEX-13IVO-2926-SM-5L3CZ_2.fastq",
+        "fq1_sy": "GTEX-13IVO-2926-SM-5L3CZ_1.fastq",
+        "fq2_sy": "GTEX-13IVO-2926-SM-5L3CZ_2.fastq",
+        "ID": "GTEX-13IVO-2926-SM-5L3CZ",
+        "SM": "GTEX-13IVO-2926-SM-5L3CZ",
+        "LB": "GTEX-13IVO-2926-SM-5L3CZ",
+        "PU": "GTEX-13IVO-2926-SM-5L3CZ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13NYB-3026-SM-5IJD7":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13NYB-3026-SM-5IJD7/GTEX-13NYB-3026-SM-5IJD7_1.fastq",
+        "fq2": "GTEX-13NYB-3026-SM-5IJD7/GTEX-13NYB-3026-SM-5IJD7_2.fastq",
+        "fq1_sy": "GTEX-13NYB-3026-SM-5IJD7_1.fastq",
+        "fq2_sy": "GTEX-13NYB-3026-SM-5IJD7_2.fastq",
+        "ID": "GTEX-13NYB-3026-SM-5IJD7",
+        "SM": "GTEX-13NYB-3026-SM-5IJD7",
+        "LB": "GTEX-13NYB-3026-SM-5IJD7",
+        "PU": "GTEX-13NYB-3026-SM-5IJD7",
+        "PL": "Illumina"
+    },
+
+    "GTEX-147GR-3026-SM-5S2ML":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-147GR-3026-SM-5S2ML/GTEX-147GR-3026-SM-5S2ML_1.fastq",
+        "fq2": "GTEX-147GR-3026-SM-5S2ML/GTEX-147GR-3026-SM-5S2ML_2.fastq",
+        "fq1_sy": "GTEX-147GR-3026-SM-5S2ML_1.fastq",
+        "fq2_sy": "GTEX-147GR-3026-SM-5S2ML_2.fastq",
+        "ID": "GTEX-147GR-3026-SM-5S2ML",
+        "SM": "GTEX-147GR-3026-SM-5S2ML",
+        "LB": "GTEX-147GR-3026-SM-5S2ML",
+        "PU": "GTEX-147GR-3026-SM-5S2ML",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13NYC-2826-SM-5K7WR":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13NYC-2826-SM-5K7WR/GTEX-13NYC-2826-SM-5K7WR_1.fastq",
+        "fq2": "GTEX-13NYC-2826-SM-5K7WR/GTEX-13NYC-2826-SM-5K7WR_2.fastq",
+        "fq1_sy": "GTEX-13NYC-2826-SM-5K7WR_1.fastq",
+        "fq2_sy": "GTEX-13NYC-2826-SM-5K7WR_2.fastq",
+        "ID": "GTEX-13NYC-2826-SM-5K7WR",
+        "SM": "GTEX-13NYC-2826-SM-5K7WR",
+        "LB": "GTEX-13NYC-2826-SM-5K7WR",
+        "PU": "GTEX-13NYC-2826-SM-5K7WR",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11EI6-3026-SM-5GZZO":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-11EI6-3026-SM-5GZZO/GTEX-11EI6-3026-SM-5GZZO_1.fastq",
+        "fq2": "GTEX-11EI6-3026-SM-5GZZO/GTEX-11EI6-3026-SM-5GZZO_2.fastq",
+        "fq1_sy": "GTEX-11EI6-3026-SM-5GZZO_1.fastq",
+        "fq2_sy": "GTEX-11EI6-3026-SM-5GZZO_2.fastq",
+        "ID": "GTEX-11EI6-3026-SM-5GZZO",
+        "SM": "GTEX-11EI6-3026-SM-5GZZO",
+        "LB": "GTEX-11EI6-3026-SM-5GZZO",
+        "PU": "GTEX-11EI6-3026-SM-5GZZO",
+        "PL": "Illumina"
+    },
+
+    "GTEX-R55F-1326-SM-5S2V4":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-R55F-1326-SM-5S2V4/GTEX-R55F-1326-SM-5S2V4_1.fastq",
+        "fq2": "GTEX-R55F-1326-SM-5S2V4/GTEX-R55F-1326-SM-5S2V4_2.fastq",
+        "fq1_sy": "GTEX-R55F-1326-SM-5S2V4_1.fastq",
+        "fq2_sy": "GTEX-R55F-1326-SM-5S2V4_2.fastq",
+        "ID": "GTEX-R55F-1326-SM-5S2V4",
+        "SM": "GTEX-R55F-1326-SM-5S2V4",
+        "LB": "GTEX-R55F-1326-SM-5S2V4",
+        "PU": "GTEX-R55F-1326-SM-5S2V4",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13VXU-2926-SM-5LU5C":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13VXU-2926-SM-5LU5C/GTEX-13VXU-2926-SM-5LU5C_1.fastq",
+        "fq2": "GTEX-13VXU-2926-SM-5LU5C/GTEX-13VXU-2926-SM-5LU5C_2.fastq",
+        "fq1_sy": "GTEX-13VXU-2926-SM-5LU5C_1.fastq",
+        "fq2_sy": "GTEX-13VXU-2926-SM-5LU5C_2.fastq",
+        "ID": "GTEX-13VXU-2926-SM-5LU5C",
+        "SM": "GTEX-13VXU-2926-SM-5LU5C",
+        "LB": "GTEX-13VXU-2926-SM-5LU5C",
+        "PU": "GTEX-13VXU-2926-SM-5LU5C",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13PVQ-3026-SM-5SI93":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13PVQ-3026-SM-5SI93/GTEX-13PVQ-3026-SM-5SI93_1.fastq",
+        "fq2": "GTEX-13PVQ-3026-SM-5SI93/GTEX-13PVQ-3026-SM-5SI93_2.fastq",
+        "fq1_sy": "GTEX-13PVQ-3026-SM-5SI93_1.fastq",
+        "fq2_sy": "GTEX-13PVQ-3026-SM-5SI93_2.fastq",
+        "ID": "GTEX-13PVQ-3026-SM-5SI93",
+        "SM": "GTEX-13PVQ-3026-SM-5SI93",
+        "LB": "GTEX-13PVQ-3026-SM-5SI93",
+        "PU": "GTEX-13PVQ-3026-SM-5SI93",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12ZZY-3026-SM-5GCOU":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-12ZZY-3026-SM-5GCOU/GTEX-12ZZY-3026-SM-5GCOU_1.fastq",
+        "fq2": "GTEX-12ZZY-3026-SM-5GCOU/GTEX-12ZZY-3026-SM-5GCOU_2.fastq",
+        "fq1_sy": "GTEX-12ZZY-3026-SM-5GCOU_1.fastq",
+        "fq2_sy": "GTEX-12ZZY-3026-SM-5GCOU_2.fastq",
+        "ID": "GTEX-12ZZY-3026-SM-5GCOU",
+        "SM": "GTEX-12ZZY-3026-SM-5GCOU",
+        "LB": "GTEX-12ZZY-3026-SM-5GCOU",
+        "PU": "GTEX-12ZZY-3026-SM-5GCOU",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11OC5-0726-SM-5P9JK":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-11OC5-0726-SM-5P9JK/GTEX-11OC5-0726-SM-5P9JK_1.fastq",
+        "fq2": "GTEX-11OC5-0726-SM-5P9JK/GTEX-11OC5-0726-SM-5P9JK_2.fastq",
+        "fq1_sy": "GTEX-11OC5-0726-SM-5P9JK_1.fastq",
+        "fq2_sy": "GTEX-11OC5-0726-SM-5P9JK_2.fastq",
+        "ID": "GTEX-11OC5-0726-SM-5P9JK",
+        "SM": "GTEX-11OC5-0726-SM-5P9JK",
+        "LB": "GTEX-11OC5-0726-SM-5P9JK",
+        "PU": "GTEX-11OC5-0726-SM-5P9JK",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13FXS-3126-SM-5J2NN":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13FXS-3126-SM-5J2NN/GTEX-13FXS-3126-SM-5J2NN_1.fastq",
+        "fq2": "GTEX-13FXS-3126-SM-5J2NN/GTEX-13FXS-3126-SM-5J2NN_2.fastq",
+        "fq1_sy": "GTEX-13FXS-3126-SM-5J2NN_1.fastq",
+        "fq2_sy": "GTEX-13FXS-3126-SM-5J2NN_2.fastq",
+        "ID": "GTEX-13FXS-3126-SM-5J2NN",
+        "SM": "GTEX-13FXS-3126-SM-5J2NN",
+        "LB": "GTEX-13FXS-3126-SM-5J2NN",
+        "PU": "GTEX-13FXS-3126-SM-5J2NN",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13FHP-3026-SM-5IJBS":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13FHP-3026-SM-5IJBS/GTEX-13FHP-3026-SM-5IJBS_1.fastq",
+        "fq2": "GTEX-13FHP-3026-SM-5IJBS/GTEX-13FHP-3026-SM-5IJBS_2.fastq",
+        "fq1_sy": "GTEX-13FHP-3026-SM-5IJBS_1.fastq",
+        "fq2_sy": "GTEX-13FHP-3026-SM-5IJBS_2.fastq",
+        "ID": "GTEX-13FHP-3026-SM-5IJBS",
+        "SM": "GTEX-13FHP-3026-SM-5IJBS",
+        "LB": "GTEX-13FHP-3026-SM-5IJBS",
+        "PU": "GTEX-13FHP-3026-SM-5IJBS",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12126-1026-SM-5P9JJ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-12126-1026-SM-5P9JJ/GTEX-12126-1026-SM-5P9JJ_1.fastq",
+        "fq2": "GTEX-12126-1026-SM-5P9JJ/GTEX-12126-1026-SM-5P9JJ_2.fastq",
+        "fq1_sy": "GTEX-12126-1026-SM-5P9JJ_1.fastq",
+        "fq2_sy": "GTEX-12126-1026-SM-5P9JJ_2.fastq",
+        "ID": "GTEX-12126-1026-SM-5P9JJ",
+        "SM": "GTEX-12126-1026-SM-5P9JJ",
+        "LB": "GTEX-12126-1026-SM-5P9JJ",
+        "PU": "GTEX-12126-1026-SM-5P9JJ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-14ASI-3026-SM-5S2PN":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-14ASI-3026-SM-5S2PN/GTEX-14ASI-3026-SM-5S2PN_1.fastq",
+        "fq2": "GTEX-14ASI-3026-SM-5S2PN/GTEX-14ASI-3026-SM-5S2PN_2.fastq",
+        "fq1_sy": "GTEX-14ASI-3026-SM-5S2PN_1.fastq",
+        "fq2_sy": "GTEX-14ASI-3026-SM-5S2PN_2.fastq",
+        "ID": "GTEX-14ASI-3026-SM-5S2PN",
+        "SM": "GTEX-14ASI-3026-SM-5S2PN",
+        "LB": "GTEX-14ASI-3026-SM-5S2PN",
+        "PU": "GTEX-14ASI-3026-SM-5S2PN",
+        "PL": "Illumina"
+    },
+
+    "GTEX-T5JC-2426-SM-3NMDB":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-T5JC-2426-SM-3NMDB/GTEX-T5JC-2426-SM-3NMDB_1.fastq",
+        "fq2": "GTEX-T5JC-2426-SM-3NMDB/GTEX-T5JC-2426-SM-3NMDB_2.fastq",
+        "fq1_sy": "GTEX-T5JC-2426-SM-3NMDB_1.fastq",
+        "fq2_sy": "GTEX-T5JC-2426-SM-3NMDB_2.fastq",
+        "ID": "GTEX-T5JC-2426-SM-3NMDB",
+        "SM": "GTEX-T5JC-2426-SM-3NMDB",
+        "LB": "GTEX-T5JC-2426-SM-3NMDB",
+        "PU": "GTEX-T5JC-2426-SM-3NMDB",
+        "PL": "Illumina"
+    },
+
+    "GTEX-1192X-3126-SM-5N9BY":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-1192X-3126-SM-5N9BY/GTEX-1192X-3126-SM-5N9BY_1.fastq",
+        "fq2": "GTEX-1192X-3126-SM-5N9BY/GTEX-1192X-3126-SM-5N9BY_2.fastq",
+        "fq1_sy": "GTEX-1192X-3126-SM-5N9BY_1.fastq",
+        "fq2_sy": "GTEX-1192X-3126-SM-5N9BY_2.fastq",
+        "ID": "GTEX-1192X-3126-SM-5N9BY",
+        "SM": "GTEX-1192X-3126-SM-5N9BY",
+        "LB": "GTEX-1192X-3126-SM-5N9BY",
+        "PU": "GTEX-1192X-3126-SM-5N9BY",
+        "PL": "Illumina"
+    },
+
+    "GTEX-139UC-3126-SM-5J1OY":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-139UC-3126-SM-5J1OY/GTEX-139UC-3126-SM-5J1OY_1.fastq",
+        "fq2": "GTEX-139UC-3126-SM-5J1OY/GTEX-139UC-3126-SM-5J1OY_2.fastq",
+        "fq1_sy": "GTEX-139UC-3126-SM-5J1OY_1.fastq",
+        "fq2_sy": "GTEX-139UC-3126-SM-5J1OY_2.fastq",
+        "ID": "GTEX-139UC-3126-SM-5J1OY",
+        "SM": "GTEX-139UC-3126-SM-5J1OY",
+        "LB": "GTEX-139UC-3126-SM-5J1OY",
+        "PU": "GTEX-139UC-3126-SM-5J1OY",
+        "PL": "Illumina"
+    },
+
+    "GTEX-WVLH-3026-SM-3MJG9":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-WVLH-3026-SM-3MJG9/GTEX-WVLH-3026-SM-3MJG9_1.fastq",
+        "fq2": "GTEX-WVLH-3026-SM-3MJG9/GTEX-WVLH-3026-SM-3MJG9_2.fastq",
+        "fq1_sy": "GTEX-WVLH-3026-SM-3MJG9_1.fastq",
+        "fq2_sy": "GTEX-WVLH-3026-SM-3MJG9_2.fastq",
+        "ID": "GTEX-WVLH-3026-SM-3MJG9",
+        "SM": "GTEX-WVLH-3026-SM-3MJG9",
+        "LB": "GTEX-WVLH-3026-SM-3MJG9",
+        "PU": "GTEX-WVLH-3026-SM-3MJG9",
+        "PL": "Illumina"
+    },
+
+    "GTEX-132Q8-3026-SM-5PNVG":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-132Q8-3026-SM-5PNVG/GTEX-132Q8-3026-SM-5PNVG_1.fastq",
+        "fq2": "GTEX-132Q8-3026-SM-5PNVG/GTEX-132Q8-3026-SM-5PNVG_2.fastq",
+        "fq1_sy": "GTEX-132Q8-3026-SM-5PNVG_1.fastq",
+        "fq2_sy": "GTEX-132Q8-3026-SM-5PNVG_2.fastq",
+        "ID": "GTEX-132Q8-3026-SM-5PNVG",
+        "SM": "GTEX-132Q8-3026-SM-5PNVG",
+        "LB": "GTEX-132Q8-3026-SM-5PNVG",
+        "PU": "GTEX-132Q8-3026-SM-5PNVG",
+        "PL": "Illumina"
+    },
+
+    "GTEX-1445S-3026-SM-5O9BR":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-1445S-3026-SM-5O9BR/GTEX-1445S-3026-SM-5O9BR_1.fastq",
+        "fq2": "GTEX-1445S-3026-SM-5O9BR/GTEX-1445S-3026-SM-5O9BR_2.fastq",
+        "fq1_sy": "GTEX-1445S-3026-SM-5O9BR_1.fastq",
+        "fq2_sy": "GTEX-1445S-3026-SM-5O9BR_2.fastq",
+        "ID": "GTEX-1445S-3026-SM-5O9BR",
+        "SM": "GTEX-1445S-3026-SM-5O9BR",
+        "LB": "GTEX-1445S-3026-SM-5O9BR",
+        "PU": "GTEX-1445S-3026-SM-5O9BR",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13X6J-3026-SM-5Q5CU":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-13X6J-3026-SM-5Q5CU/GTEX-13X6J-3026-SM-5Q5CU_1.fastq",
+        "fq2": "GTEX-13X6J-3026-SM-5Q5CU/GTEX-13X6J-3026-SM-5Q5CU_2.fastq",
+        "fq1_sy": "GTEX-13X6J-3026-SM-5Q5CU_1.fastq",
+        "fq2_sy": "GTEX-13X6J-3026-SM-5Q5CU_2.fastq",
+        "ID": "GTEX-13X6J-3026-SM-5Q5CU",
+        "SM": "GTEX-13X6J-3026-SM-5Q5CU",
+        "LB": "GTEX-13X6J-3026-SM-5Q5CU",
+        "PU": "GTEX-13X6J-3026-SM-5Q5CU",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11DXW-1126-SM-5H12Q":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/brain_cortex/MALE/",
+        "fq1": "GTEX-11DXW-1126-SM-5H12Q/GTEX-11DXW-1126-SM-5H12Q_1.fastq",
+        "fq2": "GTEX-11DXW-1126-SM-5H12Q/GTEX-11DXW-1126-SM-5H12Q_2.fastq",
+        "fq1_sy": "GTEX-11DXW-1126-SM-5H12Q_1.fastq",
+        "fq2_sy": "GTEX-11DXW-1126-SM-5H12Q_2.fastq",
+        "ID": "GTEX-11DXW-1126-SM-5H12Q",
+        "SM": "GTEX-11DXW-1126-SM-5H12Q",
+        "LB": "GTEX-11DXW-1126-SM-5H12Q",
+        "PU": "GTEX-11DXW-1126-SM-5H12Q",
+        "PL": "Illumina"
+    }
+
+}
+

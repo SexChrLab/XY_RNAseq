@@ -1,0 +1,1876 @@
+{
+  "Commment_Input_Output_Directories": "The following section specifies the input and output directories for the files to be used in the script
+        Orginal input folder /mnt/storage/public/dbgap-8834/LIVER/",
+  "Trimmed_FastQC_Input_File_Directory": "/mnt/storage/SAYRES/XY_Trim_Ref/LIVER/trimmed/",
+  "Output_File_Directory": "/mnt/storage/SAYRES/XY_Trim_Ref/LIVER/",
+
+  "Comment_Transcriptome_Index": "The following section specified the location of the index file for Salmon",
+  "HG38_Transcriptome_Index_HISAT_Path_male": "/mnt/storage/SAYRES/XY_Trim_Ref/ensemble_HISAT2_references/YPARs_masked/GRCh38_YPARs_masked_reference_HISAT2",
+  "HG38_Transcriptome_Index_HISAT_Path_female": "/mnt/storage/SAYRES/XY_Trim_Ref/ensemble_HISAT2_references/Y_masked/GRCh38_Ymasked_reference_HISAT2",
+  "HG38_Transcriptome_Index_HISAT_Path_DEF": "/mnt/storage/SAYRES/XY_Trim_Ref/ensemble_HISAT2_references/wholeGenome/GRCh38_wholeGenome_reference_HISAT2",
+
+  "HG38_Transcriptome_Index_STAR_Path_male": "/mnt/storage/SAYRES/XY_Trim_Ref/ensemble_references/ensemble.GRCh38.YPARs_masked",
+  "HG38_Transcriptome_Index_STAR_Path_female": "/mnt/storage/SAYRES/XY_Trim_Ref/ensemble_references/ensemble.GRCh38.Y_masked",
+  "HG38_Transcriptome_Index_STAR_Path_DEF": "/mnt/storage/SAYRES/XY_Trim_Ref/ensemble_references/ensemble.GRCh38.wholeGenome",
+
+  "Comment_GTF_gencode.v29.": "The following section is the specified location for the gencode gene annotation file",
+  "gencode.v29.annotation.gtf_path": "/mnt/storage/SAYRES/XY_Trim_Ref/ensemble_HISAT2_references/YPARs_masked/Homo_sapiens.GRCh38.89.gtf",
+  "ensemble.gtf": "/mnt/storage/SAYRES/XY_Trim_Ref/ensemble_HISAT2_references/YPARs_masked/Homo_sapiens.GRCh38.89.gtf",
+
+  "Comment_Sample_Info": "The following section lists the samples that are to be analyzed",
+  "sample_names": ["GTEX-11ZVC-0726-SM-5FQT9", "GTEX-132AR-0426-SM-5IFH8", "GTEX-ZVT4-0626-SM-5E45T", "GTEX-13SLX-1226-SM-5S2Q6", "GTEX-S32W-1926-SM-4AD63", "GTEX-RU72-1426-SM-46MUF", "GTEX-13113-1326-SM-5GCOI", "GTEX-1269C-0626-SM-5FQSS", "GTEX-RTLS-1326-SM-46MUN", "GTEX-14DAQ-1726-SM-5S2R2", "GTEX-X4EP-1026-SM-4QAS5", "GTEX-12WSD-1426-SM-5GCN9", "GTEX-11GSP-0626-SM-5986T", "GTEX-ZF29-2026-SM-4WWB7", "GTEX-X4EO-1126-SM-4QARQ", "GTEX-ZVT3-1626-SM-5GU66", "GTEX-ZYY3-0626-SM-5NQ6W", "GTEX-13PVR-0126-SM-5S2PY", "GTEX-13QJC-0726-SM-5RQJK", "GTEX-13O3O-1826-SM-5IFGW", "GTEX-11DXZ-0126-SM-5EGGY", "GTEX-QDVN-0826-SM-48TZ2", "GTEX-X261-1726-SM-4PQYT", "GTEX-XBEC-1526-SM-4AT68", "GTEX-13VXU-0926-SM-5IFFH", "GTEX-13OW6-2626-SM-5IFF2", "GTEX-139TS-1426-SM-5IFJD", "GTEX-11DXY-0526-SM-5EGGQ", "GTEX-X4XY-1626-SM-46MVN", "GTEX-12WSM-0726-SM-5GCOW", "GTEX-S4Z8-0526-SM-4AD4T", "GTEX-11NV4-1326-SM-5HL6V", "GTEX-1212Z-0226-SM-59HLF", "GTEX-WQUQ-1926-SM-4OOSA", "GTEX-1399T-0826-SM-5IFES", "GTEX-139UC-1426-SM-5IJGH", "GTEX-13FTZ-0726-SM-5IFFY", "GTEX-12696-0826-SM-5EGGE", "GTEX-13O1R-2026-SM-5KM3N", "GTEX-UTHO-2426-SM-4JBHD"],  
+  "females": ["GTEX-13O3O-1826-SM-5IFGW", "GTEX-11ZVC-0726-SM-5FQT9", "GTEX-132AR-0426-SM-5IFH8", "GTEX-ZVT4-0626-SM-5E45T", "GTEX-13SLX-1226-SM-5S2Q6", "GTEX-S32W-1926-SM-4AD63", "GTEX-RU72-1426-SM-46MUF", "GTEX-13113-1326-SM-5GCOI", "GTEX-1269C-0626-SM-5FQSS", "GTEX-RTLS-1326-SM-46MUN", "GTEX-14DAQ-1726-SM-5S2R2", "GTEX-X4EP-1026-SM-4QAS5", "GTEX-12WSD-1426-SM-5GCN9", "GTEX-11GSP-0626-SM-5986T", "GTEX-ZF29-2026-SM-4WWB7", "GTEX-X4EO-1126-SM-4QARQ", "GTEX-ZVT3-1626-SM-5GU66", "GTEX-ZYY3-0626-SM-5NQ6W", "GTEX-13PVR-0126-SM-5S2PY", "GTEX-13QJC-0726-SM-5RQJK"],
+  
+  "males": ["GTEX-11DXZ-0126-SM-5EGGY", "GTEX-QDVN-0826-SM-48TZ2", "GTEX-X261-1726-SM-4PQYT", "GTEX-XBEC-1526-SM-4AT68", "GTEX-13VXU-0926-SM-5IFFH", "GTEX-13OW6-2626-SM-5IFF2", "GTEX-139TS-1426-SM-5IFJD", "GTEX-11DXY-0526-SM-5EGGQ", "GTEX-X4XY-1626-SM-46MVN", "GTEX-12WSM-0726-SM-5GCOW", "GTEX-S4Z8-0526-SM-4AD4T", "GTEX-11NV4-1326-SM-5HL6V", "GTEX-1212Z-0226-SM-59HLF", "GTEX-WQUQ-1926-SM-4OOSA", "GTEX-1399T-0826-SM-5IFES", "GTEX-139UC-1426-SM-5IJGH", "GTEX-13FTZ-0726-SM-5IFFY", "GTEX-12696-0826-SM-5EGGE", "GTEX-13O1R-2026-SM-5KM3N", "GTEX-UTHO-2426-SM-4JBHD"],
+  
+  "sample_names_ALL": ["GTEX-11ZTS-1426-SM-5EQMM", "GTEX-12WSG-0626-SM-5FQTQ", "GTEX-13113-1326-SM-5GCOI", "GTEX-13O3O-1826-SM-5IFGW", "GTEX-13SLX-1226-SM-5S2Q6", "GTEX-146FH-1526-SM-5NQBU", "GTEX-Q2AG-1126-SM-48U1P", "GTEX-Q734-0326-SM-48U15", "GTEX-R53T-0326-SM-48FEC", "GTEX-RNOR-1426-SM-48FDJ", "GTEX-RTLS-1326-SM-46MUN", "GTEX-RU72-1426-SM-46MUF", "GTEX-UPIC-0926-SM-4IHLV", "GTEX-X4EO-1126-SM-4QARQ", "GTEX-X4EP-1026-SM-4QAS5", "GTEX-Y5V5-0926-SM-4VBPZ", "GTEX-YFC4-1526-SM-5IFJS", "GTEX-ZF2S-3026-SM-4WWCH", "GTEX-ZVT4-0626-SM-5E45T", "GTEX-ZZPU-0426-SM-5GZYH", "GTEX-132AR-0426-SM-5IFH8", "GTEX-13OVJ-1026-SM-5IFGI", "GTEX-PWOO-0826-SM-48TCL", "GTEX-Y5LM-0426-SM-4VBRO", "GTEX-11GSP-0626-SM-5986T", "GTEX-11ZVC-0726-SM-5FQT9", "GTEX-1269C-0626-SM-5FQSS", "GTEX-12WSD-1426-SM-5GCN9", "GTEX-131YS-1626-SM-5HL6C", "GTEX-13N11-0926-SM-5IJG2", "GTEX-13PVR-0126-SM-5S2PY", "GTEX-13QJC-0726-SM-5RQJK", "GTEX-14A5I-1726-SM-5QGQ5", "GTEX-14AS3-0126-SM-5Q5F4", "GTEX-14DAQ-1726-SM-5S2R2", "GTEX-P78B-1326-SM-3P611", "GTEX-PX3G-0826-SM-48TZS", "GTEX-S32W-1926-SM-4AD63", "GTEX-TSE9-1126-SM-5CHRH_rep1", "GTEX-TSE9-1126-SM-5CHRH_rep2", "GTEX-U3ZN-0226-SM-3DB8D", "GTEX-W5X1-0126-SM-5CHR9_rep1", "GTEX-WYVS-1926-SM-4SOIC", "GTEX-WYVS-1926-SM-4PQZ2", "GTEX-ZF29-2026-SM-4WWB7", "GTEX-ZTPG-1426-SM-51MT3", "GTEX-ZVT3-1626-SM-5GU66", "GTEX-ZYY3-0626-SM-5NQ6W", "GTEX-11DXY-0526-SM-5EGGQ", "GTEX-11DXZ-0126-SM-5EGGY", "GTEX-11EQ9-0526-SM-5A5JZ", "GTEX-1212Z-0226-SM-59HLF", "GTEX-12WSL-0226-SM-5CVMJ", "GTEX-12WSM-0726-SM-5GCOW", "GTEX-12ZZZ-1326-SM-59HKW", "GTEX-131XE-0326-SM-5LZVO", "GTEX-131XH-0626-SM-5LZWH", "GTEX-132NY-0926-SM-5P9G3", "GTEX-1399R-1226-SM-5P9GF", "GTEX-139TS-1426-SM-5IFJD", "GTEX-139YR-0226-SM-5IFEM", "GTEX-13FLV-0326-SM-5N9DJ", "GTEX-13N2G-0926-SM-5IFGJ", "GTEX-145MO-2326-SM-5NQ9K", "GTEX-1497J-0726-SM-5Q5D1", "GTEX-14C38-1526-SM-5RQJ7", "GTEX-QESD-2026-SM-447BI", "GTEX-QV44-0326-SM-4R1KD", "GTEX-RM2N-1926-SM-48FCU", "GTEX-RN64-1826-SM-48FDV", "GTEX-S4Z8-0526-SM-4AD4T", "GTEX-TKQ2-1726-SM-4DXUP", "GTEX-UPK5-1426-SM-4JBHH", "GTEX-WFON-1726-SM-4LVMQ", "GTEX-WQUQ-1926-SM-4OOSA", "GTEX-WZTO-0626-SM-4PQYY", "GTEX-X3Y1-2726-SM-4PQZH", "GTEX-X4XY-1626-SM-46MVN", "GTEX-XBEC-1526-SM-4AT68", "GTEX-YECK-1926-SM-4W21H", "GTEX-ZAB5-0426-SM-5CVMI", "GTEX-ZPU1-0826-SM-57WG2", "GTEX-ZYT6-0626-SM-5E45V", "GTEX-11TT1-1726-SM-5EQLJ", "GTEX-139UC-1426-SM-5IJGH", "GTEX-13O1R-2026-SM-5KM3N", "GTEX-144GM-1326-SM-5LU5E", "GTEX-145LU-1326-SM-5LU9N", "GTEX-O5YT-0826-SM-3TW8N", "GTEX-P44G-1126-SM-3NM9D", "GTEX-U8XE-1526-SM-4E3HT", "GTEX-WK11-1326-SM-4OOSI", "GTEX-WY7C-0726-SM-4ONCB", "GTEX-XOTO-0826-SM-4B65O", "GTEX-ZEX8-0826-SM-4WKHK", "GTEX-1192X-1026-SM-5H12P", "GTEX-11NUK-1226-SM-5P9GM", "GTEX-11NV4-1326-SM-5HL6V", "GTEX-11OF3-0726-SM-5BC4Z", "GTEX-11TUW-1726-SM-5BC5C", "GTEX-11UD2-1626-SM-5EQM3", "GTEX-11WQC-0726-SM-5EQMR", "GTEX-11ZUS-2526-SM-59872", "GTEX-12696-0826-SM-5EGGE", "GTEX-12KS4-1326-SM-5LUB3", "GTEX-12WSI-0226-SM-5GCNA", "GTEX-13112-1426-SM-5EGH8", "GTEX-1399T-0826-SM-5IFES", "GTEX-139TU-0826-SM-5IJFG", "GTEX-13FTW-1126-SM-5J2NV", "GTEX-13FTZ-0726-SM-5IFFY", "GTEX-13NYB-1026-SM-5IFH3", "GTEX-13NZ9-1326-SM-5MR3V", "GTEX-13NZB-0626-SM-5IFH6", "GTEX-13OW6-2626-SM-5IFF2", "GTEX-13PVQ-1526-SM-5IFEQ", "GTEX-13VXU-0926-SM-5IFFH", "GTEX-145MF-0826-SM-5QGQA", "GTEX-14753-1626-SM-5NQ9L", "GTEX-147F4-1426-SM-5LUA8", "GTEX-147JS-1126-SM-5RQIW", "GTEX-14E1K-0326-SM-5S2PE", "GTEX-OOBJ-0826-SM-3NB2K", "GTEX-QDVN-0826-SM-48TZ2", "GTEX-QEG4-1826-SM-4R1JN", "GTEX-REY6-1226-SM-48FDR", "GTEX-RWSA-1426-SM-47JXA", "GTEX-S33H-1626-SM-4AD68", "GTEX-SJXC-1226-SM-4DM78", "GTEX-T6MN-1226-SM-5CHSL_rep1", "GTEX-T6MN-1226-SM-3NMA5", "GTEX-U8XE-1526-SM-5CHRK_rep1", "GTEX-UTHO-2426-SM-4JBHD", "GTEX-VUSG-0126-SM-4KL1X", "GTEX-WFON-1726-SM-5CHT5_rep1", "GTEX-X261-1726-SM-4PQYT", "GTEX-XXEK-1126-SM-4BRUX", "GTEX-YB5E-0326-SM-5IFHU", "GTEX-YEC4-0826-SM-5P9FV", "GTEX-Z9EW-0426-SM-5CVM9", "GTEX-ZAB4-0826-SM-5LU9D", "GTEX-ZVP2-0626-SM-51MSO"],
+  "females_ALL": ["GTEX-11ZTS-1426-SM-5EQMM", "GTEX-12WSG-0626-SM-5FQTQ", "GTEX-13113-1326-SM-5GCOI", "GTEX-13O3O-1826-SM-5IFGW", "GTEX-13SLX-1226-SM-5S2Q6", "GTEX-146FH-1526-SM-5NQBU", "GTEX-Q2AG-1126-SM-48U1P", "GTEX-Q734-0326-SM-48U15", "GTEX-R53T-0326-SM-48FEC", "GTEX-RNOR-1426-SM-48FDJ", "GTEX-RTLS-1326-SM-46MUN", "GTEX-RU72-1426-SM-46MUF", "GTEX-UPIC-0926-SM-4IHLV", "GTEX-X4EO-1126-SM-4QARQ", "GTEX-X4EP-1026-SM-4QAS5", "GTEX-Y5V5-0926-SM-4VBPZ", "GTEX-YFC4-1526-SM-5IFJS", "GTEX-ZF2S-3026-SM-4WWCH", "GTEX-ZVT4-0626-SM-5E45T", "GTEX-ZZPU-0426-SM-5GZYH", "GTEX-132AR-0426-SM-5IFH8", "GTEX-13OVJ-1026-SM-5IFGI", "GTEX-PWOO-0826-SM-48TCL", "GTEX-Y5LM-0426-SM-4VBRO", "GTEX-11GSP-0626-SM-5986T", "GTEX-11ZVC-0726-SM-5FQT9", "GTEX-1269C-0626-SM-5FQSS", "GTEX-12WSD-1426-SM-5GCN9", "GTEX-131YS-1626-SM-5HL6C", "GTEX-13N11-0926-SM-5IJG2", "GTEX-13PVR-0126-SM-5S2PY", "GTEX-13QJC-0726-SM-5RQJK", "GTEX-14A5I-1726-SM-5QGQ5", "GTEX-14AS3-0126-SM-5Q5F4", "GTEX-14DAQ-1726-SM-5S2R2", "GTEX-P78B-1326-SM-3P611", "GTEX-PX3G-0826-SM-48TZS", "GTEX-S32W-1926-SM-4AD63", "GTEX-TSE9-1126-SM-5CHRH_rep1", "GTEX-TSE9-1126-SM-5CHRH_rep2", "GTEX-U3ZN-0226-SM-3DB8D", "GTEX-W5X1-0126-SM-5CHR9_rep1", "GTEX-WYVS-1926-SM-4SOIC", "GTEX-WYVS-1926-SM-4PQZ2", "GTEX-ZF29-2026-SM-4WWB7", "GTEX-ZTPG-1426-SM-51MT3", "GTEX-ZVT3-1626-SM-5GU66", "GTEX-ZYY3-0626-SM-5NQ6W"],
+  "males_ALL": ["GTEX-11DXY-0526-SM-5EGGQ", "GTEX-11DXZ-0126-SM-5EGGY", "GTEX-11EQ9-0526-SM-5A5JZ", "GTEX-1212Z-0226-SM-59HLF", "GTEX-12WSL-0226-SM-5CVMJ", "GTEX-12WSM-0726-SM-5GCOW", "GTEX-12ZZZ-1326-SM-59HKW", "GTEX-131XE-0326-SM-5LZVO", "GTEX-131XH-0626-SM-5LZWH", "GTEX-132NY-0926-SM-5P9G3", "GTEX-1399R-1226-SM-5P9GF", "GTEX-139TS-1426-SM-5IFJD", "GTEX-139YR-0226-SM-5IFEM", "GTEX-13FLV-0326-SM-5N9DJ", "GTEX-13N2G-0926-SM-5IFGJ", "GTEX-145MO-2326-SM-5NQ9K", "GTEX-1497J-0726-SM-5Q5D1", "GTEX-14C38-1526-SM-5RQJ7", "GTEX-QESD-2026-SM-447BI", "GTEX-QV44-0326-SM-4R1KD", "GTEX-RM2N-1926-SM-48FCU", "GTEX-RN64-1826-SM-48FDV", "GTEX-S4Z8-0526-SM-4AD4T", "GTEX-TKQ2-1726-SM-4DXUP", "GTEX-UPK5-1426-SM-4JBHH", "GTEX-WFON-1726-SM-4LVMQ", "GTEX-WQUQ-1926-SM-4OOSA", "GTEX-WZTO-0626-SM-4PQYY", "GTEX-X3Y1-2726-SM-4PQZH", "GTEX-X4XY-1626-SM-46MVN", "GTEX-XBEC-1526-SM-4AT68", "GTEX-YECK-1926-SM-4W21H", "GTEX-ZAB5-0426-SM-5CVMI", "GTEX-ZPU1-0826-SM-57WG2", "GTEX-ZYT6-0626-SM-5E45V", "GTEX-11TT1-1726-SM-5EQLJ", "GTEX-139UC-1426-SM-5IJGH", "GTEX-13O1R-2026-SM-5KM3N", "GTEX-144GM-1326-SM-5LU5E", "GTEX-145LU-1326-SM-5LU9N", "GTEX-O5YT-0826-SM-3TW8N", "GTEX-P44G-1126-SM-3NM9D", "GTEX-U8XE-1526-SM-4E3HT", "GTEX-WK11-1326-SM-4OOSI", "GTEX-WY7C-0726-SM-4ONCB", "GTEX-XOTO-0826-SM-4B65O", "GTEX-ZEX8-0826-SM-4WKHK", "GTEX-1192X-1026-SM-5H12P", "GTEX-11NUK-1226-SM-5P9GM", "GTEX-11NV4-1326-SM-5HL6V", "GTEX-11OF3-0726-SM-5BC4Z", "GTEX-11TUW-1726-SM-5BC5C", "GTEX-11UD2-1626-SM-5EQM3", "GTEX-11WQC-0726-SM-5EQMR", "GTEX-11ZUS-2526-SM-59872", "GTEX-12696-0826-SM-5EGGE", "GTEX-12KS4-1326-SM-5LUB3", "GTEX-12WSI-0226-SM-5GCNA", "GTEX-13112-1426-SM-5EGH8", "GTEX-1399T-0826-SM-5IFES", "GTEX-139TU-0826-SM-5IJFG", "GTEX-13FTW-1126-SM-5J2NV", "GTEX-13FTZ-0726-SM-5IFFY", "GTEX-13NYB-1026-SM-5IFH3", "GTEX-13NZ9-1326-SM-5MR3V", "GTEX-13NZB-0626-SM-5IFH6", "GTEX-13OW6-2626-SM-5IFF2", "GTEX-13PVQ-1526-SM-5IFEQ", "GTEX-13VXU-0926-SM-5IFFH", "GTEX-145MF-0826-SM-5QGQA", "GTEX-14753-1626-SM-5NQ9L", "GTEX-147F4-1426-SM-5LUA8", "GTEX-147JS-1126-SM-5RQIW", "GTEX-14E1K-0326-SM-5S2PE", "GTEX-OOBJ-0826-SM-3NB2K", "GTEX-QDVN-0826-SM-48TZ2", "GTEX-QEG4-1826-SM-4R1JN", "GTEX-REY6-1226-SM-48FDR", "GTEX-RWSA-1426-SM-47JXA", "GTEX-S33H-1626-SM-4AD68", "GTEX-SJXC-1226-SM-4DM78", "GTEX-T6MN-1226-SM-5CHSL_rep1", "GTEX-T6MN-1226-SM-3NMA5", "GTEX-U8XE-1526-SM-5CHRK_rep1", "GTEX-UTHO-2426-SM-4JBHD", "GTEX-VUSG-0126-SM-4KL1X", "GTEX-WFON-1726-SM-5CHT5_rep1", "GTEX-X261-1726-SM-4PQYT", "GTEX-XXEK-1126-SM-4BRUX", "GTEX-YB5E-0326-SM-5IFHU", "GTEX-YEC4-0826-SM-5P9FV", "GTEX-Z9EW-0426-SM-5CVM9", "GTEX-ZAB4-0826-SM-5LU9D", "GTEX-ZVP2-0626-SM-51MSO"],
+
+    "GTEX-1192X-1026-SM-5H12P":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-1192X-1026-SM-5H12P/GTEX-1192X-1026-SM-5H12P_fixed_1.fastq",
+        "fq2": "GTEX-1192X-1026-SM-5H12P/GTEX-1192X-1026-SM-5H12P_fixed_2.fastq",
+        "fq1_sy": "GTEX-1192X-1026-SM-5H12P_1.fastq",
+        "fq2_sy": "GTEX-1192X-1026-SM-5H12P_2.fastq",
+        "ID": "GTEX-1192X-1026-SM-5H12P",
+        "SM": "GTEX-1192X-1026-SM-5H12P",
+        "LB": "GTEX-1192X-1026-SM-5H12P",
+        "PU": "GTEX-1192X-1026-SM-5H12P",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11DXY-0526-SM-5EGGQ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-11DXY-0526-SM-5EGGQ/GTEX-11DXY-0526-SM-5EGGQ_fixed_1.fastq",
+        "fq2": "GTEX-11DXY-0526-SM-5EGGQ/GTEX-11DXY-0526-SM-5EGGQ_fixed_2.fastq",
+        "fq1_sy": "GTEX-11DXY-0526-SM-5EGGQ_1.fastq",
+        "fq2_sy": "GTEX-11DXY-0526-SM-5EGGQ_2.fastq",
+        "ID": "GTEX-11DXY-0526-SM-5EGGQ",
+        "SM": "GTEX-11DXY-0526-SM-5EGGQ",
+        "LB": "GTEX-11DXY-0526-SM-5EGGQ",
+        "PU": "GTEX-11DXY-0526-SM-5EGGQ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11DXZ-0126-SM-5EGGY":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-11DXZ-0126-SM-5EGGY/GTEX-11DXZ-0126-SM-5EGGY_fixed_1.fastq",
+        "fq2": "GTEX-11DXZ-0126-SM-5EGGY/GTEX-11DXZ-0126-SM-5EGGY_fixed_2.fastq",
+        "fq1_sy": "GTEX-11DXZ-0126-SM-5EGGY_1.fastq",
+        "fq2_sy": "GTEX-11DXZ-0126-SM-5EGGY_2.fastq",
+        "ID": "GTEX-11DXZ-0126-SM-5EGGY",
+        "SM": "GTEX-11DXZ-0126-SM-5EGGY",
+        "LB": "GTEX-11DXZ-0126-SM-5EGGY",
+        "PU": "GTEX-11DXZ-0126-SM-5EGGY",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11EQ9-0526-SM-5A5JZ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-11EQ9-0526-SM-5A5JZ/GTEX-11EQ9-0526-SM-5A5JZ_fixed_1.fastq",
+        "fq2": "GTEX-11EQ9-0526-SM-5A5JZ/GTEX-11EQ9-0526-SM-5A5JZ_fixed_2.fastq",
+        "fq1_sy": "GTEX-11EQ9-0526-SM-5A5JZ_1.fastq",
+        "fq2_sy": "GTEX-11EQ9-0526-SM-5A5JZ_2.fastq",
+        "ID": "GTEX-11EQ9-0526-SM-5A5JZ",
+        "SM": "GTEX-11EQ9-0526-SM-5A5JZ",
+        "LB": "GTEX-11EQ9-0526-SM-5A5JZ",
+        "PU": "GTEX-11EQ9-0526-SM-5A5JZ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11GSP-0626-SM-5986T":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-11GSP-0626-SM-5986T/GTEX-11GSP-0626-SM-5986T_fixed_1.fastq",
+        "fq2": "GTEX-11GSP-0626-SM-5986T/GTEX-11GSP-0626-SM-5986T_fixed_2.fastq",
+        "fq1_sy": "GTEX-11GSP-0626-SM-5986T_1.fastq",
+        "fq2_sy": "GTEX-11GSP-0626-SM-5986T_2.fastq",
+        "ID": "GTEX-11GSP-0626-SM-5986T",
+        "SM": "GTEX-11GSP-0626-SM-5986T",
+        "LB": "GTEX-11GSP-0626-SM-5986T",
+        "PU": "GTEX-11GSP-0626-SM-5986T",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11NUK-1226-SM-5P9GM":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-11NUK-1226-SM-5P9GM/GTEX-11NUK-1226-SM-5P9GM_fixed_1.fastq",
+        "fq2": "GTEX-11NUK-1226-SM-5P9GM/GTEX-11NUK-1226-SM-5P9GM_fixed_2.fastq",
+        "fq1_sy": "GTEX-11NUK-1226-SM-5P9GM_1.fastq",
+        "fq2_sy": "GTEX-11NUK-1226-SM-5P9GM_2.fastq",
+        "ID": "GTEX-11NUK-1226-SM-5P9GM",
+        "SM": "GTEX-11NUK-1226-SM-5P9GM",
+        "LB": "GTEX-11NUK-1226-SM-5P9GM",
+        "PU": "GTEX-11NUK-1226-SM-5P9GM",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11NV4-1326-SM-5HL6V":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-11NV4-1326-SM-5HL6V/GTEX-11NV4-1326-SM-5HL6V_fixed_1.fastq",
+        "fq2": "GTEX-11NV4-1326-SM-5HL6V/GTEX-11NV4-1326-SM-5HL6V_fixed_2.fastq",
+        "fq1_sy": "GTEX-11NV4-1326-SM-5HL6V_1.fastq",
+        "fq2_sy": "GTEX-11NV4-1326-SM-5HL6V_2.fastq",
+        "ID": "GTEX-11NV4-1326-SM-5HL6V",
+        "SM": "GTEX-11NV4-1326-SM-5HL6V",
+        "LB": "GTEX-11NV4-1326-SM-5HL6V",
+        "PU": "GTEX-11NV4-1326-SM-5HL6V",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11OF3-0726-SM-5BC4Z":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-11OF3-0726-SM-5BC4Z/GTEX-11OF3-0726-SM-5BC4Z_fixed_1.fastq",
+        "fq2": "GTEX-11OF3-0726-SM-5BC4Z/GTEX-11OF3-0726-SM-5BC4Z_fixed_2.fastq",
+        "fq1_sy": "GTEX-11OF3-0726-SM-5BC4Z_1.fastq",
+        "fq2_sy": "GTEX-11OF3-0726-SM-5BC4Z_2.fastq",
+        "ID": "GTEX-11OF3-0726-SM-5BC4Z",
+        "SM": "GTEX-11OF3-0726-SM-5BC4Z",
+        "LB": "GTEX-11OF3-0726-SM-5BC4Z",
+        "PU": "GTEX-11OF3-0726-SM-5BC4Z",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11TT1-1726-SM-5EQLJ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-11TT1-1726-SM-5EQLJ/GTEX-11TT1-1726-SM-5EQLJ_fixed_1.fastq",
+        "fq2": "GTEX-11TT1-1726-SM-5EQLJ/GTEX-11TT1-1726-SM-5EQLJ_fixed_2.fastq",
+        "fq1_sy": "GTEX-11TT1-1726-SM-5EQLJ_1.fastq",
+        "fq2_sy": "GTEX-11TT1-1726-SM-5EQLJ_2.fastq",
+        "ID": "GTEX-11TT1-1726-SM-5EQLJ",
+        "SM": "GTEX-11TT1-1726-SM-5EQLJ",
+        "LB": "GTEX-11TT1-1726-SM-5EQLJ",
+        "PU": "GTEX-11TT1-1726-SM-5EQLJ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11TUW-1726-SM-5BC5C":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-11TUW-1726-SM-5BC5C/GTEX-11TUW-1726-SM-5BC5C_fixed_1.fastq",
+        "fq2": "GTEX-11TUW-1726-SM-5BC5C/GTEX-11TUW-1726-SM-5BC5C_fixed_2.fastq",
+        "fq1_sy": "GTEX-11TUW-1726-SM-5BC5C_1.fastq",
+        "fq2_sy": "GTEX-11TUW-1726-SM-5BC5C_2.fastq",
+        "ID": "GTEX-11TUW-1726-SM-5BC5C",
+        "SM": "GTEX-11TUW-1726-SM-5BC5C",
+        "LB": "GTEX-11TUW-1726-SM-5BC5C",
+        "PU": "GTEX-11TUW-1726-SM-5BC5C",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11UD2-1626-SM-5EQM3":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-11UD2-1626-SM-5EQM3/GTEX-11UD2-1626-SM-5EQM3_fixed_1.fastq",
+        "fq2": "GTEX-11UD2-1626-SM-5EQM3/GTEX-11UD2-1626-SM-5EQM3_fixed_2.fastq",
+        "fq1_sy": "GTEX-11UD2-1626-SM-5EQM3_1.fastq",
+        "fq2_sy": "GTEX-11UD2-1626-SM-5EQM3_2.fastq",
+        "ID": "GTEX-11UD2-1626-SM-5EQM3",
+        "SM": "GTEX-11UD2-1626-SM-5EQM3",
+        "LB": "GTEX-11UD2-1626-SM-5EQM3",
+        "PU": "GTEX-11UD2-1626-SM-5EQM3",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11WQC-0726-SM-5EQMR":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-11WQC-0726-SM-5EQMR/GTEX-11WQC-0726-SM-5EQMR_fixed_1.fastq",
+        "fq2": "GTEX-11WQC-0726-SM-5EQMR/GTEX-11WQC-0726-SM-5EQMR_fixed_2.fastq",
+        "fq1_sy": "GTEX-11WQC-0726-SM-5EQMR_1.fastq",
+        "fq2_sy": "GTEX-11WQC-0726-SM-5EQMR_2.fastq",
+        "ID": "GTEX-11WQC-0726-SM-5EQMR",
+        "SM": "GTEX-11WQC-0726-SM-5EQMR",
+        "LB": "GTEX-11WQC-0726-SM-5EQMR",
+        "PU": "GTEX-11WQC-0726-SM-5EQMR",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11ZTS-1426-SM-5EQMM":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-11ZTS-1426-SM-5EQMM/GTEX-11ZTS-1426-SM-5EQMM_fixed_1.fastq",
+        "fq2": "GTEX-11ZTS-1426-SM-5EQMM/GTEX-11ZTS-1426-SM-5EQMM_fixed_2.fastq",
+        "fq1_sy": "GTEX-11ZTS-1426-SM-5EQMM_1.fastq",
+        "fq2_sy": "GTEX-11ZTS-1426-SM-5EQMM_2.fastq",
+        "ID": "GTEX-11ZTS-1426-SM-5EQMM",
+        "SM": "GTEX-11ZTS-1426-SM-5EQMM",
+        "LB": "GTEX-11ZTS-1426-SM-5EQMM",
+        "PU": "GTEX-11ZTS-1426-SM-5EQMM",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11ZUS-2526-SM-59872":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-11ZUS-2526-SM-59872/GTEX-11ZUS-2526-SM-59872_fixed_1.fastq",
+        "fq2": "GTEX-11ZUS-2526-SM-59872/GTEX-11ZUS-2526-SM-59872_fixed_2.fastq",
+        "fq1_sy": "GTEX-11ZUS-2526-SM-59872_1.fastq",
+        "fq2_sy": "GTEX-11ZUS-2526-SM-59872_2.fastq",
+        "ID": "GTEX-11ZUS-2526-SM-59872",
+        "SM": "GTEX-11ZUS-2526-SM-59872",
+        "LB": "GTEX-11ZUS-2526-SM-59872",
+        "PU": "GTEX-11ZUS-2526-SM-59872",
+        "PL": "Illumina"
+    },
+
+    "GTEX-11ZVC-0726-SM-5FQT9":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-11ZVC-0726-SM-5FQT9/GTEX-11ZVC-0726-SM-5FQT9_fixed_1.fastq",
+        "fq2": "GTEX-11ZVC-0726-SM-5FQT9/GTEX-11ZVC-0726-SM-5FQT9_fixed_2.fastq",
+        "fq1_sy": "GTEX-11ZVC-0726-SM-5FQT9_1.fastq",
+        "fq2_sy": "GTEX-11ZVC-0726-SM-5FQT9_2.fastq",
+        "ID": "GTEX-11ZVC-0726-SM-5FQT9",
+        "SM": "GTEX-11ZVC-0726-SM-5FQT9",
+        "LB": "GTEX-11ZVC-0726-SM-5FQT9",
+        "PU": "GTEX-11ZVC-0726-SM-5FQT9",
+        "PL": "Illumina"
+    },
+
+    "GTEX-1212Z-0226-SM-59HLF":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-1212Z-0226-SM-59HLF/GTEX-1212Z-0226-SM-59HLF_fixed_1.fastq",
+        "fq2": "GTEX-1212Z-0226-SM-59HLF/GTEX-1212Z-0226-SM-59HLF_fixed_2.fastq",
+        "fq1_sy": "GTEX-1212Z-0226-SM-59HLF_1.fastq",
+        "fq2_sy": "GTEX-1212Z-0226-SM-59HLF_2.fastq",
+        "ID": "GTEX-1212Z-0226-SM-59HLF",
+        "SM": "GTEX-1212Z-0226-SM-59HLF",
+        "LB": "GTEX-1212Z-0226-SM-59HLF",
+        "PU": "GTEX-1212Z-0226-SM-59HLF",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12696-0826-SM-5EGGE":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-12696-0826-SM-5EGGE/GTEX-12696-0826-SM-5EGGE_fixed_1.fastq",
+        "fq2": "GTEX-12696-0826-SM-5EGGE/GTEX-12696-0826-SM-5EGGE_fixed_2.fastq",
+        "fq1_sy": "GTEX-12696-0826-SM-5EGGE_1.fastq",
+        "fq2_sy": "GTEX-12696-0826-SM-5EGGE_2.fastq",
+        "ID": "GTEX-12696-0826-SM-5EGGE",
+        "SM": "GTEX-12696-0826-SM-5EGGE",
+        "LB": "GTEX-12696-0826-SM-5EGGE",
+        "PU": "GTEX-12696-0826-SM-5EGGE",
+        "PL": "Illumina"
+    },
+
+    "GTEX-1269C-0626-SM-5FQSS":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-1269C-0626-SM-5FQSS/GTEX-1269C-0626-SM-5FQSS_fixed_1.fastq",
+        "fq2": "GTEX-1269C-0626-SM-5FQSS/GTEX-1269C-0626-SM-5FQSS_fixed_2.fastq",
+        "fq1_sy": "GTEX-1269C-0626-SM-5FQSS_1.fastq",
+        "fq2_sy": "GTEX-1269C-0626-SM-5FQSS_2.fastq",
+        "ID": "GTEX-1269C-0626-SM-5FQSS",
+        "SM": "GTEX-1269C-0626-SM-5FQSS",
+        "LB": "GTEX-1269C-0626-SM-5FQSS",
+        "PU": "GTEX-1269C-0626-SM-5FQSS",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12KS4-1326-SM-5LUB3":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-12KS4-1326-SM-5LUB3/GTEX-12KS4-1326-SM-5LUB3_fixed_1.fastq",
+        "fq2": "GTEX-12KS4-1326-SM-5LUB3/GTEX-12KS4-1326-SM-5LUB3_fixed_2.fastq",
+        "fq1_sy": "GTEX-12KS4-1326-SM-5LUB3_1.fastq",
+        "fq2_sy": "GTEX-12KS4-1326-SM-5LUB3_2.fastq",
+        "ID": "GTEX-12KS4-1326-SM-5LUB3",
+        "SM": "GTEX-12KS4-1326-SM-5LUB3",
+        "LB": "GTEX-12KS4-1326-SM-5LUB3",
+        "PU": "GTEX-12KS4-1326-SM-5LUB3",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12WSD-1426-SM-5GCN9":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-12WSD-1426-SM-5GCN9/GTEX-12WSD-1426-SM-5GCN9_fixed_1.fastq",
+        "fq2": "GTEX-12WSD-1426-SM-5GCN9/GTEX-12WSD-1426-SM-5GCN9_fixed_2.fastq",
+        "fq1_sy": "GTEX-12WSD-1426-SM-5GCN9_1.fastq",
+        "fq2_sy": "GTEX-12WSD-1426-SM-5GCN9_2.fastq",
+        "ID": "GTEX-12WSD-1426-SM-5GCN9",
+        "SM": "GTEX-12WSD-1426-SM-5GCN9",
+        "LB": "GTEX-12WSD-1426-SM-5GCN9",
+        "PU": "GTEX-12WSD-1426-SM-5GCN9",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12WSG-0626-SM-5FQTQ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-12WSG-0626-SM-5FQTQ/GTEX-12WSG-0626-SM-5FQTQ_fixed_1.fastq",
+        "fq2": "GTEX-12WSG-0626-SM-5FQTQ/GTEX-12WSG-0626-SM-5FQTQ_fixed_2.fastq",
+        "fq1_sy": "GTEX-12WSG-0626-SM-5FQTQ_1.fastq",
+        "fq2_sy": "GTEX-12WSG-0626-SM-5FQTQ_2.fastq",
+        "ID": "GTEX-12WSG-0626-SM-5FQTQ",
+        "SM": "GTEX-12WSG-0626-SM-5FQTQ",
+        "LB": "GTEX-12WSG-0626-SM-5FQTQ",
+        "PU": "GTEX-12WSG-0626-SM-5FQTQ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12WSI-0226-SM-5GCNA":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-12WSI-0226-SM-5GCNA/GTEX-12WSI-0226-SM-5GCNA_fixed_1.fastq",
+        "fq2": "GTEX-12WSI-0226-SM-5GCNA/GTEX-12WSI-0226-SM-5GCNA_fixed_2.fastq",
+        "fq1_sy": "GTEX-12WSI-0226-SM-5GCNA_1.fastq",
+        "fq2_sy": "GTEX-12WSI-0226-SM-5GCNA_2.fastq",
+        "ID": "GTEX-12WSI-0226-SM-5GCNA",
+        "SM": "GTEX-12WSI-0226-SM-5GCNA",
+        "LB": "GTEX-12WSI-0226-SM-5GCNA",
+        "PU": "GTEX-12WSI-0226-SM-5GCNA",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12WSL-0226-SM-5CVMJ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-12WSL-0226-SM-5CVMJ/GTEX-12WSL-0226-SM-5CVMJ_fixed_1.fastq",
+        "fq2": "GTEX-12WSL-0226-SM-5CVMJ/GTEX-12WSL-0226-SM-5CVMJ_fixed_2.fastq",
+        "fq1_sy": "GTEX-12WSL-0226-SM-5CVMJ_1.fastq",
+        "fq2_sy": "GTEX-12WSL-0226-SM-5CVMJ_2.fastq",
+        "ID": "GTEX-12WSL-0226-SM-5CVMJ",
+        "SM": "GTEX-12WSL-0226-SM-5CVMJ",
+        "LB": "GTEX-12WSL-0226-SM-5CVMJ",
+        "PU": "GTEX-12WSL-0226-SM-5CVMJ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12WSM-0726-SM-5GCOW":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-12WSM-0726-SM-5GCOW/GTEX-12WSM-0726-SM-5GCOW_fixed_1.fastq",
+        "fq2": "GTEX-12WSM-0726-SM-5GCOW/GTEX-12WSM-0726-SM-5GCOW_fixed_2.fastq",
+        "fq1_sy": "GTEX-12WSM-0726-SM-5GCOW_1.fastq",
+        "fq2_sy": "GTEX-12WSM-0726-SM-5GCOW_2.fastq",
+        "ID": "GTEX-12WSM-0726-SM-5GCOW",
+        "SM": "GTEX-12WSM-0726-SM-5GCOW",
+        "LB": "GTEX-12WSM-0726-SM-5GCOW",
+        "PU": "GTEX-12WSM-0726-SM-5GCOW",
+        "PL": "Illumina"
+    },
+
+    "GTEX-12ZZZ-1326-SM-59HKW":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-12ZZZ-1326-SM-59HKW/GTEX-12ZZZ-1326-SM-59HKW_fixed_1.fastq",
+        "fq2": "GTEX-12ZZZ-1326-SM-59HKW/GTEX-12ZZZ-1326-SM-59HKW_fixed_2.fastq",
+        "fq1_sy": "GTEX-12ZZZ-1326-SM-59HKW_1.fastq",
+        "fq2_sy": "GTEX-12ZZZ-1326-SM-59HKW_2.fastq",
+        "ID": "GTEX-12ZZZ-1326-SM-59HKW",
+        "SM": "GTEX-12ZZZ-1326-SM-59HKW",
+        "LB": "GTEX-12ZZZ-1326-SM-59HKW",
+        "PU": "GTEX-12ZZZ-1326-SM-59HKW",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13112-1426-SM-5EGH8":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13112-1426-SM-5EGH8/GTEX-13112-1426-SM-5EGH8_fixed_1.fastq",
+        "fq2": "GTEX-13112-1426-SM-5EGH8/GTEX-13112-1426-SM-5EGH8_fixed_2.fastq",
+        "fq1_sy": "GTEX-13112-1426-SM-5EGH8_1.fastq",
+        "fq2_sy": "GTEX-13112-1426-SM-5EGH8_2.fastq",
+        "ID": "GTEX-13112-1426-SM-5EGH8",
+        "SM": "GTEX-13112-1426-SM-5EGH8",
+        "LB": "GTEX-13112-1426-SM-5EGH8",
+        "PU": "GTEX-13112-1426-SM-5EGH8",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13113-1326-SM-5GCOI":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13113-1326-SM-5GCOI/GTEX-13113-1326-SM-5GCOI_fixed_1.fastq",
+        "fq2": "GTEX-13113-1326-SM-5GCOI/GTEX-13113-1326-SM-5GCOI_fixed_2.fastq",
+        "fq1_sy": "GTEX-13113-1326-SM-5GCOI_1.fastq",
+        "fq2_sy": "GTEX-13113-1326-SM-5GCOI_2.fastq",
+        "ID": "GTEX-13113-1326-SM-5GCOI",
+        "SM": "GTEX-13113-1326-SM-5GCOI",
+        "LB": "GTEX-13113-1326-SM-5GCOI",
+        "PU": "GTEX-13113-1326-SM-5GCOI",
+        "PL": "Illumina"
+    },
+
+    "GTEX-131XE-0326-SM-5LZVO":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-131XE-0326-SM-5LZVO/GTEX-131XE-0326-SM-5LZVO_fixed_1.fastq",
+        "fq2": "GTEX-131XE-0326-SM-5LZVO/GTEX-131XE-0326-SM-5LZVO_fixed_2.fastq",
+        "fq1_sy": "GTEX-131XE-0326-SM-5LZVO_1.fastq",
+        "fq2_sy": "GTEX-131XE-0326-SM-5LZVO_2.fastq",
+        "ID": "GTEX-131XE-0326-SM-5LZVO",
+        "SM": "GTEX-131XE-0326-SM-5LZVO",
+        "LB": "GTEX-131XE-0326-SM-5LZVO",
+        "PU": "GTEX-131XE-0326-SM-5LZVO",
+        "PL": "Illumina"
+    },
+
+    "GTEX-131XH-0626-SM-5LZWH":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-131XH-0626-SM-5LZWH/GTEX-131XH-0626-SM-5LZWH_fixed_1.fastq",
+        "fq2": "GTEX-131XH-0626-SM-5LZWH/GTEX-131XH-0626-SM-5LZWH_fixed_2.fastq",
+        "fq1_sy": "GTEX-131XH-0626-SM-5LZWH_1.fastq",
+        "fq2_sy": "GTEX-131XH-0626-SM-5LZWH_2.fastq",
+        "ID": "GTEX-131XH-0626-SM-5LZWH",
+        "SM": "GTEX-131XH-0626-SM-5LZWH",
+        "LB": "GTEX-131XH-0626-SM-5LZWH",
+        "PU": "GTEX-131XH-0626-SM-5LZWH",
+        "PL": "Illumina"
+    },
+
+    "GTEX-131YS-1626-SM-5HL6C":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-131YS-1626-SM-5HL6C/GTEX-131YS-1626-SM-5HL6C_fixed_1.fastq",
+        "fq2": "GTEX-131YS-1626-SM-5HL6C/GTEX-131YS-1626-SM-5HL6C_fixed_2.fastq",
+        "fq1_sy": "GTEX-131YS-1626-SM-5HL6C_1.fastq",
+        "fq2_sy": "GTEX-131YS-1626-SM-5HL6C_2.fastq",
+        "ID": "GTEX-131YS-1626-SM-5HL6C",
+        "SM": "GTEX-131YS-1626-SM-5HL6C",
+        "LB": "GTEX-131YS-1626-SM-5HL6C",
+        "PU": "GTEX-131YS-1626-SM-5HL6C",
+        "PL": "Illumina"
+    },
+
+    "GTEX-132AR-0426-SM-5IFH8":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-132AR-0426-SM-5IFH8/GTEX-132AR-0426-SM-5IFH8_fixed_1.fastq",
+        "fq2": "GTEX-132AR-0426-SM-5IFH8/GTEX-132AR-0426-SM-5IFH8_fixed_2.fastq",
+        "fq1_sy": "GTEX-132AR-0426-SM-5IFH8_1.fastq",
+        "fq2_sy": "GTEX-132AR-0426-SM-5IFH8_2.fastq",
+        "ID": "GTEX-132AR-0426-SM-5IFH8",
+        "SM": "GTEX-132AR-0426-SM-5IFH8",
+        "LB": "GTEX-132AR-0426-SM-5IFH8",
+        "PU": "GTEX-132AR-0426-SM-5IFH8",
+        "PL": "Illumina"
+    },
+
+    "GTEX-132NY-0926-SM-5P9G3":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-132NY-0926-SM-5P9G3/GTEX-132NY-0926-SM-5P9G3_fixed_1.fastq",
+        "fq2": "GTEX-132NY-0926-SM-5P9G3/GTEX-132NY-0926-SM-5P9G3_fixed_2.fastq",
+        "fq1_sy": "GTEX-132NY-0926-SM-5P9G3_1.fastq",
+        "fq2_sy": "GTEX-132NY-0926-SM-5P9G3_2.fastq",
+        "ID": "GTEX-132NY-0926-SM-5P9G3",
+        "SM": "GTEX-132NY-0926-SM-5P9G3",
+        "LB": "GTEX-132NY-0926-SM-5P9G3",
+        "PU": "GTEX-132NY-0926-SM-5P9G3",
+        "PL": "Illumina"
+    },
+
+    "GTEX-1399R-1226-SM-5P9GF":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-1399R-1226-SM-5P9GF/GTEX-1399R-1226-SM-5P9GF_fixed_1.fastq",
+        "fq2": "GTEX-1399R-1226-SM-5P9GF/GTEX-1399R-1226-SM-5P9GF_fixed_2.fastq",
+        "fq1_sy": "GTEX-1399R-1226-SM-5P9GF_1.fastq",
+        "fq2_sy": "GTEX-1399R-1226-SM-5P9GF_2.fastq",
+        "ID": "GTEX-1399R-1226-SM-5P9GF",
+        "SM": "GTEX-1399R-1226-SM-5P9GF",
+        "LB": "GTEX-1399R-1226-SM-5P9GF",
+        "PU": "GTEX-1399R-1226-SM-5P9GF",
+        "PL": "Illumina"
+    },
+
+    "GTEX-1399T-0826-SM-5IFES":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-1399T-0826-SM-5IFES/GTEX-1399T-0826-SM-5IFES_fixed_1.fastq",
+        "fq2": "GTEX-1399T-0826-SM-5IFES/GTEX-1399T-0826-SM-5IFES_fixed_2.fastq",
+        "fq1_sy": "GTEX-1399T-0826-SM-5IFES_1.fastq",
+        "fq2_sy": "GTEX-1399T-0826-SM-5IFES_2.fastq",
+        "ID": "GTEX-1399T-0826-SM-5IFES",
+        "SM": "GTEX-1399T-0826-SM-5IFES",
+        "LB": "GTEX-1399T-0826-SM-5IFES",
+        "PU": "GTEX-1399T-0826-SM-5IFES",
+        "PL": "Illumina"
+    },
+
+    "GTEX-139TS-1426-SM-5IFJD":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-139TS-1426-SM-5IFJD/GTEX-139TS-1426-SM-5IFJD_fixed_1.fastq",
+        "fq2": "GTEX-139TS-1426-SM-5IFJD/GTEX-139TS-1426-SM-5IFJD_fixed_2.fastq",
+        "fq1_sy": "GTEX-139TS-1426-SM-5IFJD_1.fastq",
+        "fq2_sy": "GTEX-139TS-1426-SM-5IFJD_2.fastq",
+        "ID": "GTEX-139TS-1426-SM-5IFJD",
+        "SM": "GTEX-139TS-1426-SM-5IFJD",
+        "LB": "GTEX-139TS-1426-SM-5IFJD",
+        "PU": "GTEX-139TS-1426-SM-5IFJD",
+        "PL": "Illumina"
+    },
+
+    "GTEX-139TU-0826-SM-5IJFG":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-139TU-0826-SM-5IJFG/GTEX-139TU-0826-SM-5IJFG_fixed_1.fastq",
+        "fq2": "GTEX-139TU-0826-SM-5IJFG/GTEX-139TU-0826-SM-5IJFG_fixed_2.fastq",
+        "fq1_sy": "GTEX-139TU-0826-SM-5IJFG_1.fastq",
+        "fq2_sy": "GTEX-139TU-0826-SM-5IJFG_2.fastq",
+        "ID": "GTEX-139TU-0826-SM-5IJFG",
+        "SM": "GTEX-139TU-0826-SM-5IJFG",
+        "LB": "GTEX-139TU-0826-SM-5IJFG",
+        "PU": "GTEX-139TU-0826-SM-5IJFG",
+        "PL": "Illumina"
+    },
+
+    "GTEX-139UC-1426-SM-5IJGH":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-139UC-1426-SM-5IJGH/GTEX-139UC-1426-SM-5IJGH_fixed_1.fastq",
+        "fq2": "GTEX-139UC-1426-SM-5IJGH/GTEX-139UC-1426-SM-5IJGH_fixed_2.fastq",
+        "fq1_sy": "GTEX-139UC-1426-SM-5IJGH_1.fastq",
+        "fq2_sy": "GTEX-139UC-1426-SM-5IJGH_2.fastq",
+        "ID": "GTEX-139UC-1426-SM-5IJGH",
+        "SM": "GTEX-139UC-1426-SM-5IJGH",
+        "LB": "GTEX-139UC-1426-SM-5IJGH",
+        "PU": "GTEX-139UC-1426-SM-5IJGH",
+        "PL": "Illumina"
+    },
+
+    "GTEX-139YR-0226-SM-5IFEM":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-139YR-0226-SM-5IFEM/GTEX-139YR-0226-SM-5IFEM_fixed_1.fastq",
+        "fq2": "GTEX-139YR-0226-SM-5IFEM/GTEX-139YR-0226-SM-5IFEM_fixed_2.fastq",
+        "fq1_sy": "GTEX-139YR-0226-SM-5IFEM_1.fastq",
+        "fq2_sy": "GTEX-139YR-0226-SM-5IFEM_2.fastq",
+        "ID": "GTEX-139YR-0226-SM-5IFEM",
+        "SM": "GTEX-139YR-0226-SM-5IFEM",
+        "LB": "GTEX-139YR-0226-SM-5IFEM",
+        "PU": "GTEX-139YR-0226-SM-5IFEM",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13FLV-0326-SM-5N9DJ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13FLV-0326-SM-5N9DJ/GTEX-13FLV-0326-SM-5N9DJ_fixed_1.fastq",
+        "fq2": "GTEX-13FLV-0326-SM-5N9DJ/GTEX-13FLV-0326-SM-5N9DJ_fixed_2.fastq",
+        "fq1_sy": "GTEX-13FLV-0326-SM-5N9DJ_1.fastq",
+        "fq2_sy": "GTEX-13FLV-0326-SM-5N9DJ_2.fastq",
+        "ID": "GTEX-13FLV-0326-SM-5N9DJ",
+        "SM": "GTEX-13FLV-0326-SM-5N9DJ",
+        "LB": "GTEX-13FLV-0326-SM-5N9DJ",
+        "PU": "GTEX-13FLV-0326-SM-5N9DJ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13FTW-1126-SM-5J2NV":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13FTW-1126-SM-5J2NV/GTEX-13FTW-1126-SM-5J2NV_fixed_1.fastq",
+        "fq2": "GTEX-13FTW-1126-SM-5J2NV/GTEX-13FTW-1126-SM-5J2NV_fixed_2.fastq",
+        "fq1_sy": "GTEX-13FTW-1126-SM-5J2NV_1.fastq",
+        "fq2_sy": "GTEX-13FTW-1126-SM-5J2NV_2.fastq",
+        "ID": "GTEX-13FTW-1126-SM-5J2NV",
+        "SM": "GTEX-13FTW-1126-SM-5J2NV",
+        "LB": "GTEX-13FTW-1126-SM-5J2NV",
+        "PU": "GTEX-13FTW-1126-SM-5J2NV",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13FTZ-0726-SM-5IFFY":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13FTZ-0726-SM-5IFFY/GTEX-13FTZ-0726-SM-5IFFY_fixed_1.fastq",
+        "fq2": "GTEX-13FTZ-0726-SM-5IFFY/GTEX-13FTZ-0726-SM-5IFFY_fixed_2.fastq",
+        "fq1_sy": "GTEX-13FTZ-0726-SM-5IFFY_1.fastq",
+        "fq2_sy": "GTEX-13FTZ-0726-SM-5IFFY_2.fastq",
+        "ID": "GTEX-13FTZ-0726-SM-5IFFY",
+        "SM": "GTEX-13FTZ-0726-SM-5IFFY",
+        "LB": "GTEX-13FTZ-0726-SM-5IFFY",
+        "PU": "GTEX-13FTZ-0726-SM-5IFFY",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13N11-0926-SM-5IJG2":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13N11-0926-SM-5IJG2/GTEX-13N11-0926-SM-5IJG2_fixed_1.fastq",
+        "fq2": "GTEX-13N11-0926-SM-5IJG2/GTEX-13N11-0926-SM-5IJG2_fixed_2.fastq",
+        "fq1_sy": "GTEX-13N11-0926-SM-5IJG2_1.fastq",
+        "fq2_sy": "GTEX-13N11-0926-SM-5IJG2_2.fastq",
+        "ID": "GTEX-13N11-0926-SM-5IJG2",
+        "SM": "GTEX-13N11-0926-SM-5IJG2",
+        "LB": "GTEX-13N11-0926-SM-5IJG2",
+        "PU": "GTEX-13N11-0926-SM-5IJG2",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13N2G-0926-SM-5IFGJ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13N2G-0926-SM-5IFGJ/GTEX-13N2G-0926-SM-5IFGJ_fixed_1.fastq",
+        "fq2": "GTEX-13N2G-0926-SM-5IFGJ/GTEX-13N2G-0926-SM-5IFGJ_fixed_2.fastq",
+        "fq1_sy": "GTEX-13N2G-0926-SM-5IFGJ_1.fastq",
+        "fq2_sy": "GTEX-13N2G-0926-SM-5IFGJ_2.fastq",
+        "ID": "GTEX-13N2G-0926-SM-5IFGJ",
+        "SM": "GTEX-13N2G-0926-SM-5IFGJ",
+        "LB": "GTEX-13N2G-0926-SM-5IFGJ",
+        "PU": "GTEX-13N2G-0926-SM-5IFGJ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13NYB-1026-SM-5IFH3":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13NYB-1026-SM-5IFH3/GTEX-13NYB-1026-SM-5IFH3_fixed_1.fastq",
+        "fq2": "GTEX-13NYB-1026-SM-5IFH3/GTEX-13NYB-1026-SM-5IFH3_fixed_2.fastq",
+        "fq1_sy": "GTEX-13NYB-1026-SM-5IFH3_1.fastq",
+        "fq2_sy": "GTEX-13NYB-1026-SM-5IFH3_2.fastq",
+        "ID": "GTEX-13NYB-1026-SM-5IFH3",
+        "SM": "GTEX-13NYB-1026-SM-5IFH3",
+        "LB": "GTEX-13NYB-1026-SM-5IFH3",
+        "PU": "GTEX-13NYB-1026-SM-5IFH3",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13NZ9-1326-SM-5MR3V":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13NZ9-1326-SM-5MR3V/GTEX-13NZ9-1326-SM-5MR3V_fixed_1.fastq",
+        "fq2": "GTEX-13NZ9-1326-SM-5MR3V/GTEX-13NZ9-1326-SM-5MR3V_fixed_2.fastq",
+        "fq1_sy": "GTEX-13NZ9-1326-SM-5MR3V_1.fastq",
+        "fq2_sy": "GTEX-13NZ9-1326-SM-5MR3V_2.fastq",
+        "ID": "GTEX-13NZ9-1326-SM-5MR3V",
+        "SM": "GTEX-13NZ9-1326-SM-5MR3V",
+        "LB": "GTEX-13NZ9-1326-SM-5MR3V",
+        "PU": "GTEX-13NZ9-1326-SM-5MR3V",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13NZB-0626-SM-5IFH6":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13NZB-0626-SM-5IFH6/GTEX-13NZB-0626-SM-5IFH6_fixed_1.fastq",
+        "fq2": "GTEX-13NZB-0626-SM-5IFH6/GTEX-13NZB-0626-SM-5IFH6_fixed_2.fastq",
+        "fq1_sy": "GTEX-13NZB-0626-SM-5IFH6_1.fastq",
+        "fq2_sy": "GTEX-13NZB-0626-SM-5IFH6_2.fastq",
+        "ID": "GTEX-13NZB-0626-SM-5IFH6",
+        "SM": "GTEX-13NZB-0626-SM-5IFH6",
+        "LB": "GTEX-13NZB-0626-SM-5IFH6",
+        "PU": "GTEX-13NZB-0626-SM-5IFH6",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13O1R-2026-SM-5KM3N":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13O1R-2026-SM-5KM3N/GTEX-13O1R-2026-SM-5KM3N_fixed_1.fastq",
+        "fq2": "GTEX-13O1R-2026-SM-5KM3N/GTEX-13O1R-2026-SM-5KM3N_fixed_2.fastq",
+        "fq1_sy": "GTEX-13O1R-2026-SM-5KM3N_1.fastq",
+        "fq2_sy": "GTEX-13O1R-2026-SM-5KM3N_2.fastq",
+        "ID": "GTEX-13O1R-2026-SM-5KM3N",
+        "SM": "GTEX-13O1R-2026-SM-5KM3N",
+        "LB": "GTEX-13O1R-2026-SM-5KM3N",
+        "PU": "GTEX-13O1R-2026-SM-5KM3N",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13O3O-1826-SM-5IFGW":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13O3O-1826-SM-5IFGW/GTEX-13O3O-1826-SM-5IFGW_fixed_1.fastq",
+        "fq2": "GTEX-13O3O-1826-SM-5IFGW/GTEX-13O3O-1826-SM-5IFGW_fixed_2.fastq",
+        "fq1_sy": "GTEX-13O3O-1826-SM-5IFGW_1.fastq",
+        "fq2_sy": "GTEX-13O3O-1826-SM-5IFGW_2.fastq",
+        "ID": "GTEX-13O3O-1826-SM-5IFGW",
+        "SM": "GTEX-13O3O-1826-SM-5IFGW",
+        "LB": "GTEX-13O3O-1826-SM-5IFGW",
+        "PU": "GTEX-13O3O-1826-SM-5IFGW",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13OVJ-1026-SM-5IFGI":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13OVJ-1026-SM-5IFGI/GTEX-13OVJ-1026-SM-5IFGI_fixed_1.fastq",
+        "fq2": "GTEX-13OVJ-1026-SM-5IFGI/GTEX-13OVJ-1026-SM-5IFGI_fixed_2.fastq",
+        "fq1_sy": "GTEX-13OVJ-1026-SM-5IFGI_1.fastq",
+        "fq2_sy": "GTEX-13OVJ-1026-SM-5IFGI_2.fastq",
+        "ID": "GTEX-13OVJ-1026-SM-5IFGI",
+        "SM": "GTEX-13OVJ-1026-SM-5IFGI",
+        "LB": "GTEX-13OVJ-1026-SM-5IFGI",
+        "PU": "GTEX-13OVJ-1026-SM-5IFGI",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13OW6-2626-SM-5IFF2":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13OW6-2626-SM-5IFF2/GTEX-13OW6-2626-SM-5IFF2_fixed_1.fastq",
+        "fq2": "GTEX-13OW6-2626-SM-5IFF2/GTEX-13OW6-2626-SM-5IFF2_fixed_2.fastq",
+        "fq1_sy": "GTEX-13OW6-2626-SM-5IFF2_1.fastq",
+        "fq2_sy": "GTEX-13OW6-2626-SM-5IFF2_2.fastq",
+        "ID": "GTEX-13OW6-2626-SM-5IFF2",
+        "SM": "GTEX-13OW6-2626-SM-5IFF2",
+        "LB": "GTEX-13OW6-2626-SM-5IFF2",
+        "PU": "GTEX-13OW6-2626-SM-5IFF2",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13PVQ-1526-SM-5IFEQ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13PVQ-1526-SM-5IFEQ/GTEX-13PVQ-1526-SM-5IFEQ_fixed_1.fastq",
+        "fq2": "GTEX-13PVQ-1526-SM-5IFEQ/GTEX-13PVQ-1526-SM-5IFEQ_fixed_2.fastq",
+        "fq1_sy": "GTEX-13PVQ-1526-SM-5IFEQ_1.fastq",
+        "fq2_sy": "GTEX-13PVQ-1526-SM-5IFEQ_2.fastq",
+        "ID": "GTEX-13PVQ-1526-SM-5IFEQ",
+        "SM": "GTEX-13PVQ-1526-SM-5IFEQ",
+        "LB": "GTEX-13PVQ-1526-SM-5IFEQ",
+        "PU": "GTEX-13PVQ-1526-SM-5IFEQ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13PVR-0126-SM-5S2PY":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13PVR-0126-SM-5S2PY/GTEX-13PVR-0126-SM-5S2PY_fixed_1.fastq",
+        "fq2": "GTEX-13PVR-0126-SM-5S2PY/GTEX-13PVR-0126-SM-5S2PY_fixed_2.fastq",
+        "fq1_sy": "GTEX-13PVR-0126-SM-5S2PY_1.fastq",
+        "fq2_sy": "GTEX-13PVR-0126-SM-5S2PY_2.fastq",
+        "ID": "GTEX-13PVR-0126-SM-5S2PY",
+        "SM": "GTEX-13PVR-0126-SM-5S2PY",
+        "LB": "GTEX-13PVR-0126-SM-5S2PY",
+        "PU": "GTEX-13PVR-0126-SM-5S2PY",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13QJC-0726-SM-5RQJK":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13QJC-0726-SM-5RQJK/GTEX-13QJC-0726-SM-5RQJK_fixed_1.fastq",
+        "fq2": "GTEX-13QJC-0726-SM-5RQJK/GTEX-13QJC-0726-SM-5RQJK_fixed_2.fastq",
+        "fq1_sy": "GTEX-13QJC-0726-SM-5RQJK_1.fastq",
+        "fq2_sy": "GTEX-13QJC-0726-SM-5RQJK_2.fastq",
+        "ID": "GTEX-13QJC-0726-SM-5RQJK",
+        "SM": "GTEX-13QJC-0726-SM-5RQJK",
+        "LB": "GTEX-13QJC-0726-SM-5RQJK",
+        "PU": "GTEX-13QJC-0726-SM-5RQJK",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13SLX-1226-SM-5S2Q6":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13SLX-1226-SM-5S2Q6/GTEX-13SLX-1226-SM-5S2Q6_fixed_1.fastq",
+        "fq2": "GTEX-13SLX-1226-SM-5S2Q6/GTEX-13SLX-1226-SM-5S2Q6_fixed_2.fastq",
+        "fq1_sy": "GTEX-13SLX-1226-SM-5S2Q6_1.fastq",
+        "fq2_sy": "GTEX-13SLX-1226-SM-5S2Q6_2.fastq",
+        "ID": "GTEX-13SLX-1226-SM-5S2Q6",
+        "SM": "GTEX-13SLX-1226-SM-5S2Q6",
+        "LB": "GTEX-13SLX-1226-SM-5S2Q6",
+        "PU": "GTEX-13SLX-1226-SM-5S2Q6",
+        "PL": "Illumina"
+    },
+
+    "GTEX-13VXU-0926-SM-5IFFH":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-13VXU-0926-SM-5IFFH/GTEX-13VXU-0926-SM-5IFFH_fixed_1.fastq",
+        "fq2": "GTEX-13VXU-0926-SM-5IFFH/GTEX-13VXU-0926-SM-5IFFH_fixed_2.fastq",
+        "fq1_sy": "GTEX-13VXU-0926-SM-5IFFH_1.fastq",
+        "fq2_sy": "GTEX-13VXU-0926-SM-5IFFH_2.fastq",
+        "ID": "GTEX-13VXU-0926-SM-5IFFH",
+        "SM": "GTEX-13VXU-0926-SM-5IFFH",
+        "LB": "GTEX-13VXU-0926-SM-5IFFH",
+        "PU": "GTEX-13VXU-0926-SM-5IFFH",
+        "PL": "Illumina"
+    },
+
+    "GTEX-144GM-1326-SM-5LU5E":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-144GM-1326-SM-5LU5E/GTEX-144GM-1326-SM-5LU5E_fixed_1.fastq",
+        "fq2": "GTEX-144GM-1326-SM-5LU5E/GTEX-144GM-1326-SM-5LU5E_fixed_2.fastq",
+        "fq1_sy": "GTEX-144GM-1326-SM-5LU5E_1.fastq",
+        "fq2_sy": "GTEX-144GM-1326-SM-5LU5E_2.fastq",
+        "ID": "GTEX-144GM-1326-SM-5LU5E",
+        "SM": "GTEX-144GM-1326-SM-5LU5E",
+        "LB": "GTEX-144GM-1326-SM-5LU5E",
+        "PU": "GTEX-144GM-1326-SM-5LU5E",
+        "PL": "Illumina"
+    },
+
+    "GTEX-145LU-1326-SM-5LU9N":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-145LU-1326-SM-5LU9N/GTEX-145LU-1326-SM-5LU9N_fixed_1.fastq",
+        "fq2": "GTEX-145LU-1326-SM-5LU9N/GTEX-145LU-1326-SM-5LU9N_fixed_2.fastq",
+        "fq1_sy": "GTEX-145LU-1326-SM-5LU9N_1.fastq",
+        "fq2_sy": "GTEX-145LU-1326-SM-5LU9N_2.fastq",
+        "ID": "GTEX-145LU-1326-SM-5LU9N",
+        "SM": "GTEX-145LU-1326-SM-5LU9N",
+        "LB": "GTEX-145LU-1326-SM-5LU9N",
+        "PU": "GTEX-145LU-1326-SM-5LU9N",
+        "PL": "Illumina"
+    },
+
+    "GTEX-145MF-0826-SM-5QGQA":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-145MF-0826-SM-5QGQA/GTEX-145MF-0826-SM-5QGQA_fixed_1.fastq",
+        "fq2": "GTEX-145MF-0826-SM-5QGQA/GTEX-145MF-0826-SM-5QGQA_fixed_2.fastq",
+        "fq1_sy": "GTEX-145MF-0826-SM-5QGQA_1.fastq",
+        "fq2_sy": "GTEX-145MF-0826-SM-5QGQA_2.fastq",
+        "ID": "GTEX-145MF-0826-SM-5QGQA",
+        "SM": "GTEX-145MF-0826-SM-5QGQA",
+        "LB": "GTEX-145MF-0826-SM-5QGQA",
+        "PU": "GTEX-145MF-0826-SM-5QGQA",
+        "PL": "Illumina"
+    },
+
+    "GTEX-145MO-2326-SM-5NQ9K":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-145MO-2326-SM-5NQ9K/GTEX-145MO-2326-SM-5NQ9K_fixed_1.fastq",
+        "fq2": "GTEX-145MO-2326-SM-5NQ9K/GTEX-145MO-2326-SM-5NQ9K_fixed_2.fastq",
+        "fq1_sy": "GTEX-145MO-2326-SM-5NQ9K_1.fastq",
+        "fq2_sy": "GTEX-145MO-2326-SM-5NQ9K_2.fastq",
+        "ID": "GTEX-145MO-2326-SM-5NQ9K",
+        "SM": "GTEX-145MO-2326-SM-5NQ9K",
+        "LB": "GTEX-145MO-2326-SM-5NQ9K",
+        "PU": "GTEX-145MO-2326-SM-5NQ9K",
+        "PL": "Illumina"
+    },
+
+    "GTEX-146FH-1526-SM-5NQBU":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-146FH-1526-SM-5NQBU/GTEX-146FH-1526-SM-5NQBU_fixed_1.fastq",
+        "fq2": "GTEX-146FH-1526-SM-5NQBU/GTEX-146FH-1526-SM-5NQBU_fixed_2.fastq",
+        "fq1_sy": "GTEX-146FH-1526-SM-5NQBU_1.fastq",
+        "fq2_sy": "GTEX-146FH-1526-SM-5NQBU_2.fastq",
+        "ID": "GTEX-146FH-1526-SM-5NQBU",
+        "SM": "GTEX-146FH-1526-SM-5NQBU",
+        "LB": "GTEX-146FH-1526-SM-5NQBU",
+        "PU": "GTEX-146FH-1526-SM-5NQBU",
+        "PL": "Illumina"
+    },
+
+    "GTEX-14753-1626-SM-5NQ9L":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-14753-1626-SM-5NQ9L/GTEX-14753-1626-SM-5NQ9L_fixed_1.fastq",
+        "fq2": "GTEX-14753-1626-SM-5NQ9L/GTEX-14753-1626-SM-5NQ9L_fixed_2.fastq",
+        "fq1_sy": "GTEX-14753-1626-SM-5NQ9L_1.fastq",
+        "fq2_sy": "GTEX-14753-1626-SM-5NQ9L_2.fastq",
+        "ID": "GTEX-14753-1626-SM-5NQ9L",
+        "SM": "GTEX-14753-1626-SM-5NQ9L",
+        "LB": "GTEX-14753-1626-SM-5NQ9L",
+        "PU": "GTEX-14753-1626-SM-5NQ9L",
+        "PL": "Illumina"
+    },
+
+    "GTEX-147F4-1426-SM-5LUA8":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-147F4-1426-SM-5LUA8/GTEX-147F4-1426-SM-5LUA8_fixed_1.fastq",
+        "fq2": "GTEX-147F4-1426-SM-5LUA8/GTEX-147F4-1426-SM-5LUA8_fixed_2.fastq",
+        "fq1_sy": "GTEX-147F4-1426-SM-5LUA8_1.fastq",
+        "fq2_sy": "GTEX-147F4-1426-SM-5LUA8_2.fastq",
+        "ID": "GTEX-147F4-1426-SM-5LUA8",
+        "SM": "GTEX-147F4-1426-SM-5LUA8",
+        "LB": "GTEX-147F4-1426-SM-5LUA8",
+        "PU": "GTEX-147F4-1426-SM-5LUA8",
+        "PL": "Illumina"
+    },
+
+    "GTEX-147JS-1126-SM-5RQIW":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-147JS-1126-SM-5RQIW/GTEX-147JS-1126-SM-5RQIW_fixed_1.fastq",
+        "fq2": "GTEX-147JS-1126-SM-5RQIW/GTEX-147JS-1126-SM-5RQIW_fixed_2.fastq",
+        "fq1_sy": "GTEX-147JS-1126-SM-5RQIW_1.fastq",
+        "fq2_sy": "GTEX-147JS-1126-SM-5RQIW_2.fastq",
+        "ID": "GTEX-147JS-1126-SM-5RQIW",
+        "SM": "GTEX-147JS-1126-SM-5RQIW",
+        "LB": "GTEX-147JS-1126-SM-5RQIW",
+        "PU": "GTEX-147JS-1126-SM-5RQIW",
+        "PL": "Illumina"
+    },
+
+    "GTEX-1497J-0726-SM-5Q5D1":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-1497J-0726-SM-5Q5D1/GTEX-1497J-0726-SM-5Q5D1_fixed_1.fastq",
+        "fq2": "GTEX-1497J-0726-SM-5Q5D1/GTEX-1497J-0726-SM-5Q5D1_fixed_2.fastq",
+        "fq1_sy": "GTEX-1497J-0726-SM-5Q5D1_1.fastq",
+        "fq2_sy": "GTEX-1497J-0726-SM-5Q5D1_2.fastq",
+        "ID": "GTEX-1497J-0726-SM-5Q5D1",
+        "SM": "GTEX-1497J-0726-SM-5Q5D1",
+        "LB": "GTEX-1497J-0726-SM-5Q5D1",
+        "PU": "GTEX-1497J-0726-SM-5Q5D1",
+        "PL": "Illumina"
+    },
+
+    "GTEX-14A5I-1726-SM-5QGQ5":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-14A5I-1726-SM-5QGQ5/GTEX-14A5I-1726-SM-5QGQ5_fixed_1.fastq",
+        "fq2": "GTEX-14A5I-1726-SM-5QGQ5/GTEX-14A5I-1726-SM-5QGQ5_fixed_2.fastq",
+        "fq1_sy": "GTEX-14A5I-1726-SM-5QGQ5_1.fastq",
+        "fq2_sy": "GTEX-14A5I-1726-SM-5QGQ5_2.fastq",
+        "ID": "GTEX-14A5I-1726-SM-5QGQ5",
+        "SM": "GTEX-14A5I-1726-SM-5QGQ5",
+        "LB": "GTEX-14A5I-1726-SM-5QGQ5",
+        "PU": "GTEX-14A5I-1726-SM-5QGQ5",
+        "PL": "Illumina"
+    },
+
+    "GTEX-14AS3-0126-SM-5Q5F4":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-14AS3-0126-SM-5Q5F4/GTEX-14AS3-0126-SM-5Q5F4_fixed_1.fastq",
+        "fq2": "GTEX-14AS3-0126-SM-5Q5F4/GTEX-14AS3-0126-SM-5Q5F4_fixed_2.fastq",
+        "fq1_sy": "GTEX-14AS3-0126-SM-5Q5F4_1.fastq",
+        "fq2_sy": "GTEX-14AS3-0126-SM-5Q5F4_2.fastq",
+        "ID": "GTEX-14AS3-0126-SM-5Q5F4",
+        "SM": "GTEX-14AS3-0126-SM-5Q5F4",
+        "LB": "GTEX-14AS3-0126-SM-5Q5F4",
+        "PU": "GTEX-14AS3-0126-SM-5Q5F4",
+        "PL": "Illumina"
+    },
+
+    "GTEX-14C38-1526-SM-5RQJ7":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-14C38-1526-SM-5RQJ7/GTEX-14C38-1526-SM-5RQJ7_fixed_1.fastq",
+        "fq2": "GTEX-14C38-1526-SM-5RQJ7/GTEX-14C38-1526-SM-5RQJ7_fixed_2.fastq",
+        "fq1_sy": "GTEX-14C38-1526-SM-5RQJ7_1.fastq",
+        "fq2_sy": "GTEX-14C38-1526-SM-5RQJ7_2.fastq",
+        "ID": "GTEX-14C38-1526-SM-5RQJ7",
+        "SM": "GTEX-14C38-1526-SM-5RQJ7",
+        "LB": "GTEX-14C38-1526-SM-5RQJ7",
+        "PU": "GTEX-14C38-1526-SM-5RQJ7",
+        "PL": "Illumina"
+    },
+
+    "GTEX-14DAQ-1726-SM-5S2R2":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-14DAQ-1726-SM-5S2R2/GTEX-14DAQ-1726-SM-5S2R2_fixed_1.fastq",
+        "fq2": "GTEX-14DAQ-1726-SM-5S2R2/GTEX-14DAQ-1726-SM-5S2R2_fixed_2.fastq",
+        "fq1_sy": "GTEX-14DAQ-1726-SM-5S2R2_1.fastq",
+        "fq2_sy": "GTEX-14DAQ-1726-SM-5S2R2_2.fastq",
+        "ID": "GTEX-14DAQ-1726-SM-5S2R2",
+        "SM": "GTEX-14DAQ-1726-SM-5S2R2",
+        "LB": "GTEX-14DAQ-1726-SM-5S2R2",
+        "PU": "GTEX-14DAQ-1726-SM-5S2R2",
+        "PL": "Illumina"
+    },
+
+    "GTEX-14E1K-0326-SM-5S2PE":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-14E1K-0326-SM-5S2PE/GTEX-14E1K-0326-SM-5S2PE_fixed_1.fastq",
+        "fq2": "GTEX-14E1K-0326-SM-5S2PE/GTEX-14E1K-0326-SM-5S2PE_fixed_2.fastq",
+        "fq1_sy": "GTEX-14E1K-0326-SM-5S2PE_1.fastq",
+        "fq2_sy": "GTEX-14E1K-0326-SM-5S2PE_2.fastq",
+        "ID": "GTEX-14E1K-0326-SM-5S2PE",
+        "SM": "GTEX-14E1K-0326-SM-5S2PE",
+        "LB": "GTEX-14E1K-0326-SM-5S2PE",
+        "PU": "GTEX-14E1K-0326-SM-5S2PE",
+        "PL": "Illumina"
+    },
+
+    "GTEX-O5YT-0826-SM-3TW8N":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-O5YT-0826-SM-3TW8N/GTEX-O5YT-0826-SM-3TW8N_fixed_1.fastq",
+        "fq2": "GTEX-O5YT-0826-SM-3TW8N/GTEX-O5YT-0826-SM-3TW8N_fixed_2.fastq",
+        "fq1_sy": "GTEX-O5YT-0826-SM-3TW8N_1.fastq",
+        "fq2_sy": "GTEX-O5YT-0826-SM-3TW8N_2.fastq",
+        "ID": "GTEX-O5YT-0826-SM-3TW8N",
+        "SM": "GTEX-O5YT-0826-SM-3TW8N",
+        "LB": "GTEX-O5YT-0826-SM-3TW8N",
+        "PU": "GTEX-O5YT-0826-SM-3TW8N",
+        "PL": "Illumina"
+    },
+
+    "GTEX-OOBJ-0826-SM-3NB2K":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-OOBJ-0826-SM-3NB2K/GTEX-OOBJ-0826-SM-3NB2K_fixed_1.fastq",
+        "fq2": "GTEX-OOBJ-0826-SM-3NB2K/GTEX-OOBJ-0826-SM-3NB2K_fixed_2.fastq",
+        "fq1_sy": "GTEX-OOBJ-0826-SM-3NB2K_1.fastq",
+        "fq2_sy": "GTEX-OOBJ-0826-SM-3NB2K_2.fastq",
+        "ID": "GTEX-OOBJ-0826-SM-3NB2K",
+        "SM": "GTEX-OOBJ-0826-SM-3NB2K",
+        "LB": "GTEX-OOBJ-0826-SM-3NB2K",
+        "PU": "GTEX-OOBJ-0826-SM-3NB2K",
+        "PL": "Illumina"
+    },
+
+    "GTEX-P44G-1126-SM-3NM9D":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-P44G-1126-SM-3NM9D/GTEX-P44G-1126-SM-3NM9D_fixed_1.fastq",
+        "fq2": "GTEX-P44G-1126-SM-3NM9D/GTEX-P44G-1126-SM-3NM9D_fixed_2.fastq",
+        "fq1_sy": "GTEX-P44G-1126-SM-3NM9D_1.fastq",
+        "fq2_sy": "GTEX-P44G-1126-SM-3NM9D_2.fastq",
+        "ID": "GTEX-P44G-1126-SM-3NM9D",
+        "SM": "GTEX-P44G-1126-SM-3NM9D",
+        "LB": "GTEX-P44G-1126-SM-3NM9D",
+        "PU": "GTEX-P44G-1126-SM-3NM9D",
+        "PL": "Illumina"
+    },
+
+    "GTEX-P78B-1326-SM-3P611":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-P78B-1326-SM-3P611/GTEX-P78B-1326-SM-3P611_fixed_1.fastq",
+        "fq2": "GTEX-P78B-1326-SM-3P611/GTEX-P78B-1326-SM-3P611_fixed_2.fastq",
+        "fq1_sy": "GTEX-P78B-1326-SM-3P611_1.fastq",
+        "fq2_sy": "GTEX-P78B-1326-SM-3P611_2.fastq",
+        "ID": "GTEX-P78B-1326-SM-3P611",
+        "SM": "GTEX-P78B-1326-SM-3P611",
+        "LB": "GTEX-P78B-1326-SM-3P611",
+        "PU": "GTEX-P78B-1326-SM-3P611",
+        "PL": "Illumina"
+    },
+
+    "GTEX-PWOO-0826-SM-48TCL":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-PWOO-0826-SM-48TCL/GTEX-PWOO-0826-SM-48TCL_fixed_1.fastq",
+        "fq2": "GTEX-PWOO-0826-SM-48TCL/GTEX-PWOO-0826-SM-48TCL_fixed_2.fastq",
+        "fq1_sy": "GTEX-PWOO-0826-SM-48TCL_1.fastq",
+        "fq2_sy": "GTEX-PWOO-0826-SM-48TCL_2.fastq",
+        "ID": "GTEX-PWOO-0826-SM-48TCL",
+        "SM": "GTEX-PWOO-0826-SM-48TCL",
+        "LB": "GTEX-PWOO-0826-SM-48TCL",
+        "PU": "GTEX-PWOO-0826-SM-48TCL",
+        "PL": "Illumina"
+    },
+
+    "GTEX-PX3G-0826-SM-48TZS":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-PX3G-0826-SM-48TZS/GTEX-PX3G-0826-SM-48TZS_fixed_1.fastq",
+        "fq2": "GTEX-PX3G-0826-SM-48TZS/GTEX-PX3G-0826-SM-48TZS_fixed_2.fastq",
+        "fq1_sy": "GTEX-PX3G-0826-SM-48TZS_1.fastq",
+        "fq2_sy": "GTEX-PX3G-0826-SM-48TZS_2.fastq",
+        "ID": "GTEX-PX3G-0826-SM-48TZS",
+        "SM": "GTEX-PX3G-0826-SM-48TZS",
+        "LB": "GTEX-PX3G-0826-SM-48TZS",
+        "PU": "GTEX-PX3G-0826-SM-48TZS",
+        "PL": "Illumina"
+    },
+
+    "GTEX-Q2AG-1126-SM-48U1P":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-Q2AG-1126-SM-48U1P/GTEX-Q2AG-1126-SM-48U1P_fixed_1.fastq",
+        "fq2": "GTEX-Q2AG-1126-SM-48U1P/GTEX-Q2AG-1126-SM-48U1P_fixed_2.fastq",
+        "fq1_sy": "GTEX-Q2AG-1126-SM-48U1P_1.fastq",
+        "fq2_sy": "GTEX-Q2AG-1126-SM-48U1P_2.fastq",
+        "ID": "GTEX-Q2AG-1126-SM-48U1P",
+        "SM": "GTEX-Q2AG-1126-SM-48U1P",
+        "LB": "GTEX-Q2AG-1126-SM-48U1P",
+        "PU": "GTEX-Q2AG-1126-SM-48U1P",
+        "PL": "Illumina"
+    },
+
+    "GTEX-Q734-0326-SM-48U15":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-Q734-0326-SM-48U15/GTEX-Q734-0326-SM-48U15_fixed_1.fastq",
+        "fq2": "GTEX-Q734-0326-SM-48U15/GTEX-Q734-0326-SM-48U15_fixed_2.fastq",
+        "fq1_sy": "GTEX-Q734-0326-SM-48U15_1.fastq",
+        "fq2_sy": "GTEX-Q734-0326-SM-48U15_2.fastq",
+        "ID": "GTEX-Q734-0326-SM-48U15",
+        "SM": "GTEX-Q734-0326-SM-48U15",
+        "LB": "GTEX-Q734-0326-SM-48U15",
+        "PU": "GTEX-Q734-0326-SM-48U15",
+        "PL": "Illumina"
+    },
+
+    "GTEX-QDVN-0826-SM-48TZ2":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-QDVN-0826-SM-48TZ2/GTEX-QDVN-0826-SM-48TZ2_fixed_1.fastq",
+        "fq2": "GTEX-QDVN-0826-SM-48TZ2/GTEX-QDVN-0826-SM-48TZ2_fixed_2.fastq",
+        "fq1_sy": "GTEX-QDVN-0826-SM-48TZ2_1.fastq",
+        "fq2_sy": "GTEX-QDVN-0826-SM-48TZ2_2.fastq",
+        "ID": "GTEX-QDVN-0826-SM-48TZ2",
+        "SM": "GTEX-QDVN-0826-SM-48TZ2",
+        "LB": "GTEX-QDVN-0826-SM-48TZ2",
+        "PU": "GTEX-QDVN-0826-SM-48TZ2",
+        "PL": "Illumina"
+    },
+
+    "GTEX-QEG4-1826-SM-4R1JN":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-QEG4-1826-SM-4R1JN/GTEX-QEG4-1826-SM-4R1JN_fixed_1.fastq",
+        "fq2": "GTEX-QEG4-1826-SM-4R1JN/GTEX-QEG4-1826-SM-4R1JN_fixed_2.fastq",
+        "fq1_sy": "GTEX-QEG4-1826-SM-4R1JN_1.fastq",
+        "fq2_sy": "GTEX-QEG4-1826-SM-4R1JN_2.fastq",
+        "ID": "GTEX-QEG4-1826-SM-4R1JN",
+        "SM": "GTEX-QEG4-1826-SM-4R1JN",
+        "LB": "GTEX-QEG4-1826-SM-4R1JN",
+        "PU": "GTEX-QEG4-1826-SM-4R1JN",
+        "PL": "Illumina"
+    },
+
+    "GTEX-QESD-2026-SM-447BI":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-QESD-2026-SM-447BI/GTEX-QESD-2026-SM-447BI_fixed_1.fastq",
+        "fq2": "GTEX-QESD-2026-SM-447BI/GTEX-QESD-2026-SM-447BI_fixed_2.fastq",
+        "fq1_sy": "GTEX-QESD-2026-SM-447BI_1.fastq",
+        "fq2_sy": "GTEX-QESD-2026-SM-447BI_2.fastq",
+        "ID": "GTEX-QESD-2026-SM-447BI",
+        "SM": "GTEX-QESD-2026-SM-447BI",
+        "LB": "GTEX-QESD-2026-SM-447BI",
+        "PU": "GTEX-QESD-2026-SM-447BI",
+        "PL": "Illumina"
+    },
+
+    "GTEX-QV44-0326-SM-4R1KD":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-QV44-0326-SM-4R1KD/GTEX-QV44-0326-SM-4R1KD_fixed_1.fastq",
+        "fq2": "GTEX-QV44-0326-SM-4R1KD/GTEX-QV44-0326-SM-4R1KD_fixed_2.fastq",
+        "fq1_sy": "GTEX-QV44-0326-SM-4R1KD_1.fastq",
+        "fq2_sy": "GTEX-QV44-0326-SM-4R1KD_2.fastq",
+        "ID": "GTEX-QV44-0326-SM-4R1KD",
+        "SM": "GTEX-QV44-0326-SM-4R1KD",
+        "LB": "GTEX-QV44-0326-SM-4R1KD",
+        "PU": "GTEX-QV44-0326-SM-4R1KD",
+        "PL": "Illumina"
+    },
+
+    "GTEX-R53T-0326-SM-48FEC":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-R53T-0326-SM-48FEC/GTEX-R53T-0326-SM-48FEC_fixed_1.fastq",
+        "fq2": "GTEX-R53T-0326-SM-48FEC/GTEX-R53T-0326-SM-48FEC_fixed_2.fastq",
+        "fq1_sy": "GTEX-R53T-0326-SM-48FEC_1.fastq",
+        "fq2_sy": "GTEX-R53T-0326-SM-48FEC_2.fastq",
+        "ID": "GTEX-R53T-0326-SM-48FEC",
+        "SM": "GTEX-R53T-0326-SM-48FEC",
+        "LB": "GTEX-R53T-0326-SM-48FEC",
+        "PU": "GTEX-R53T-0326-SM-48FEC",
+        "PL": "Illumina"
+    },
+
+    "GTEX-REY6-1226-SM-48FDR":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-REY6-1226-SM-48FDR/GTEX-REY6-1226-SM-48FDR_fixed_1.fastq",
+        "fq2": "GTEX-REY6-1226-SM-48FDR/GTEX-REY6-1226-SM-48FDR_fixed_2.fastq",
+        "fq1_sy": "GTEX-REY6-1226-SM-48FDR_1.fastq",
+        "fq2_sy": "GTEX-REY6-1226-SM-48FDR_2.fastq",
+        "ID": "GTEX-REY6-1226-SM-48FDR",
+        "SM": "GTEX-REY6-1226-SM-48FDR",
+        "LB": "GTEX-REY6-1226-SM-48FDR",
+        "PU": "GTEX-REY6-1226-SM-48FDR",
+        "PL": "Illumina"
+    },
+
+    "GTEX-RM2N-1926-SM-48FCU":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-RM2N-1926-SM-48FCU/GTEX-RM2N-1926-SM-48FCU_fixed_1.fastq",
+        "fq2": "GTEX-RM2N-1926-SM-48FCU/GTEX-RM2N-1926-SM-48FCU_fixed_2.fastq",
+        "fq1_sy": "GTEX-RM2N-1926-SM-48FCU_1.fastq",
+        "fq2_sy": "GTEX-RM2N-1926-SM-48FCU_2.fastq",
+        "ID": "GTEX-RM2N-1926-SM-48FCU",
+        "SM": "GTEX-RM2N-1926-SM-48FCU",
+        "LB": "GTEX-RM2N-1926-SM-48FCU",
+        "PU": "GTEX-RM2N-1926-SM-48FCU",
+        "PL": "Illumina"
+    },
+
+    "GTEX-RN64-1826-SM-48FDV":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-RN64-1826-SM-48FDV/GTEX-RN64-1826-SM-48FDV_fixed_1.fastq",
+        "fq2": "GTEX-RN64-1826-SM-48FDV/GTEX-RN64-1826-SM-48FDV_fixed_2.fastq",
+        "fq1_sy": "GTEX-RN64-1826-SM-48FDV_1.fastq",
+        "fq2_sy": "GTEX-RN64-1826-SM-48FDV_2.fastq",
+        "ID": "GTEX-RN64-1826-SM-48FDV",
+        "SM": "GTEX-RN64-1826-SM-48FDV",
+        "LB": "GTEX-RN64-1826-SM-48FDV",
+        "PU": "GTEX-RN64-1826-SM-48FDV",
+        "PL": "Illumina"
+    },
+
+    "GTEX-RNOR-1426-SM-48FDJ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-RNOR-1426-SM-48FDJ/GTEX-RNOR-1426-SM-48FDJ_fixed_1.fastq",
+        "fq2": "GTEX-RNOR-1426-SM-48FDJ/GTEX-RNOR-1426-SM-48FDJ_fixed_2.fastq",
+        "fq1_sy": "GTEX-RNOR-1426-SM-48FDJ_1.fastq",
+        "fq2_sy": "GTEX-RNOR-1426-SM-48FDJ_2.fastq",
+        "ID": "GTEX-RNOR-1426-SM-48FDJ",
+        "SM": "GTEX-RNOR-1426-SM-48FDJ",
+        "LB": "GTEX-RNOR-1426-SM-48FDJ",
+        "PU": "GTEX-RNOR-1426-SM-48FDJ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-RTLS-1326-SM-46MUN":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-RTLS-1326-SM-46MUN/GTEX-RTLS-1326-SM-46MUN_fixed_1.fastq",
+        "fq2": "GTEX-RTLS-1326-SM-46MUN/GTEX-RTLS-1326-SM-46MUN_fixed_2.fastq",
+        "fq1_sy": "GTEX-RTLS-1326-SM-46MUN_1.fastq",
+        "fq2_sy": "GTEX-RTLS-1326-SM-46MUN_2.fastq",
+        "ID": "GTEX-RTLS-1326-SM-46MUN",
+        "SM": "GTEX-RTLS-1326-SM-46MUN",
+        "LB": "GTEX-RTLS-1326-SM-46MUN",
+        "PU": "GTEX-RTLS-1326-SM-46MUN",
+        "PL": "Illumina"
+    },
+
+    "GTEX-RU72-1426-SM-46MUF":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-RU72-1426-SM-46MUF/GTEX-RU72-1426-SM-46MUF_fixed_1.fastq",
+        "fq2": "GTEX-RU72-1426-SM-46MUF/GTEX-RU72-1426-SM-46MUF_fixed_2.fastq",
+        "fq1_sy": "GTEX-RU72-1426-SM-46MUF_1.fastq",
+        "fq2_sy": "GTEX-RU72-1426-SM-46MUF_2.fastq",
+        "ID": "GTEX-RU72-1426-SM-46MUF",
+        "SM": "GTEX-RU72-1426-SM-46MUF",
+        "LB": "GTEX-RU72-1426-SM-46MUF",
+        "PU": "GTEX-RU72-1426-SM-46MUF",
+        "PL": "Illumina"
+    },
+
+    "GTEX-RWSA-1426-SM-47JXA":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-RWSA-1426-SM-47JXA/GTEX-RWSA-1426-SM-47JXA_fixed_1.fastq",
+        "fq2": "GTEX-RWSA-1426-SM-47JXA/GTEX-RWSA-1426-SM-47JXA_fixed_2.fastq",
+        "fq1_sy": "GTEX-RWSA-1426-SM-47JXA_1.fastq",
+        "fq2_sy": "GTEX-RWSA-1426-SM-47JXA_2.fastq",
+        "ID": "GTEX-RWSA-1426-SM-47JXA",
+        "SM": "GTEX-RWSA-1426-SM-47JXA",
+        "LB": "GTEX-RWSA-1426-SM-47JXA",
+        "PU": "GTEX-RWSA-1426-SM-47JXA",
+        "PL": "Illumina"
+    },
+
+    "GTEX-S32W-1926-SM-4AD63":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-S32W-1926-SM-4AD63/GTEX-S32W-1926-SM-4AD63_fixed_1.fastq",
+        "fq2": "GTEX-S32W-1926-SM-4AD63/GTEX-S32W-1926-SM-4AD63_fixed_2.fastq",
+        "fq1_sy": "GTEX-S32W-1926-SM-4AD63_1.fastq",
+        "fq2_sy": "GTEX-S32W-1926-SM-4AD63_2.fastq",
+        "ID": "GTEX-S32W-1926-SM-4AD63",
+        "SM": "GTEX-S32W-1926-SM-4AD63",
+        "LB": "GTEX-S32W-1926-SM-4AD63",
+        "PU": "GTEX-S32W-1926-SM-4AD63",
+        "PL": "Illumina"
+    },
+
+    "GTEX-S33H-1626-SM-4AD68":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-S33H-1626-SM-4AD68/GTEX-S33H-1626-SM-4AD68_fixed_1.fastq",
+        "fq2": "GTEX-S33H-1626-SM-4AD68/GTEX-S33H-1626-SM-4AD68_fixed_2.fastq",
+        "fq1_sy": "GTEX-S33H-1626-SM-4AD68_1.fastq",
+        "fq2_sy": "GTEX-S33H-1626-SM-4AD68_2.fastq",
+        "ID": "GTEX-S33H-1626-SM-4AD68",
+        "SM": "GTEX-S33H-1626-SM-4AD68",
+        "LB": "GTEX-S33H-1626-SM-4AD68",
+        "PU": "GTEX-S33H-1626-SM-4AD68",
+        "PL": "Illumina"
+    },
+
+    "GTEX-S4Z8-0526-SM-4AD4T":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-S4Z8-0526-SM-4AD4T/GTEX-S4Z8-0526-SM-4AD4T_fixed_1.fastq",
+        "fq2": "GTEX-S4Z8-0526-SM-4AD4T/GTEX-S4Z8-0526-SM-4AD4T_fixed_2.fastq",
+        "fq1_sy": "GTEX-S4Z8-0526-SM-4AD4T_1.fastq",
+        "fq2_sy": "GTEX-S4Z8-0526-SM-4AD4T_2.fastq",
+        "ID": "GTEX-S4Z8-0526-SM-4AD4T",
+        "SM": "GTEX-S4Z8-0526-SM-4AD4T",
+        "LB": "GTEX-S4Z8-0526-SM-4AD4T",
+        "PU": "GTEX-S4Z8-0526-SM-4AD4T",
+        "PL": "Illumina"
+    },
+
+    "GTEX-SJXC-1226-SM-4DM78":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-SJXC-1226-SM-4DM78/GTEX-SJXC-1226-SM-4DM78_fixed_1.fastq",
+        "fq2": "GTEX-SJXC-1226-SM-4DM78/GTEX-SJXC-1226-SM-4DM78_fixed_2.fastq",
+        "fq1_sy": "GTEX-SJXC-1226-SM-4DM78_1.fastq",
+        "fq2_sy": "GTEX-SJXC-1226-SM-4DM78_2.fastq",
+        "ID": "GTEX-SJXC-1226-SM-4DM78",
+        "SM": "GTEX-SJXC-1226-SM-4DM78",
+        "LB": "GTEX-SJXC-1226-SM-4DM78",
+        "PU": "GTEX-SJXC-1226-SM-4DM78",
+        "PL": "Illumina"
+    },
+
+    "GTEX-T6MN-1226-SM-3NMA5":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-T6MN-1226-SM-3NMA5/GTEX-T6MN-1226-SM-3NMA5_fixed_1.fastq",
+        "fq2": "GTEX-T6MN-1226-SM-3NMA5/GTEX-T6MN-1226-SM-3NMA5_fixed_2.fastq",
+        "fq1_sy": "GTEX-T6MN-1226-SM-3NMA5_1.fastq",
+        "fq2_sy": "GTEX-T6MN-1226-SM-3NMA5_2.fastq",
+        "ID": "GTEX-T6MN-1226-SM-3NMA5",
+        "SM": "GTEX-T6MN-1226-SM-3NMA5",
+        "LB": "GTEX-T6MN-1226-SM-3NMA5",
+        "PU": "GTEX-T6MN-1226-SM-3NMA5",
+        "PL": "Illumina"
+    },
+
+    "GTEX-T6MN-1226-SM-5CHSL_rep1":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-T6MN-1226-SM-5CHSL_rep1/GTEX-T6MN-1226-SM-5CHSL_rep1_fixed_1.fastq",
+        "fq2": "GTEX-T6MN-1226-SM-5CHSL_rep1/GTEX-T6MN-1226-SM-5CHSL_rep1_fixed_2.fastq",
+        "fq1_sy": "GTEX-T6MN-1226-SM-5CHSL_rep1_1.fastq",
+        "fq2_sy": "GTEX-T6MN-1226-SM-5CHSL_rep1_2.fastq",
+        "ID": "GTEX-T6MN-1226-SM-5CHSL_rep1",
+        "SM": "GTEX-T6MN-1226-SM-5CHSL_rep1",
+        "LB": "GTEX-T6MN-1226-SM-5CHSL_rep1",
+        "PU": "GTEX-T6MN-1226-SM-5CHSL_rep1",
+        "PL": "Illumina"
+    },
+
+    "GTEX-TKQ2-1726-SM-4DXUP":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-TKQ2-1726-SM-4DXUP/GTEX-TKQ2-1726-SM-4DXUP_fixed_1.fastq",
+        "fq2": "GTEX-TKQ2-1726-SM-4DXUP/GTEX-TKQ2-1726-SM-4DXUP_fixed_2.fastq",
+        "fq1_sy": "GTEX-TKQ2-1726-SM-4DXUP_1.fastq",
+        "fq2_sy": "GTEX-TKQ2-1726-SM-4DXUP_2.fastq",
+        "ID": "GTEX-TKQ2-1726-SM-4DXUP",
+        "SM": "GTEX-TKQ2-1726-SM-4DXUP",
+        "LB": "GTEX-TKQ2-1726-SM-4DXUP",
+        "PU": "GTEX-TKQ2-1726-SM-4DXUP",
+        "PL": "Illumina"
+    },
+
+    "GTEX-TSE9-1126-SM-5CHRH_rep1":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-TSE9-1126-SM-5CHRH_rep1/GTEX-TSE9-1126-SM-5CHRH_rep1_fixed_1.fastq",
+        "fq2": "GTEX-TSE9-1126-SM-5CHRH_rep1/GTEX-TSE9-1126-SM-5CHRH_rep1_fixed_2.fastq",
+        "fq1_sy": "GTEX-TSE9-1126-SM-5CHRH_rep1_1.fastq",
+        "fq2_sy": "GTEX-TSE9-1126-SM-5CHRH_rep1_2.fastq",
+        "ID": "GTEX-TSE9-1126-SM-5CHRH_rep1",
+        "SM": "GTEX-TSE9-1126-SM-5CHRH_rep1",
+        "LB": "GTEX-TSE9-1126-SM-5CHRH_rep1",
+        "PU": "GTEX-TSE9-1126-SM-5CHRH_rep1",
+        "PL": "Illumina"
+    },
+
+    "GTEX-TSE9-1126-SM-5CHRH_rep2":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-TSE9-1126-SM-5CHRH_rep2/GTEX-TSE9-1126-SM-5CHRH_rep2_fixed_1.fastq",
+        "fq2": "GTEX-TSE9-1126-SM-5CHRH_rep2/GTEX-TSE9-1126-SM-5CHRH_rep2_fixed_2.fastq",
+        "fq1_sy": "GTEX-TSE9-1126-SM-5CHRH_rep2_1.fastq",
+        "fq2_sy": "GTEX-TSE9-1126-SM-5CHRH_rep2_2.fastq",
+        "ID": "GTEX-TSE9-1126-SM-5CHRH_rep2",
+        "SM": "GTEX-TSE9-1126-SM-5CHRH_rep2",
+        "LB": "GTEX-TSE9-1126-SM-5CHRH_rep2",
+        "PU": "GTEX-TSE9-1126-SM-5CHRH_rep2",
+        "PL": "Illumina"
+    },
+
+    "GTEX-U3ZN-0226-SM-3DB8D":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-U3ZN-0226-SM-3DB8D/GTEX-U3ZN-0226-SM-3DB8D_fixed_1.fastq",
+        "fq2": "GTEX-U3ZN-0226-SM-3DB8D/GTEX-U3ZN-0226-SM-3DB8D_fixed_2.fastq",
+        "fq1_sy": "GTEX-U3ZN-0226-SM-3DB8D_1.fastq",
+        "fq2_sy": "GTEX-U3ZN-0226-SM-3DB8D_2.fastq",
+        "ID": "GTEX-U3ZN-0226-SM-3DB8D",
+        "SM": "GTEX-U3ZN-0226-SM-3DB8D",
+        "LB": "GTEX-U3ZN-0226-SM-3DB8D",
+        "PU": "GTEX-U3ZN-0226-SM-3DB8D",
+        "PL": "Illumina"
+    },
+
+    "GTEX-U8XE-1526-SM-4E3HT":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-U8XE-1526-SM-4E3HT/GTEX-U8XE-1526-SM-4E3HT_fixed_1.fastq",
+        "fq2": "GTEX-U8XE-1526-SM-4E3HT/GTEX-U8XE-1526-SM-4E3HT_fixed_2.fastq",
+        "fq1_sy": "GTEX-U8XE-1526-SM-4E3HT_1.fastq",
+        "fq2_sy": "GTEX-U8XE-1526-SM-4E3HT_2.fastq",
+        "ID": "GTEX-U8XE-1526-SM-4E3HT",
+        "SM": "GTEX-U8XE-1526-SM-4E3HT",
+        "LB": "GTEX-U8XE-1526-SM-4E3HT",
+        "PU": "GTEX-U8XE-1526-SM-4E3HT",
+        "PL": "Illumina"
+    },
+
+    "GTEX-U8XE-1526-SM-5CHRK_rep1":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-U8XE-1526-SM-5CHRK_rep1/GTEX-U8XE-1526-SM-5CHRK_rep1_fixed_1.fastq",
+        "fq2": "GTEX-U8XE-1526-SM-5CHRK_rep1/GTEX-U8XE-1526-SM-5CHRK_rep1_fixed_2.fastq",
+        "fq1_sy": "GTEX-U8XE-1526-SM-5CHRK_rep1_1.fastq",
+        "fq2_sy": "GTEX-U8XE-1526-SM-5CHRK_rep1_2.fastq",
+        "ID": "GTEX-U8XE-1526-SM-5CHRK_rep1",
+        "SM": "GTEX-U8XE-1526-SM-5CHRK_rep1",
+        "LB": "GTEX-U8XE-1526-SM-5CHRK_rep1",
+        "PU": "GTEX-U8XE-1526-SM-5CHRK_rep1",
+        "PL": "Illumina"
+    },
+
+    "GTEX-UPIC-0926-SM-4IHLV":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-UPIC-0926-SM-4IHLV/GTEX-UPIC-0926-SM-4IHLV_fixed_1.fastq",
+        "fq2": "GTEX-UPIC-0926-SM-4IHLV/GTEX-UPIC-0926-SM-4IHLV_fixed_2.fastq",
+        "fq1_sy": "GTEX-UPIC-0926-SM-4IHLV_1.fastq",
+        "fq2_sy": "GTEX-UPIC-0926-SM-4IHLV_2.fastq",
+        "ID": "GTEX-UPIC-0926-SM-4IHLV",
+        "SM": "GTEX-UPIC-0926-SM-4IHLV",
+        "LB": "GTEX-UPIC-0926-SM-4IHLV",
+        "PU": "GTEX-UPIC-0926-SM-4IHLV",
+        "PL": "Illumina"
+    },
+
+    "GTEX-UPK5-1426-SM-4JBHH":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-UPK5-1426-SM-4JBHH/GTEX-UPK5-1426-SM-4JBHH_fixed_1.fastq",
+        "fq2": "GTEX-UPK5-1426-SM-4JBHH/GTEX-UPK5-1426-SM-4JBHH_fixed_2.fastq",
+        "fq1_sy": "GTEX-UPK5-1426-SM-4JBHH_1.fastq",
+        "fq2_sy": "GTEX-UPK5-1426-SM-4JBHH_2.fastq",
+        "ID": "GTEX-UPK5-1426-SM-4JBHH",
+        "SM": "GTEX-UPK5-1426-SM-4JBHH",
+        "LB": "GTEX-UPK5-1426-SM-4JBHH",
+        "PU": "GTEX-UPK5-1426-SM-4JBHH",
+        "PL": "Illumina"
+    },
+
+    "GTEX-UTHO-2426-SM-4JBHD":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-UTHO-2426-SM-4JBHD/GTEX-UTHO-2426-SM-4JBHD_fixed_1.fastq",
+        "fq2": "GTEX-UTHO-2426-SM-4JBHD/GTEX-UTHO-2426-SM-4JBHD_fixed_2.fastq",
+        "fq1_sy": "GTEX-UTHO-2426-SM-4JBHD_1.fastq",
+        "fq2_sy": "GTEX-UTHO-2426-SM-4JBHD_2.fastq",
+        "ID": "GTEX-UTHO-2426-SM-4JBHD",
+        "SM": "GTEX-UTHO-2426-SM-4JBHD",
+        "LB": "GTEX-UTHO-2426-SM-4JBHD",
+        "PU": "GTEX-UTHO-2426-SM-4JBHD",
+        "PL": "Illumina"
+    },
+
+    "GTEX-VUSG-0126-SM-4KL1X":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-VUSG-0126-SM-4KL1X/GTEX-VUSG-0126-SM-4KL1X_fixed_1.fastq",
+        "fq2": "GTEX-VUSG-0126-SM-4KL1X/GTEX-VUSG-0126-SM-4KL1X_fixed_2.fastq",
+        "fq1_sy": "GTEX-VUSG-0126-SM-4KL1X_1.fastq",
+        "fq2_sy": "GTEX-VUSG-0126-SM-4KL1X_2.fastq",
+        "ID": "GTEX-VUSG-0126-SM-4KL1X",
+        "SM": "GTEX-VUSG-0126-SM-4KL1X",
+        "LB": "GTEX-VUSG-0126-SM-4KL1X",
+        "PU": "GTEX-VUSG-0126-SM-4KL1X",
+        "PL": "Illumina"
+    },
+
+    "GTEX-W5X1-0126-SM-5CHR9_rep1":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-W5X1-0126-SM-5CHR9_rep1/GTEX-W5X1-0126-SM-5CHR9_rep1_fixed_1.fastq",
+        "fq2": "GTEX-W5X1-0126-SM-5CHR9_rep1/GTEX-W5X1-0126-SM-5CHR9_rep1_fixed_2.fastq",
+        "fq1_sy": "GTEX-W5X1-0126-SM-5CHR9_rep1_1.fastq",
+        "fq2_sy": "GTEX-W5X1-0126-SM-5CHR9_rep1_2.fastq",
+        "ID": "GTEX-W5X1-0126-SM-5CHR9_rep1",
+        "SM": "GTEX-W5X1-0126-SM-5CHR9_rep1",
+        "LB": "GTEX-W5X1-0126-SM-5CHR9_rep1",
+        "PU": "GTEX-W5X1-0126-SM-5CHR9_rep1",
+        "PL": "Illumina"
+    },
+
+    "GTEX-WFON-1726-SM-4LVMQ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-WFON-1726-SM-4LVMQ/GTEX-WFON-1726-SM-4LVMQ_fixed_1.fastq",
+        "fq2": "GTEX-WFON-1726-SM-4LVMQ/GTEX-WFON-1726-SM-4LVMQ_fixed_2.fastq",
+        "fq1_sy": "GTEX-WFON-1726-SM-4LVMQ_1.fastq",
+        "fq2_sy": "GTEX-WFON-1726-SM-4LVMQ_2.fastq",
+        "ID": "GTEX-WFON-1726-SM-4LVMQ",
+        "SM": "GTEX-WFON-1726-SM-4LVMQ",
+        "LB": "GTEX-WFON-1726-SM-4LVMQ",
+        "PU": "GTEX-WFON-1726-SM-4LVMQ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-WFON-1726-SM-5CHT5_rep1":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-WFON-1726-SM-5CHT5_rep1/GTEX-WFON-1726-SM-5CHT5_rep1_fixed_1.fastq",
+        "fq2": "GTEX-WFON-1726-SM-5CHT5_rep1/GTEX-WFON-1726-SM-5CHT5_rep1_fixed_2.fastq",
+        "fq1_sy": "GTEX-WFON-1726-SM-5CHT5_rep1_1.fastq",
+        "fq2_sy": "GTEX-WFON-1726-SM-5CHT5_rep1_2.fastq",
+        "ID": "GTEX-WFON-1726-SM-5CHT5_rep1",
+        "SM": "GTEX-WFON-1726-SM-5CHT5_rep1",
+        "LB": "GTEX-WFON-1726-SM-5CHT5_rep1",
+        "PU": "GTEX-WFON-1726-SM-5CHT5_rep1",
+        "PL": "Illumina"
+    },
+
+    "GTEX-WK11-1326-SM-4OOSI":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-WK11-1326-SM-4OOSI/GTEX-WK11-1326-SM-4OOSI_fixed_1.fastq",
+        "fq2": "GTEX-WK11-1326-SM-4OOSI/GTEX-WK11-1326-SM-4OOSI_fixed_2.fastq",
+        "fq1_sy": "GTEX-WK11-1326-SM-4OOSI_1.fastq",
+        "fq2_sy": "GTEX-WK11-1326-SM-4OOSI_2.fastq",
+        "ID": "GTEX-WK11-1326-SM-4OOSI",
+        "SM": "GTEX-WK11-1326-SM-4OOSI",
+        "LB": "GTEX-WK11-1326-SM-4OOSI",
+        "PU": "GTEX-WK11-1326-SM-4OOSI",
+        "PL": "Illumina"
+    },
+
+    "GTEX-WQUQ-1926-SM-4OOSA":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-WQUQ-1926-SM-4OOSA/GTEX-WQUQ-1926-SM-4OOSA_fixed_1.fastq",
+        "fq2": "GTEX-WQUQ-1926-SM-4OOSA/GTEX-WQUQ-1926-SM-4OOSA_fixed_2.fastq",
+        "fq1_sy": "GTEX-WQUQ-1926-SM-4OOSA_1.fastq",
+        "fq2_sy": "GTEX-WQUQ-1926-SM-4OOSA_2.fastq",
+        "ID": "GTEX-WQUQ-1926-SM-4OOSA",
+        "SM": "GTEX-WQUQ-1926-SM-4OOSA",
+        "LB": "GTEX-WQUQ-1926-SM-4OOSA",
+        "PU": "GTEX-WQUQ-1926-SM-4OOSA",
+        "PL": "Illumina"
+    },
+
+    "GTEX-WY7C-0726-SM-4ONCB":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-WY7C-0726-SM-4ONCB/GTEX-WY7C-0726-SM-4ONCB_fixed_1.fastq",
+        "fq2": "GTEX-WY7C-0726-SM-4ONCB/GTEX-WY7C-0726-SM-4ONCB_fixed_2.fastq",
+        "fq1_sy": "GTEX-WY7C-0726-SM-4ONCB_1.fastq",
+        "fq2_sy": "GTEX-WY7C-0726-SM-4ONCB_2.fastq",
+        "ID": "GTEX-WY7C-0726-SM-4ONCB",
+        "SM": "GTEX-WY7C-0726-SM-4ONCB",
+        "LB": "GTEX-WY7C-0726-SM-4ONCB",
+        "PU": "GTEX-WY7C-0726-SM-4ONCB",
+        "PL": "Illumina"
+    },
+
+    "GTEX-WYVS-1926-SM-4PQZ2":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-WYVS-1926-SM-4PQZ2/GTEX-WYVS-1926-SM-4PQZ2_fixed_1.fastq",
+        "fq2": "GTEX-WYVS-1926-SM-4PQZ2/GTEX-WYVS-1926-SM-4PQZ2_fixed_2.fastq",
+        "fq1_sy": "GTEX-WYVS-1926-SM-4PQZ2_1.fastq",
+        "fq2_sy": "GTEX-WYVS-1926-SM-4PQZ2_2.fastq",
+        "ID": "GTEX-WYVS-1926-SM-4PQZ2",
+        "SM": "GTEX-WYVS-1926-SM-4PQZ2",
+        "LB": "GTEX-WYVS-1926-SM-4PQZ2",
+        "PU": "GTEX-WYVS-1926-SM-4PQZ2",
+        "PL": "Illumina"
+    },
+
+    "GTEX-WYVS-1926-SM-4SOIC":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-WYVS-1926-SM-4SOIC/GTEX-WYVS-1926-SM-4SOIC_fixed_1.fastq",
+        "fq2": "GTEX-WYVS-1926-SM-4SOIC/GTEX-WYVS-1926-SM-4SOIC_fixed_2.fastq",
+        "fq1_sy": "GTEX-WYVS-1926-SM-4SOIC_1.fastq",
+        "fq2_sy": "GTEX-WYVS-1926-SM-4SOIC_2.fastq",
+        "ID": "GTEX-WYVS-1926-SM-4SOIC",
+        "SM": "GTEX-WYVS-1926-SM-4SOIC",
+        "LB": "GTEX-WYVS-1926-SM-4SOIC",
+        "PU": "GTEX-WYVS-1926-SM-4SOIC",
+        "PL": "Illumina"
+    },
+
+    "GTEX-WZTO-0626-SM-4PQYY":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-WZTO-0626-SM-4PQYY/GTEX-WZTO-0626-SM-4PQYY_fixed_1.fastq",
+        "fq2": "GTEX-WZTO-0626-SM-4PQYY/GTEX-WZTO-0626-SM-4PQYY_fixed_2.fastq",
+        "fq1_sy": "GTEX-WZTO-0626-SM-4PQYY_1.fastq",
+        "fq2_sy": "GTEX-WZTO-0626-SM-4PQYY_2.fastq",
+        "ID": "GTEX-WZTO-0626-SM-4PQYY",
+        "SM": "GTEX-WZTO-0626-SM-4PQYY",
+        "LB": "GTEX-WZTO-0626-SM-4PQYY",
+        "PU": "GTEX-WZTO-0626-SM-4PQYY",
+        "PL": "Illumina"
+    },
+
+    "GTEX-X261-1726-SM-4PQYT":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-X261-1726-SM-4PQYT/GTEX-X261-1726-SM-4PQYT_fixed_1.fastq",
+        "fq2": "GTEX-X261-1726-SM-4PQYT/GTEX-X261-1726-SM-4PQYT_fixed_2.fastq",
+        "fq1_sy": "GTEX-X261-1726-SM-4PQYT_1.fastq",
+        "fq2_sy": "GTEX-X261-1726-SM-4PQYT_2.fastq",
+        "ID": "GTEX-X261-1726-SM-4PQYT",
+        "SM": "GTEX-X261-1726-SM-4PQYT",
+        "LB": "GTEX-X261-1726-SM-4PQYT",
+        "PU": "GTEX-X261-1726-SM-4PQYT",
+        "PL": "Illumina"
+    },
+
+    "GTEX-X3Y1-2726-SM-4PQZH":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-X3Y1-2726-SM-4PQZH/GTEX-X3Y1-2726-SM-4PQZH_fixed_1.fastq",
+        "fq2": "GTEX-X3Y1-2726-SM-4PQZH/GTEX-X3Y1-2726-SM-4PQZH_fixed_2.fastq",
+        "fq1_sy": "GTEX-X3Y1-2726-SM-4PQZH_1.fastq",
+        "fq2_sy": "GTEX-X3Y1-2726-SM-4PQZH_2.fastq",
+        "ID": "GTEX-X3Y1-2726-SM-4PQZH",
+        "SM": "GTEX-X3Y1-2726-SM-4PQZH",
+        "LB": "GTEX-X3Y1-2726-SM-4PQZH",
+        "PU": "GTEX-X3Y1-2726-SM-4PQZH",
+        "PL": "Illumina"
+    },
+
+    "GTEX-X4EO-1126-SM-4QARQ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-X4EO-1126-SM-4QARQ/GTEX-X4EO-1126-SM-4QARQ_fixed_1.fastq",
+        "fq2": "GTEX-X4EO-1126-SM-4QARQ/GTEX-X4EO-1126-SM-4QARQ_fixed_2.fastq",
+        "fq1_sy": "GTEX-X4EO-1126-SM-4QARQ_1.fastq",
+        "fq2_sy": "GTEX-X4EO-1126-SM-4QARQ_2.fastq",
+        "ID": "GTEX-X4EO-1126-SM-4QARQ",
+        "SM": "GTEX-X4EO-1126-SM-4QARQ",
+        "LB": "GTEX-X4EO-1126-SM-4QARQ",
+        "PU": "GTEX-X4EO-1126-SM-4QARQ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-X4EP-1026-SM-4QAS5":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-X4EP-1026-SM-4QAS5/GTEX-X4EP-1026-SM-4QAS5_fixed_1.fastq",
+        "fq2": "GTEX-X4EP-1026-SM-4QAS5/GTEX-X4EP-1026-SM-4QAS5_fixed_2.fastq",
+        "fq1_sy": "GTEX-X4EP-1026-SM-4QAS5_1.fastq",
+        "fq2_sy": "GTEX-X4EP-1026-SM-4QAS5_2.fastq",
+        "ID": "GTEX-X4EP-1026-SM-4QAS5",
+        "SM": "GTEX-X4EP-1026-SM-4QAS5",
+        "LB": "GTEX-X4EP-1026-SM-4QAS5",
+        "PU": "GTEX-X4EP-1026-SM-4QAS5",
+        "PL": "Illumina"
+    },
+
+    "GTEX-X4XY-1626-SM-46MVN":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-X4XY-1626-SM-46MVN/GTEX-X4XY-1626-SM-46MVN_fixed_1.fastq",
+        "fq2": "GTEX-X4XY-1626-SM-46MVN/GTEX-X4XY-1626-SM-46MVN_fixed_2.fastq",
+        "fq1_sy": "GTEX-X4XY-1626-SM-46MVN_1.fastq",
+        "fq2_sy": "GTEX-X4XY-1626-SM-46MVN_2.fastq",
+        "ID": "GTEX-X4XY-1626-SM-46MVN",
+        "SM": "GTEX-X4XY-1626-SM-46MVN",
+        "LB": "GTEX-X4XY-1626-SM-46MVN",
+        "PU": "GTEX-X4XY-1626-SM-46MVN",
+        "PL": "Illumina"
+    },
+
+    "GTEX-XBEC-1526-SM-4AT68":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-XBEC-1526-SM-4AT68/GTEX-XBEC-1526-SM-4AT68_fixed_1.fastq",
+        "fq2": "GTEX-XBEC-1526-SM-4AT68/GTEX-XBEC-1526-SM-4AT68_fixed_2.fastq",
+        "fq1_sy": "GTEX-XBEC-1526-SM-4AT68_1.fastq",
+        "fq2_sy": "GTEX-XBEC-1526-SM-4AT68_2.fastq",
+        "ID": "GTEX-XBEC-1526-SM-4AT68",
+        "SM": "GTEX-XBEC-1526-SM-4AT68",
+        "LB": "GTEX-XBEC-1526-SM-4AT68",
+        "PU": "GTEX-XBEC-1526-SM-4AT68",
+        "PL": "Illumina"
+    },
+
+    "GTEX-XOTO-0826-SM-4B65O":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-XOTO-0826-SM-4B65O/GTEX-XOTO-0826-SM-4B65O_fixed_1.fastq",
+        "fq2": "GTEX-XOTO-0826-SM-4B65O/GTEX-XOTO-0826-SM-4B65O_fixed_2.fastq",
+        "fq1_sy": "GTEX-XOTO-0826-SM-4B65O_1.fastq",
+        "fq2_sy": "GTEX-XOTO-0826-SM-4B65O_2.fastq",
+        "ID": "GTEX-XOTO-0826-SM-4B65O",
+        "SM": "GTEX-XOTO-0826-SM-4B65O",
+        "LB": "GTEX-XOTO-0826-SM-4B65O",
+        "PU": "GTEX-XOTO-0826-SM-4B65O",
+        "PL": "Illumina"
+    },
+
+    "GTEX-XXEK-1126-SM-4BRUX":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-XXEK-1126-SM-4BRUX/GTEX-XXEK-1126-SM-4BRUX_fixed_1.fastq",
+        "fq2": "GTEX-XXEK-1126-SM-4BRUX/GTEX-XXEK-1126-SM-4BRUX_fixed_2.fastq",
+        "fq1_sy": "GTEX-XXEK-1126-SM-4BRUX_1.fastq",
+        "fq2_sy": "GTEX-XXEK-1126-SM-4BRUX_2.fastq",
+        "ID": "GTEX-XXEK-1126-SM-4BRUX",
+        "SM": "GTEX-XXEK-1126-SM-4BRUX",
+        "LB": "GTEX-XXEK-1126-SM-4BRUX",
+        "PU": "GTEX-XXEK-1126-SM-4BRUX",
+        "PL": "Illumina"
+    },
+
+    "GTEX-Y5LM-0426-SM-4VBRO":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-Y5LM-0426-SM-4VBRO/GTEX-Y5LM-0426-SM-4VBRO_fixed_1.fastq",
+        "fq2": "GTEX-Y5LM-0426-SM-4VBRO/GTEX-Y5LM-0426-SM-4VBRO_fixed_2.fastq",
+        "fq1_sy": "GTEX-Y5LM-0426-SM-4VBRO_1.fastq",
+        "fq2_sy": "GTEX-Y5LM-0426-SM-4VBRO_2.fastq",
+        "ID": "GTEX-Y5LM-0426-SM-4VBRO",
+        "SM": "GTEX-Y5LM-0426-SM-4VBRO",
+        "LB": "GTEX-Y5LM-0426-SM-4VBRO",
+        "PU": "GTEX-Y5LM-0426-SM-4VBRO",
+        "PL": "Illumina"
+    },
+
+    "GTEX-Y5V5-0926-SM-4VBPZ":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-Y5V5-0926-SM-4VBPZ/GTEX-Y5V5-0926-SM-4VBPZ_fixed_1.fastq",
+        "fq2": "GTEX-Y5V5-0926-SM-4VBPZ/GTEX-Y5V5-0926-SM-4VBPZ_fixed_2.fastq",
+        "fq1_sy": "GTEX-Y5V5-0926-SM-4VBPZ_1.fastq",
+        "fq2_sy": "GTEX-Y5V5-0926-SM-4VBPZ_2.fastq",
+        "ID": "GTEX-Y5V5-0926-SM-4VBPZ",
+        "SM": "GTEX-Y5V5-0926-SM-4VBPZ",
+        "LB": "GTEX-Y5V5-0926-SM-4VBPZ",
+        "PU": "GTEX-Y5V5-0926-SM-4VBPZ",
+        "PL": "Illumina"
+    },
+
+    "GTEX-YB5E-0326-SM-5IFHU":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-YB5E-0326-SM-5IFHU/GTEX-YB5E-0326-SM-5IFHU_fixed_1.fastq",
+        "fq2": "GTEX-YB5E-0326-SM-5IFHU/GTEX-YB5E-0326-SM-5IFHU_fixed_2.fastq",
+        "fq1_sy": "GTEX-YB5E-0326-SM-5IFHU_1.fastq",
+        "fq2_sy": "GTEX-YB5E-0326-SM-5IFHU_2.fastq",
+        "ID": "GTEX-YB5E-0326-SM-5IFHU",
+        "SM": "GTEX-YB5E-0326-SM-5IFHU",
+        "LB": "GTEX-YB5E-0326-SM-5IFHU",
+        "PU": "GTEX-YB5E-0326-SM-5IFHU",
+        "PL": "Illumina"
+    },
+
+    "GTEX-YEC4-0826-SM-5P9FV":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-YEC4-0826-SM-5P9FV/GTEX-YEC4-0826-SM-5P9FV_fixed_1.fastq",
+        "fq2": "GTEX-YEC4-0826-SM-5P9FV/GTEX-YEC4-0826-SM-5P9FV_fixed_2.fastq",
+        "fq1_sy": "GTEX-YEC4-0826-SM-5P9FV_1.fastq",
+        "fq2_sy": "GTEX-YEC4-0826-SM-5P9FV_2.fastq",
+        "ID": "GTEX-YEC4-0826-SM-5P9FV",
+        "SM": "GTEX-YEC4-0826-SM-5P9FV",
+        "LB": "GTEX-YEC4-0826-SM-5P9FV",
+        "PU": "GTEX-YEC4-0826-SM-5P9FV",
+        "PL": "Illumina"
+    },
+
+    "GTEX-YECK-1926-SM-4W21H":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-YECK-1926-SM-4W21H/GTEX-YECK-1926-SM-4W21H_fixed_1.fastq",
+        "fq2": "GTEX-YECK-1926-SM-4W21H/GTEX-YECK-1926-SM-4W21H_fixed_2.fastq",
+        "fq1_sy": "GTEX-YECK-1926-SM-4W21H_1.fastq",
+        "fq2_sy": "GTEX-YECK-1926-SM-4W21H_2.fastq",
+        "ID": "GTEX-YECK-1926-SM-4W21H",
+        "SM": "GTEX-YECK-1926-SM-4W21H",
+        "LB": "GTEX-YECK-1926-SM-4W21H",
+        "PU": "GTEX-YECK-1926-SM-4W21H",
+        "PL": "Illumina"
+    },
+
+    "GTEX-YFC4-1526-SM-5IFJS":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-YFC4-1526-SM-5IFJS/GTEX-YFC4-1526-SM-5IFJS_fixed_1.fastq",
+        "fq2": "GTEX-YFC4-1526-SM-5IFJS/GTEX-YFC4-1526-SM-5IFJS_fixed_2.fastq",
+        "fq1_sy": "GTEX-YFC4-1526-SM-5IFJS_1.fastq",
+        "fq2_sy": "GTEX-YFC4-1526-SM-5IFJS_2.fastq",
+        "ID": "GTEX-YFC4-1526-SM-5IFJS",
+        "SM": "GTEX-YFC4-1526-SM-5IFJS",
+        "LB": "GTEX-YFC4-1526-SM-5IFJS",
+        "PU": "GTEX-YFC4-1526-SM-5IFJS",
+        "PL": "Illumina"
+    },
+
+    "GTEX-Z9EW-0426-SM-5CVM9":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-Z9EW-0426-SM-5CVM9/GTEX-Z9EW-0426-SM-5CVM9_fixed_1.fastq",
+        "fq2": "GTEX-Z9EW-0426-SM-5CVM9/GTEX-Z9EW-0426-SM-5CVM9_fixed_2.fastq",
+        "fq1_sy": "GTEX-Z9EW-0426-SM-5CVM9_1.fastq",
+        "fq2_sy": "GTEX-Z9EW-0426-SM-5CVM9_2.fastq",
+        "ID": "GTEX-Z9EW-0426-SM-5CVM9",
+        "SM": "GTEX-Z9EW-0426-SM-5CVM9",
+        "LB": "GTEX-Z9EW-0426-SM-5CVM9",
+        "PU": "GTEX-Z9EW-0426-SM-5CVM9",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZAB4-0826-SM-5LU9D":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-ZAB4-0826-SM-5LU9D/GTEX-ZAB4-0826-SM-5LU9D_fixed_1.fastq",
+        "fq2": "GTEX-ZAB4-0826-SM-5LU9D/GTEX-ZAB4-0826-SM-5LU9D_fixed_2.fastq",
+        "fq1_sy": "GTEX-ZAB4-0826-SM-5LU9D_1.fastq",
+        "fq2_sy": "GTEX-ZAB4-0826-SM-5LU9D_2.fastq",
+        "ID": "GTEX-ZAB4-0826-SM-5LU9D",
+        "SM": "GTEX-ZAB4-0826-SM-5LU9D",
+        "LB": "GTEX-ZAB4-0826-SM-5LU9D",
+        "PU": "GTEX-ZAB4-0826-SM-5LU9D",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZAB5-0426-SM-5CVMI":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-ZAB5-0426-SM-5CVMI/GTEX-ZAB5-0426-SM-5CVMI_fixed_1.fastq",
+        "fq2": "GTEX-ZAB5-0426-SM-5CVMI/GTEX-ZAB5-0426-SM-5CVMI_fixed_2.fastq",
+        "fq1_sy": "GTEX-ZAB5-0426-SM-5CVMI_1.fastq",
+        "fq2_sy": "GTEX-ZAB5-0426-SM-5CVMI_2.fastq",
+        "ID": "GTEX-ZAB5-0426-SM-5CVMI",
+        "SM": "GTEX-ZAB5-0426-SM-5CVMI",
+        "LB": "GTEX-ZAB5-0426-SM-5CVMI",
+        "PU": "GTEX-ZAB5-0426-SM-5CVMI",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZEX8-0826-SM-4WKHK":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-ZEX8-0826-SM-4WKHK/GTEX-ZEX8-0826-SM-4WKHK_fixed_1.fastq",
+        "fq2": "GTEX-ZEX8-0826-SM-4WKHK/GTEX-ZEX8-0826-SM-4WKHK_fixed_2.fastq",
+        "fq1_sy": "GTEX-ZEX8-0826-SM-4WKHK_1.fastq",
+        "fq2_sy": "GTEX-ZEX8-0826-SM-4WKHK_2.fastq",
+        "ID": "GTEX-ZEX8-0826-SM-4WKHK",
+        "SM": "GTEX-ZEX8-0826-SM-4WKHK",
+        "LB": "GTEX-ZEX8-0826-SM-4WKHK",
+        "PU": "GTEX-ZEX8-0826-SM-4WKHK",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZF29-2026-SM-4WWB7":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-ZF29-2026-SM-4WWB7/GTEX-ZF29-2026-SM-4WWB7_fixed_1.fastq",
+        "fq2": "GTEX-ZF29-2026-SM-4WWB7/GTEX-ZF29-2026-SM-4WWB7_fixed_2.fastq",
+        "fq1_sy": "GTEX-ZF29-2026-SM-4WWB7_1.fastq",
+        "fq2_sy": "GTEX-ZF29-2026-SM-4WWB7_2.fastq",
+        "ID": "GTEX-ZF29-2026-SM-4WWB7",
+        "SM": "GTEX-ZF29-2026-SM-4WWB7",
+        "LB": "GTEX-ZF29-2026-SM-4WWB7",
+        "PU": "GTEX-ZF29-2026-SM-4WWB7",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZF2S-3026-SM-4WWCH":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-ZF2S-3026-SM-4WWCH/GTEX-ZF2S-3026-SM-4WWCH_fixed_1.fastq",
+        "fq2": "GTEX-ZF2S-3026-SM-4WWCH/GTEX-ZF2S-3026-SM-4WWCH_fixed_2.fastq",
+        "fq1_sy": "GTEX-ZF2S-3026-SM-4WWCH_1.fastq",
+        "fq2_sy": "GTEX-ZF2S-3026-SM-4WWCH_2.fastq",
+        "ID": "GTEX-ZF2S-3026-SM-4WWCH",
+        "SM": "GTEX-ZF2S-3026-SM-4WWCH",
+        "LB": "GTEX-ZF2S-3026-SM-4WWCH",
+        "PU": "GTEX-ZF2S-3026-SM-4WWCH",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZPU1-0826-SM-57WG2":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-ZPU1-0826-SM-57WG2/GTEX-ZPU1-0826-SM-57WG2_fixed_1.fastq",
+        "fq2": "GTEX-ZPU1-0826-SM-57WG2/GTEX-ZPU1-0826-SM-57WG2_fixed_2.fastq",
+        "fq1_sy": "GTEX-ZPU1-0826-SM-57WG2_1.fastq",
+        "fq2_sy": "GTEX-ZPU1-0826-SM-57WG2_2.fastq",
+        "ID": "GTEX-ZPU1-0826-SM-57WG2",
+        "SM": "GTEX-ZPU1-0826-SM-57WG2",
+        "LB": "GTEX-ZPU1-0826-SM-57WG2",
+        "PU": "GTEX-ZPU1-0826-SM-57WG2",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZTPG-1426-SM-51MT3":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-ZTPG-1426-SM-51MT3/GTEX-ZTPG-1426-SM-51MT3_fixed_1.fastq",
+        "fq2": "GTEX-ZTPG-1426-SM-51MT3/GTEX-ZTPG-1426-SM-51MT3_fixed_2.fastq",
+        "fq1_sy": "GTEX-ZTPG-1426-SM-51MT3_1.fastq",
+        "fq2_sy": "GTEX-ZTPG-1426-SM-51MT3_2.fastq",
+        "ID": "GTEX-ZTPG-1426-SM-51MT3",
+        "SM": "GTEX-ZTPG-1426-SM-51MT3",
+        "LB": "GTEX-ZTPG-1426-SM-51MT3",
+        "PU": "GTEX-ZTPG-1426-SM-51MT3",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZVP2-0626-SM-51MSO":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-ZVP2-0626-SM-51MSO/GTEX-ZVP2-0626-SM-51MSO_fixed_1.fastq",
+        "fq2": "GTEX-ZVP2-0626-SM-51MSO/GTEX-ZVP2-0626-SM-51MSO_fixed_2.fastq",
+        "fq1_sy": "GTEX-ZVP2-0626-SM-51MSO_1.fastq",
+        "fq2_sy": "GTEX-ZVP2-0626-SM-51MSO_2.fastq",
+        "ID": "GTEX-ZVP2-0626-SM-51MSO",
+        "SM": "GTEX-ZVP2-0626-SM-51MSO",
+        "LB": "GTEX-ZVP2-0626-SM-51MSO",
+        "PU": "GTEX-ZVP2-0626-SM-51MSO",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZVT3-1626-SM-5GU66":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-ZVT3-1626-SM-5GU66/GTEX-ZVT3-1626-SM-5GU66_fixed_1.fastq",
+        "fq2": "GTEX-ZVT3-1626-SM-5GU66/GTEX-ZVT3-1626-SM-5GU66_fixed_2.fastq",
+        "fq1_sy": "GTEX-ZVT3-1626-SM-5GU66_1.fastq",
+        "fq2_sy": "GTEX-ZVT3-1626-SM-5GU66_2.fastq",
+        "ID": "GTEX-ZVT3-1626-SM-5GU66",
+        "SM": "GTEX-ZVT3-1626-SM-5GU66",
+        "LB": "GTEX-ZVT3-1626-SM-5GU66",
+        "PU": "GTEX-ZVT3-1626-SM-5GU66",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZVT4-0626-SM-5E45T":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-ZVT4-0626-SM-5E45T/GTEX-ZVT4-0626-SM-5E45T_fixed_1.fastq",
+        "fq2": "GTEX-ZVT4-0626-SM-5E45T/GTEX-ZVT4-0626-SM-5E45T_fixed_2.fastq",
+        "fq1_sy": "GTEX-ZVT4-0626-SM-5E45T_1.fastq",
+        "fq2_sy": "GTEX-ZVT4-0626-SM-5E45T_2.fastq",
+        "ID": "GTEX-ZVT4-0626-SM-5E45T",
+        "SM": "GTEX-ZVT4-0626-SM-5E45T",
+        "LB": "GTEX-ZVT4-0626-SM-5E45T",
+        "PU": "GTEX-ZVT4-0626-SM-5E45T",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZYT6-0626-SM-5E45V":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-ZYT6-0626-SM-5E45V/GTEX-ZYT6-0626-SM-5E45V_fixed_1.fastq",
+        "fq2": "GTEX-ZYT6-0626-SM-5E45V/GTEX-ZYT6-0626-SM-5E45V_fixed_2.fastq",
+        "fq1_sy": "GTEX-ZYT6-0626-SM-5E45V_1.fastq",
+        "fq2_sy": "GTEX-ZYT6-0626-SM-5E45V_2.fastq",
+        "ID": "GTEX-ZYT6-0626-SM-5E45V",
+        "SM": "GTEX-ZYT6-0626-SM-5E45V",
+        "LB": "GTEX-ZYT6-0626-SM-5E45V",
+        "PU": "GTEX-ZYT6-0626-SM-5E45V",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZYY3-0626-SM-5NQ6W":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-ZYY3-0626-SM-5NQ6W/GTEX-ZYY3-0626-SM-5NQ6W_fixed_1.fastq",
+        "fq2": "GTEX-ZYY3-0626-SM-5NQ6W/GTEX-ZYY3-0626-SM-5NQ6W_fixed_2.fastq",
+        "fq1_sy": "GTEX-ZYY3-0626-SM-5NQ6W_1.fastq",
+        "fq2_sy": "GTEX-ZYY3-0626-SM-5NQ6W_2.fastq",
+        "ID": "GTEX-ZYY3-0626-SM-5NQ6W",
+        "SM": "GTEX-ZYY3-0626-SM-5NQ6W",
+        "LB": "GTEX-ZYY3-0626-SM-5NQ6W",
+        "PU": "GTEX-ZYY3-0626-SM-5NQ6W",
+        "PL": "Illumina"
+    },
+
+    "GTEX-ZZPU-0426-SM-5GZYH":{
+        "fq_path": "/mnt/storage/public/dbgap-8834/liver/",
+        "fq1": "GTEX-ZZPU-0426-SM-5GZYH/GTEX-ZZPU-0426-SM-5GZYH_fixed_1.fastq",
+        "fq2": "GTEX-ZZPU-0426-SM-5GZYH/GTEX-ZZPU-0426-SM-5GZYH_fixed_2.fastq",
+        "fq1_sy": "GTEX-ZZPU-0426-SM-5GZYH_1.fastq",
+        "fq2_sy": "GTEX-ZZPU-0426-SM-5GZYH_2.fastq",
+        "ID": "GTEX-ZZPU-0426-SM-5GZYH",
+        "SM": "GTEX-ZZPU-0426-SM-5GZYH",
+        "LB": "GTEX-ZZPU-0426-SM-5GZYH",
+        "PU": "GTEX-ZZPU-0426-SM-5GZYH",
+        "PL": "Illumina"
+    }
+}
+
