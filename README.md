@@ -60,5 +60,5 @@ Kimberly Olney | olneykimberly@gmail.com | @olneykimberly
 Sarah Brotman | sarah.brotman13@gmail.com | @sarahbrotman
 Valeria Valverde-Vesling |
 Jocelyn Andrews |
-Melissa A. Wilson | melissa.wilsonsayres@asu.edu | @mwilsonsayres
+Melissa A. Wilson | mwilsons@asu.edu | @sexchrlab
 
