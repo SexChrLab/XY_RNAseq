@@ -29,9 +29,9 @@
 <text text-anchor="start" x="454.29" y="-46" font-family="monospace" font-size="10.00">gentrome_ymask.fa.gz</text>
 <text text-anchor="start" x="454.29" y="-28" font-family="monospace" font-size="10.00">gentrome_ypars.fa.gz</text>
 <text text-anchor="start" x="668.29" y="-10" font-family="sans" font-size="10.00"> &#160;</text>
-<polygon fill="#57a7d9" stroke="#57a7d9" points="448.29,-260 448.29,-260 682.29,-260 682.29,-260 448.29,-260"/>
-<polygon fill="#57a7d9" stroke="#57a7d9" points="448.29,-22 448.29,-22 682.29,-22 682.29,-22 448.29,-22"/>
-<polygon fill="none" stroke="#57a7d9" stroke-width="2" points="447.79,-1 447.79,-289 680.79,-289 680.79,-1 447.79,-1"/>
+<polygon fill="#57d993" stroke="#57d993" points="448.29,-260 448.29,-260 682.29,-260 682.29,-260 448.29,-260"/>
+<polygon fill="#57d993" stroke="#57d993" points="448.29,-22 448.29,-22 682.29,-22 682.29,-22 448.29,-22"/>
+<polygon fill="none" stroke="#57d993" stroke-width="2" points="447.79,-1 447.79,-289 680.79,-289 680.79,-1 447.79,-1"/>
 </g>
 <!-- 1 -->
 <g id="node2" class="node">
@@ -45,12 +45,12 @@
 <text text-anchor="start" x="179.29" y="-532.8" font-family="sans" font-weight="bold" font-size="14.00">output →</text>
 <text text-anchor="start" x="252.29" y="-532.8" font-family="sans" font-size="10.00"> </text>
 <text text-anchor="start" x="108.29" y="-513" font-family="monospace" font-size="10.00">decoys_ypars.txt</text>
-<polygon fill="#d97f57" stroke="#d97f57" points="102.29,-587 102.29,-587 263.29,-587 263.29,-587 102.29,-587"/>
-<polygon fill="#d97f57" stroke="#d97f57" points="102.29,-547 102.29,-547 263.29,-547 263.29,-547 102.29,-547"/>
-<polygon fill="none" stroke="#d97f57" stroke-width="2" points="102.29,-504 102.29,-616 262.29,-616 262.29,-504 102.29,-504"/>
+<polygon fill="#57d96b" stroke="#57d96b" points="102.29,-587 102.29,-587 263.29,-587 263.29,-587 102.29,-587"/>
+<polygon fill="#57d96b" stroke="#57d96b" points="102.29,-547 102.29,-547 263.29,-547 263.29,-547 102.29,-547"/>
+<polygon fill="none" stroke="#57d96b" stroke-width="2" points="102.29,-504 102.29,-616 262.29,-616 262.29,-504 102.29,-504"/>
 </g>
 <!-- 1&#45;&gt;0 -->
-<g id="edge3" class="edge">
+<g id="edge8" class="edge">
 <title>1&#45;&gt;0</title>
 <path fill="none" stroke="grey" stroke-width="2" d="M196.8,-502.64C212.04,-452.03 240.03,-377.91 284.29,-326 326.2,-276.85 384.9,-236.3 437.73,-206.22"/>
 <polygon fill="grey" stroke="grey" stroke-width="2" points="439.49,-209.24 446.49,-201.29 436.06,-203.14 439.49,-209.24"/>
@@ -68,9 +68,9 @@
 <text text-anchor="start" x="395.29" y="-355.8" font-family="sans" font-weight="bold" font-size="14.00">output →</text>
 <text text-anchor="start" x="468.29" y="-355.8" font-family="sans" font-size="10.00"> </text>
 <text text-anchor="start" x="300.29" y="-336" font-family="monospace" font-size="10.00">gencode_salmon_index_XYonly</text>
-<polygon fill="#577fd9" stroke="#577fd9" points="294.29,-428 294.29,-428 479.29,-428 479.29,-428 294.29,-428"/>
-<polygon fill="#577fd9" stroke="#577fd9" points="294.29,-370 294.29,-370 479.29,-370 479.29,-370 294.29,-370"/>
-<polygon fill="none" stroke="#577fd9" stroke-width="2" points="294.29,-327 294.29,-457 478.29,-457 478.29,-327 294.29,-327"/>
+<polygon fill="#57cfd9" stroke="#57cfd9" points="294.29,-428 294.29,-428 479.29,-428 479.29,-428 294.29,-428"/>
+<polygon fill="#57cfd9" stroke="#57cfd9" points="294.29,-370 294.29,-370 479.29,-370 479.29,-370 294.29,-370"/>
+<polygon fill="none" stroke="#57cfd9" stroke-width="2" points="294.29,-327 294.29,-457 478.29,-457 478.29,-327 294.29,-327"/>
 </g>
 <!-- 1&#45;&gt;12 -->
 <g id="edge23" class="edge">
@@ -95,7 +95,7 @@
 <polygon fill="none" stroke="#57d9bb" stroke-width="2" points="68.29,-663 68.29,-775 236.29,-775 236.29,-663 68.29,-663"/>
 </g>
 <!-- 2&#45;&gt;0 -->
-<g id="edge10" class="edge">
+<g id="edge9" class="edge">
 <title>2&#45;&gt;0</title>
 <path fill="none" stroke="grey" stroke-width="2" d="M108.57,-661.88C101.86,-650.57 95.96,-638.34 92.29,-626 75.58,-569.77 74.83,-550.01 92.29,-494 119.29,-407.37 139.92,-385.65 208.29,-326 275.22,-267.62 364.43,-222.56 436.8,-192.12"/>
 <polygon fill="grey" stroke="grey" stroke-width="2" points="438.56,-195.18 446.45,-188.11 435.87,-188.72 438.56,-195.18"/>
@@ -115,9 +115,9 @@
 <text text-anchor="start" x="146.29" y="-841.8" font-family="sans" font-weight="bold" font-size="14.00">output →</text>
 <text text-anchor="start" x="219.29" y="-841.8" font-family="sans" font-size="10.00"> </text>
 <text text-anchor="start" x="81.29" y="-822" font-family="monospace" font-size="10.00">GRCh38.p12.genome.XYonly.fa</text>
-<polygon fill="#bbd957" stroke="#bbd957" points="75.29,-874 75.29,-874 230.29,-874 230.29,-874 75.29,-874"/>
-<polygon fill="#bbd957" stroke="#bbd957" points="75.29,-856 75.29,-856 230.29,-856 230.29,-856 75.29,-856"/>
-<polygon fill="none" stroke="#bbd957" stroke-width="2" points="75.29,-813 75.29,-903 229.29,-903 229.29,-813 75.29,-813"/>
+<polygon fill="#93d957" stroke="#93d957" points="75.29,-874 75.29,-874 230.29,-874 230.29,-874 75.29,-874"/>
+<polygon fill="#93d957" stroke="#93d957" points="75.29,-856 75.29,-856 230.29,-856 230.29,-856 75.29,-856"/>
+<polygon fill="none" stroke="#93d957" stroke-width="2" points="75.29,-813 75.29,-903 229.29,-903 229.29,-813 75.29,-813"/>
 </g>
 <!-- 3&#45;&gt;0 -->
 <g id="edge6" class="edge">
@@ -144,9 +144,9 @@
 <text text-anchor="start" x="433.29" y="-523.8" font-family="sans" font-weight="bold" font-size="14.00">output →</text>
 <text text-anchor="start" x="506.29" y="-523.8" font-family="sans" font-size="10.00"> </text>
 <text text-anchor="start" x="289.29" y="-504" font-family="monospace" font-size="10.00">gentrome_ypars.fa.gz</text>
-<polygon fill="#d95757" stroke="#d95757" points="283.29,-596 283.29,-596 517.29,-596 517.29,-596 283.29,-596"/>
-<polygon fill="#d95757" stroke="#d95757" points="283.29,-538 283.29,-538 517.29,-538 517.29,-538 283.29,-538"/>
-<polygon fill="none" stroke="#d95757" stroke-width="2" points="282.79,-495 282.79,-625 515.79,-625 515.79,-495 282.79,-495"/>
+<polygon fill="#57a7d9" stroke="#57a7d9" points="283.29,-596 283.29,-596 517.29,-596 517.29,-596 283.29,-596"/>
+<polygon fill="#57a7d9" stroke="#57a7d9" points="283.29,-538 283.29,-538 517.29,-538 517.29,-538 283.29,-538"/>
+<polygon fill="none" stroke="#57a7d9" stroke-width="2" points="282.79,-495 282.79,-625 515.79,-625 515.79,-495 282.79,-495"/>
 </g>
 <!-- 3&#45;&gt;9 -->
 <g id="edge18" class="edge">
@@ -166,12 +166,12 @@
 <text text-anchor="start" x="724.29" y="-532.8" font-family="sans" font-weight="bold" font-size="14.00">output →</text>
 <text text-anchor="start" x="797.29" y="-532.8" font-family="sans" font-size="10.00"> </text>
 <text text-anchor="start" x="656.29" y="-513" font-family="monospace" font-size="10.00">decoys_ymask.txt</text>
-<polygon fill="#d9cf57" stroke="#d9cf57" points="650.29,-587 650.29,-587 808.29,-587 808.29,-587 650.29,-587"/>
-<polygon fill="#d9cf57" stroke="#d9cf57" points="650.29,-547 650.29,-547 808.29,-547 808.29,-547 650.29,-547"/>
-<polygon fill="none" stroke="#d9cf57" stroke-width="2" points="649.79,-504 649.79,-616 806.79,-616 806.79,-504 649.79,-504"/>
+<polygon fill="#d97f57" stroke="#d97f57" points="650.29,-587 650.29,-587 808.29,-587 808.29,-587 650.29,-587"/>
+<polygon fill="#d97f57" stroke="#d97f57" points="650.29,-547 650.29,-547 808.29,-547 808.29,-547 650.29,-547"/>
+<polygon fill="none" stroke="#d97f57" stroke-width="2" points="649.79,-504 649.79,-616 806.79,-616 806.79,-504 649.79,-504"/>
 </g>
 <!-- 4&#45;&gt;0 -->
-<g id="edge4" class="edge">
+<g id="edge1" class="edge">
 <title>4&#45;&gt;0</title>
 <path fill="none" stroke="grey" stroke-width="2" d="M698.66,-502.77C691.57,-488.37 684.31,-472.77 678.29,-458 654.99,-400.87 656.18,-384.06 635.29,-326 632.2,-317.41 628.97,-308.62 625.66,-299.76"/>
 <polygon fill="grey" stroke="grey" stroke-width="2" points="628.83,-298.26 622.03,-290.13 622.28,-300.72 628.83,-298.26"/>
@@ -189,12 +189,12 @@
 <text text-anchor="start" x="791.29" y="-355.8" font-family="sans" font-weight="bold" font-size="14.00">output →</text>
 <text text-anchor="start" x="864.29" y="-355.8" font-family="sans" font-size="10.00"> </text>
 <text text-anchor="start" x="694.29" y="-336" font-family="monospace" font-size="10.00">gencode_salmon_index_XXonly</text>
-<polygon fill="#57d993" stroke="#57d993" points="688.29,-428 688.29,-428 875.29,-428 875.29,-428 688.29,-428"/>
-<polygon fill="#57d993" stroke="#57d993" points="688.29,-370 688.29,-370 875.29,-370 875.29,-370 688.29,-370"/>
-<polygon fill="none" stroke="#57d993" stroke-width="2" points="688.29,-327 688.29,-457 874.29,-457 874.29,-327 688.29,-327"/>
+<polygon fill="#d9cf57" stroke="#d9cf57" points="688.29,-428 688.29,-428 875.29,-428 875.29,-428 688.29,-428"/>
+<polygon fill="#d9cf57" stroke="#d9cf57" points="688.29,-370 688.29,-370 875.29,-370 875.29,-370 688.29,-370"/>
+<polygon fill="none" stroke="#d9cf57" stroke-width="2" points="688.29,-327 688.29,-457 874.29,-457 874.29,-327 688.29,-327"/>
 </g>
 <!-- 4&#45;&gt;11 -->
-<g id="edge21" class="edge">
+<g id="edge20" class="edge">
 <title>4&#45;&gt;11</title>
 <path fill="none" stroke="grey" stroke-width="2" d="M746.24,-502.8C749.83,-491.56 753.65,-479.58 757.4,-467.82"/>
 <polygon fill="grey" stroke="grey" stroke-width="2" points="760.83,-468.61 760.53,-458.02 754.16,-466.48 760.83,-468.61"/>
@@ -211,12 +211,12 @@
 <text text-anchor="start" x="720.29" y="-691.8" font-family="sans" font-weight="bold" font-size="14.00">output →</text>
 <text text-anchor="start" x="793.29" y="-691.8" font-family="sans" font-size="10.00"> </text>
 <text text-anchor="start" x="632.29" y="-672" font-family="monospace" font-size="10.00">decoys_ymask_x.txt</text>
-<polygon fill="#93d957" stroke="#93d957" points="626.29,-746 626.29,-746 804.29,-746 804.29,-746 626.29,-746"/>
-<polygon fill="#93d957" stroke="#93d957" points="626.29,-706 626.29,-706 804.29,-706 804.29,-706 626.29,-706"/>
-<polygon fill="none" stroke="#93d957" stroke-width="2" points="625.79,-663 625.79,-775 802.79,-775 802.79,-663 625.79,-663"/>
+<polygon fill="#577fd9" stroke="#577fd9" points="626.29,-746 626.29,-746 804.29,-746 804.29,-746 626.29,-746"/>
+<polygon fill="#577fd9" stroke="#577fd9" points="626.29,-706 626.29,-706 804.29,-706 804.29,-706 626.29,-706"/>
+<polygon fill="none" stroke="#577fd9" stroke-width="2" points="625.79,-663 625.79,-775 802.79,-775 802.79,-663 625.79,-663"/>
 </g>
 <!-- 5&#45;&gt;0 -->
-<g id="edge5" class="edge">
+<g id="edge12" class="edge">
 <title>5&#45;&gt;0</title>
 <path fill="none" stroke="grey" stroke-width="2" d="M660.67,-661.79C652.35,-650.62 644.73,-638.47 639.29,-626 585.44,-502.61 618.77,-458.91 597.29,-326 595.93,-317.57 594.49,-308.92 593,-300.2"/>
 <polygon fill="grey" stroke="grey" stroke-width="2" points="596.45,-299.59 591.31,-290.33 589.55,-300.78 596.45,-299.59"/>
@@ -236,12 +236,12 @@
 <text text-anchor="start" x="708.29" y="-841.8" font-family="sans" font-weight="bold" font-size="14.00">output →</text>
 <text text-anchor="start" x="781.29" y="-841.8" font-family="sans" font-size="10.00"> </text>
 <text text-anchor="start" x="643.29" y="-822" font-family="monospace" font-size="10.00">GRCh38.p12.genome.XXonly.fa</text>
-<polygon fill="#6bd957" stroke="#6bd957" points="637.29,-874 637.29,-874 792.29,-874 792.29,-874 637.29,-874"/>
-<polygon fill="#6bd957" stroke="#6bd957" points="637.29,-856 637.29,-856 792.29,-856 792.29,-856 637.29,-856"/>
-<polygon fill="none" stroke="#6bd957" stroke-width="2" points="637.29,-813 637.29,-903 791.29,-903 791.29,-813 637.29,-813"/>
+<polygon fill="#d95757" stroke="#d95757" points="637.29,-874 637.29,-874 792.29,-874 792.29,-874 637.29,-874"/>
+<polygon fill="#d95757" stroke="#d95757" points="637.29,-856 637.29,-856 792.29,-856 792.29,-856 637.29,-856"/>
+<polygon fill="none" stroke="#d95757" stroke-width="2" points="637.29,-813 637.29,-903 791.29,-903 791.29,-813 637.29,-813"/>
 </g>
 <!-- 6&#45;&gt;0 -->
-<g id="edge7" class="edge">
+<g id="edge2" class="edge">
 <title>6&#45;&gt;0</title>
 <path fill="none" stroke="grey" stroke-width="2" d="M644.13,-811.98C632.73,-801.53 622.36,-789.47 615.29,-776 593.76,-734.94 578.43,-473.51 570.5,-300.58"/>
 <polygon fill="grey" stroke="grey" stroke-width="2" points="573.98,-300.18 570.03,-290.35 566.99,-300.5 573.98,-300.18"/>
@@ -265,9 +265,9 @@
 <text text-anchor="start" x="951.29" y="-523.8" font-family="sans" font-weight="bold" font-size="14.00">output →</text>
 <text text-anchor="start" x="1024.29" y="-523.8" font-family="sans" font-size="10.00"> </text>
 <text text-anchor="start" x="833.29" y="-504" font-family="monospace" font-size="10.00">gentrome_ymask.fa.gz</text>
-<polygon fill="#57d96b" stroke="#57d96b" points="827.29,-596 827.29,-596 1035.29,-596 1035.29,-596 827.29,-596"/>
-<polygon fill="#57d96b" stroke="#57d96b" points="827.29,-538 827.29,-538 1035.29,-538 1035.29,-538 827.29,-538"/>
-<polygon fill="none" stroke="#57d96b" stroke-width="2" points="826.79,-495 826.79,-625 1033.79,-625 1033.79,-495 826.79,-495"/>
+<polygon fill="#bbd957" stroke="#bbd957" points="827.29,-596 827.29,-596 1035.29,-596 1035.29,-596 827.29,-596"/>
+<polygon fill="#bbd957" stroke="#bbd957" points="827.29,-538 827.29,-538 1035.29,-538 1035.29,-538 827.29,-538"/>
+<polygon fill="none" stroke="#bbd957" stroke-width="2" points="826.79,-495 826.79,-625 1033.79,-625 1033.79,-495 826.79,-495"/>
 </g>
 <!-- 6&#45;&gt;8 -->
 <g id="edge17" class="edge">
@@ -292,25 +292,25 @@
 <polygon fill="none" stroke="#d9a757" stroke-width="2" points="932.29,-336 932.29,-448 1128.29,-448 1128.29,-336 932.29,-336"/>
 </g>
 <!-- 7&#45;&gt;0 -->
-<g id="edge2" class="edge">
+<g id="edge3" class="edge">
 <title>7&#45;&gt;0</title>
 <path fill="none" stroke="grey" stroke-width="2" d="M933.39,-334.84C927.96,-331.82 922.56,-328.86 917.29,-326 842.92,-285.68 758.54,-242.56 690.93,-208.63"/>
 <polygon fill="grey" stroke="grey" stroke-width="2" points="692.44,-205.47 681.93,-204.12 689.3,-211.73 692.44,-205.47"/>
 </g>
 <!-- 8&#45;&gt;0 -->
-<g id="edge8" class="edge">
+<g id="edge5" class="edge">
 <title>8&#45;&gt;0</title>
 <path fill="none" stroke="grey" stroke-width="2" d="M923.56,-493.74C916.36,-434.43 903.33,-352.3 884.29,-326 837.17,-260.91 758.85,-216.28 691.49,-187.73"/>
 <polygon fill="grey" stroke="grey" stroke-width="2" points="692.64,-184.42 682.06,-183.81 689.95,-190.89 692.64,-184.42"/>
 </g>
 <!-- 8&#45;&gt;11 -->
-<g id="edge20" class="edge">
+<g id="edge21" class="edge">
 <title>8&#45;&gt;11</title>
 <path fill="none" stroke="grey" stroke-width="2" d="M871.83,-493.87C863.53,-484.62 854.95,-475.07 846.54,-465.69"/>
 <polygon fill="grey" stroke="grey" stroke-width="2" points="849.11,-463.32 839.83,-458.22 843.9,-468 849.11,-463.32"/>
 </g>
 <!-- 9&#45;&gt;0 -->
-<g id="edge1" class="edge">
+<g id="edge11" class="edge">
 <title>9&#45;&gt;0</title>
 <path fill="none" stroke="grey" stroke-width="2" d="M464.52,-493.91C473.48,-482.59 481.81,-470.43 488.29,-458 503.09,-429.61 519.91,-363.89 533.96,-300.06"/>
 <polygon fill="grey" stroke="grey" stroke-width="2" points="537.39,-300.76 536.1,-290.25 530.55,-299.27 537.39,-300.76"/>
@@ -330,12 +330,12 @@
 <text text-anchor="start" x="467.29" y="-702.8" font-family="sans" font-weight="bold" font-size="14.00">output →</text>
 <text text-anchor="start" x="540.29" y="-702.8" font-family="sans" font-size="10.00"> </text>
 <text text-anchor="start" x="323.29" y="-683" font-family="monospace" font-size="10.00">gencode.v29.transcripts_YPARs_masked_XY.fa</text>
-<polygon fill="#57cfd9" stroke="#57cfd9" points="317.29,-735 317.29,-735 551.29,-735 551.29,-735 317.29,-735"/>
-<polygon fill="#57cfd9" stroke="#57cfd9" points="317.29,-717 317.29,-717 551.29,-717 551.29,-717 317.29,-717"/>
-<polygon fill="none" stroke="#57cfd9" stroke-width="2" points="316.79,-674 316.79,-764 549.79,-764 549.79,-674 316.79,-674"/>
+<polygon fill="#6bd957" stroke="#6bd957" points="317.29,-735 317.29,-735 551.29,-735 551.29,-735 317.29,-735"/>
+<polygon fill="#6bd957" stroke="#6bd957" points="317.29,-717 317.29,-717 551.29,-717 551.29,-717 317.29,-717"/>
+<polygon fill="none" stroke="#6bd957" stroke-width="2" points="316.79,-674 316.79,-764 549.79,-764 549.79,-674 316.79,-674"/>
 </g>
 <!-- 10&#45;&gt;0 -->
-<g id="edge11" class="edge">
+<g id="edge7" class="edge">
 <title>10&#45;&gt;0</title>
 <path fill="none" stroke="grey" stroke-width="2" d="M491.29,-672.54C504.68,-659.05 517.33,-643.22 525.29,-626 551.25,-569.87 560.23,-418.32 563.19,-300.37"/>
 <polygon fill="grey" stroke="grey" stroke-width="2" points="566.69,-300.23 563.43,-290.15 559.7,-300.06 566.69,-300.23"/>
@@ -347,13 +347,13 @@
 <polygon fill="grey" stroke="grey" stroke-width="2" points="418.94,-635.19 413.4,-626.16 412.1,-636.68 418.94,-635.19"/>
 </g>
 <!-- 11&#45;&gt;0 -->
-<g id="edge9" class="edge">
+<g id="edge4" class="edge">
 <title>11&#45;&gt;0</title>
 <path fill="none" stroke="grey" stroke-width="2" d="M723.71,-325.99C712.8,-313.67 701,-300.34 688.92,-286.71"/>
 <polygon fill="grey" stroke="grey" stroke-width="2" points="691.44,-284.28 682.19,-279.11 686.2,-288.92 691.44,-284.28"/>
 </g>
 <!-- 12&#45;&gt;0 -->
-<g id="edge12" class="edge">
+<g id="edge10" class="edge">
 <title>12&#45;&gt;0</title>
 <path fill="none" stroke="grey" stroke-width="2" d="M433.53,-325.99C439.82,-317.33 446.47,-308.17 453.31,-298.76"/>
 <polygon fill="grey" stroke="grey" stroke-width="2" points="456.32,-300.57 459.36,-290.43 450.65,-296.46 456.32,-300.57"/>
