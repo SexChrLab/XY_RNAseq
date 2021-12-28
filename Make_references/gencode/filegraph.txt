@@ -1,0 +1,244 @@
+digraph snakemake_dag {
+    graph[bgcolor=white, margin=0];
+    node[shape=box, style=rounded, fontname=sans,                 fontsize=10, penwidth=2];
+    edge[penwidth=2, color=grey];
+0 [ shape=none, margin=0, label=<<table border="2" color="#57A7D9" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">all</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">GRCh38.p12.genome.XXonly.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">GRCh38.p12.genome.XYonly.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">decoys_ymask.txt</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">decoys_ymask_x.txt</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">decoys_ypars.txt</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">decoys_ypars_x.txt</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">gencode.v29.transcripts_YPARs_masked_XY.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">gencode.v29.transcripts_Ymasked.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">gencode_salmon_index_XXonly</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">gencode_salmon_index_XYonly</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">gentrome_ymask.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">gentrome_ypars.fa.gz</font></td>
+</tr>
+<hr/>
+<tr><td align="right">  </td> </tr>
+</table>>]
+1 [ shape=none, margin=0, label=<<table border="2" color="#D97F57" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">decoyes_ypars</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">decoys_ypars_x.txt</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">decoys_ypars.txt</font></td></tr>
+</table>>]
+2 [ shape=none, margin=0, label=<<table border="2" color="#57D9BB" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">decoys_ypars_x</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">GRCh38.p12.genome.XYonly.fa</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">decoys_ypars_x.txt</font></td></tr>
+</table>>]
+3 [ shape=none, margin=0, label=<<table border="2" color="#BBD957" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">missing_file_1</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left">  </td></tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">GRCh38.p12.genome.XYonly.fa</font></td></tr>
+</table>>]
+4 [ shape=none, margin=0, label=<<table border="2" color="#D9CF57" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">decoys_ymask</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">decoys_ymask_x.txt</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">decoys_ymask.txt</font></td></tr>
+</table>>]
+5 [ shape=none, margin=0, label=<<table border="2" color="#93D957" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">decoys_ymask_x</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">GRCh38.p12.genome.XXonly.fa</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">decoys_ymask_x.txt</font></td></tr>
+</table>>]
+6 [ shape=none, margin=0, label=<<table border="2" color="#6BD957" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">missing_file_2</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left">  </td></tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">GRCh38.p12.genome.XXonly.fa</font></td></tr>
+</table>>]
+7 [ shape=none, margin=0, label=<<table border="2" color="#D9A757" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">gencode_ymasked</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">gencode.v29.transcripts.fa</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">gencode.v29.transcripts_Ymasked.fa</font></td></tr>
+</table>>]
+8 [ shape=none, margin=0, label=<<table border="2" color="#57D96B" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">gentrome_ymask</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">GRCh38.p12.genome.XXonly.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">gencode.v29.transcripts_Ymasked_XX.fa</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">gentrome_ymask.fa.gz</font></td></tr>
+</table>>]
+9 [ shape=none, margin=0, label=<<table border="2" color="#D95757" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">gentrome_ypars</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">GRCh38.p12.genome.XYonly.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">gencode.v29.transcripts_YPARs_masked_XY.fa</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">gentrome_ypars.fa.gz</font></td></tr>
+</table>>]
+10 [ shape=none, margin=0, label=<<table border="2" color="#57CFD9" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">missing_file_3</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left">  </td></tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">gencode.v29.transcripts_YPARs_masked_XY.fa</font></td></tr>
+</table>>]
+11 [ shape=none, margin=0, label=<<table border="2" color="#57D993" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">salmon_index_XX</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">decoys_ymask.txt</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">gentrome_ymask.fa.gz</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">gencode_salmon_index_XXonly</font></td></tr>
+</table>>]
+12 [ shape=none, margin=0, label=<<table border="2" color="#577FD9" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">salmon_index_XY</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">decoys_ypars.txt</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">gentrome_ypars.fa.gz</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">gencode_salmon_index_XYonly</font></td></tr>
+</table>>]
+	9 -> 0
+	7 -> 0
+	1 -> 0
+	4 -> 0
+	5 -> 0
+	3 -> 0
+	6 -> 0
+	8 -> 0
+	11 -> 0
+	2 -> 0
+	10 -> 0
+	12 -> 0
+	2 -> 1
+	3 -> 2
+	5 -> 4
+	6 -> 5
+	6 -> 8
+	3 -> 9
+	10 -> 9
+	8 -> 11
+	4 -> 11
+	9 -> 12
+	1 -> 12
+}            
