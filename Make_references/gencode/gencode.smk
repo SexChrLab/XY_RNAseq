@@ -45,7 +45,7 @@ rule salmon_index_XX:
 
 rule decoys_ypars_x:
     """# YPARs masked gencode transcriptome"""
-    input: "cat GRCh38.p12.genome.XYonly.fa)"
+    input: "GRCh38.p12.genome.XYonly.fa)"
     output: "decoys_ypars_x.txt"
     shell:
         """grep "^>" <(cat GRCh38.p12.genome.XYonly.fa) | cut -d " " -f 1 > decoys_ypars_x.txt"""
