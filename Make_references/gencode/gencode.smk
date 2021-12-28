@@ -16,7 +16,10 @@ newgrp wilsonlab"""
 
 rule missing_file_1:
     output: "GRCh38.p12.genome.XYonly.fa"
-            
+
+rule missing_file_2:
+    output: "GRCh38.p12.genome.XXonly.fa"
+
 rule decoys_ymask_x:
     """# Y masked gencode transcriptome"""
     input: "GRCh38.p12.genome.XXonly.fa"
