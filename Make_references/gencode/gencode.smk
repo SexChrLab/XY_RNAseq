@@ -14,6 +14,9 @@
 """source activate XY_RNA-Seq
 newgrp wilsonlab"""
 
+rule missing_file_1:
+    output: "GRCh38.p12.genome.XYonly.fa"
+
 rule decoys_ymask_x:
     """# Y masked gencode transcriptome"""
     input: "GRCh38.p12.genome.XXonly.fa"
