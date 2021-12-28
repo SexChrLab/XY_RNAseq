@@ -20,6 +20,9 @@ rule missing_file_1:
 rule missing_file_2:
     output: "GRCh38.p12.genome.XXonly.fa"
 
+rule missing_file_3:
+    output: "gencode.v29.transcripts_YPARs_masked_XY.fa"
+            
 rule decoys_ymask_x:
     """# Y masked gencode transcriptome"""
     input: "GRCh38.p12.genome.XXonly.fa"
