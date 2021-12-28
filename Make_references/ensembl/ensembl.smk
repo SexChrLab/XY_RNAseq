@@ -108,7 +108,7 @@ def getchr(chr_text, start, end):
 
     if not r.ok:
         r.raise_for_status()
-	    sys.exit()
+	sys.exit()
     return (r.text)
 
 def savetofile(text, filename):
@@ -144,7 +144,7 @@ python getYchr57217416-57227415.py | sed -e '1d' > Ychr57217416-57227415_noHeade
     output:
         actually_with_headers=[filename+"_butactually_With_header" for chr_text,start,end,filename in region_config]
     run:
-        for chr_text,start,end,filename in region_config
+        for chr_text,start,end,filename in region_config:
             text = getchr(chr_text, start, end)
             savetofile(text, filename+"_butactually_with_header")
 
@@ -167,12 +167,12 @@ rule create_y_chromosome:
     shell:
         "cat Ychr1-10000_noHeader.fa Ychr10001-2781479_noHeader.fa Ychr2781480-12781479_noHeader.fa Ychr12781480-22781479_noHeader.fa Ychr22781480-32781479_noHeader.fa Ychr32781480-42781479_noHeader.fa Ychr42781480-52781479_noHeader.fa Ychr52781480-56887902_noHeader.fa Ychr56887903-57217415_noHeader.fa Ychr57217416-57227415_noHeader.fa > YchrWhole.fa"
 
-rule single_line:
+rule single_line_whole:
     """# Turn file into single line to remove whitespace"""
     input: "YchrWhole.fa"
     output: "YchrWhole_single.fa"
     shell:
-        """awk '!/^>/ { printf "%s", $0; n = "\n" } /^>/ { print n $0; n = "" } END { printf "%s", n }' YchrWhole.fa > YchrWhole_single.fa"""
+        """awk '!/^>/ {{ printf "%s", $0; n = "\n" }} /^>/ {{ print n $0; n = "" }} END {{ printf "%s", n }}' YchrWhole.fa > YchrWhole_single.fa"""
 
 rule fold:
     """# return to multiple lines of 60 for fasta format"""
@@ -204,11 +204,11 @@ rule cat_all_files:
     shell:
         """cat Ychr1-10000_noHeader.fa PAR1_masked.fa Ychr2781480-12781479_noHeader.fa Ychr12781480-22781479_noHeader.fa Ychr22781480-32781479_noHeader.fa Ychr32781480-42781479_noHeader.fa Ychr42781480-52781479_noHeader.fa Ychr52781480-56887902_noHeader.fa PAR2_masked.fa Ychr57217416-57227415_noHeader.fa > YchrPARs-masked.fa"""
 
-rule single_line:
+rule single_line_pars:
     """# Turn file into single line to remove whitespace"""
     input: "YchrPARs-masked.fa"
     output: "YchrPARs-masked_single.fa"
-    shell: """awk '!/^>/ { printf "%s", $0; n = "\n" } /^>/ { print n $0; n = "" } END { printf "%s", n }' YchrPARs-masked.fa > YchrPARs-masked_single.fa"""
+    shell: """awk '!/^>/ {{ printf "%s", $0; n = "\n" }} /^>/ {{ print n $0; n = "" }} END {{ printf "%s", n }}' YchrPARs-masked.fa > YchrPARs-masked_single.fa"""
 
 rule fold_ychrmasked:
     """# return to multiple lines of 60 for fasta format"""
@@ -249,3 +249,13 @@ rule create_reference_genome_y_masked:
     output: "GRCh38_Ymasked_reference.fa"
     shell:
         """cat Homo_sapiens.GRCh38.dna.chromosome.1.fa Homo_sapiens.GRCh38.dna.chromosome.2.fa Homo_sapiens.GRCh38.dna.chromosome.3.fa Homo_sapiens.GRCh38.dna.chromosome.4.fa Homo_sapiens.GRCh38.dna.chromosome.5.fa Homo_sapiens.GRCh38.dna.chromosome.6.fa Homo_sapiens.GRCh38.dna.chromosome.7.fa Homo_sapiens.GRCh38.dna.chromosome.8.fa Homo_sapiens.GRCh38.dna.chromosome.9.fa Homo_sapiens.GRCh38.dna.chromosome.10.fa Homo_sapiens.GRCh38.dna.chromosome.11.fa Homo_sapiens.GRCh38.dna.chromosome.12.fa Homo_sapiens.GRCh38.dna.chromosome.13.fa Homo_sapiens.GRCh38.dna.chromosome.14.fa Homo_sapiens.GRCh38.dna.chromosome.15.fa Homo_sapiens.GRCh38.dna.chromosome.16.fa Homo_sapiens.GRCh38.dna.chromosome.17.fa Homo_sapiens.GRCh38.dna.chromosome.18.fa Homo_sapiens.GRCh38.dna.chromosome.19.fa Homo_sapiens.GRCh38.dna.chromosome.20.fa Homo_sapiens.GRCh38.dna.chromosome.21.fa Homo_sapiens.GRCh38.dna.chromosome.22.fa Homo_sapiens.GRCh38.dna.chromosome.X.fa Homo_sapiens.GRCh38.dna_rmY.chromosome.Y.fa Homo_sapiens.GRCh38.dna.chromosome.MT.fa Homo_sapiens.GRCh38.dna.nonchromosomal.fa > GRCh38_Ymasked_reference.fa"""
+
+all_rulenames = [rule for rule in dir(rules) if not "__" in rule]
+
+all_outputs = [getattr(getattr(rules, rulename),"output") for rulename in all_rulenames]
+
+#print(all_outputs)
+
+rule all:
+    input:
+        all_outputs
