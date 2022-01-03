@@ -1,0 +1,831 @@
+digraph snakemake_dag {
+    graph[bgcolor=white, margin=0];
+    node[shape=box, style=rounded, fontname=sans,                 fontsize=10, penwidth=2];
+    edge[penwidth=2, color=grey];
+0 [ shape=none, margin=0, label=<<table border="2" color="#74D957" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">all</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">GRCh38_YPARs_masked_reference.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">GRCh38_YPARs_masked_reference.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">GRCh38_Ymasked_reference.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">GRCh38_Ymasked_reference.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">GRCh38_wholeGenome_reference.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.1.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.10.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.11.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.12.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.13.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.14.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.15.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.16.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.17.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.18.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.19.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.2.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.20.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.21.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.22.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.3.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.4.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.5.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.6.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.7.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.8.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.9.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.MT.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.X.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.Y.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.Y.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.YMASKED.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.nonchromosomal.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna_rmY.chromosome.Y.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna_rmYPARs.chromosome.Y.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">PAR1_masked.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">PAR2_masked.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr1-10000_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr1-10000_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr10001-2781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr10001-2781479_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr12781480-22781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr12781480-22781479_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr22781480-32781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr22781480-32781479_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr2781480-12781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr2781480-12781479_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr32781480-42781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr32781480-42781479_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr42781480-52781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr42781480-52781479_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr52781480-56887902_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr52781480-56887902_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr56887903-57217415_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr56887903-57217415_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr57217416-57227415_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr57217416-57227415_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">YchrPARs-masked.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">YchrPARs-masked_single.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">YchrWhole.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">YchrWhole_single.fa</font></td>
+</tr>
+<hr/>
+<tr><td align="right">  </td> </tr>
+</table>>]
+1 [ shape=none, margin=0, label=<<table border="2" color="#D9AD57" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">cat_all_files</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">PAR1_masked.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">PAR2_masked.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr1-10000_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr12781480-22781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr22781480-32781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr2781480-12781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr32781480-42781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr42781480-52781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr52781480-56887902_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr57217416-57227415_noHeader.fa</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">YchrPARs-masked.fa</font></td></tr>
+</table>>]
+2 [ shape=none, margin=0, label=<<table border="2" color="#57D9CA" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">generate_region_files_without_header</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr1-10000_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr10001-2781479_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr12781480-22781479_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr22781480-32781479_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr2781480-12781479_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr32781480-42781479_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr42781480-52781479_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr52781480-56887902_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr56887903-57217415_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr57217416-57227415_noHeader.fa_butactually_With_header</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">Ychr1-10000_noHeader.fa</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr10001-2781479_noHeader.fa</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr12781480-22781479_noHeader.fa</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr22781480-32781479_noHeader.fa</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr2781480-12781479_noHeader.fa</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr32781480-42781479_noHeader.fa</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr42781480-52781479_noHeader.fa</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr52781480-56887902_noHeader.fa</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr56887903-57217415_noHeader.fa</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr57217416-57227415_noHeader.fa</font></td></tr>
+</table>>]
+3 [ shape=none, margin=0, label=<<table border="2" color="#57D9AD" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">generate_region_files_with_header</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left">  </td></tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">Ychr1-10000_noHeader.fa_butactually_With_header</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr10001-2781479_noHeader.fa_butactually_With_header</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr12781480-22781479_noHeader.fa_butactually_With_header</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr22781480-32781479_noHeader.fa_butactually_With_header</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr2781480-12781479_noHeader.fa_butactually_With_header</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr32781480-42781479_noHeader.fa_butactually_With_header</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr42781480-52781479_noHeader.fa_butactually_With_header</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr52781480-56887902_noHeader.fa_butactually_With_header</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr56887903-57217415_noHeader.fa_butactually_With_header</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr57217416-57227415_noHeader.fa_butactually_With_header</font></td></tr>
+</table>>]
+4 [ shape=none, margin=0, label=<<table border="2" color="#5774D9" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">mask_pars</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr10001-2781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr56887903-57217415_noHeader.fa</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">PAR1_masked.fa</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">PAR2_masked.fa</font></td></tr>
+</table>>]
+5 [ shape=none, margin=0, label=<<table border="2" color="#5791D9" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">ymasked_cat</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.1.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.10.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.11.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.12.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.13.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.14.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.15.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.16.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.17.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.18.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.19.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.2.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.20.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.21.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.22.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.3.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.4.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.5.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.6.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.7.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.8.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.9.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.MT.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.X.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.Y.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.YMASKED.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.nonchromosomal.fa.gz</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">GRCh38_Ymasked_reference.fa</font></td></tr>
+</table>>]
+6 [ shape=none, margin=0, label=<<table border="2" color="#D97457" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">ymasked_mask</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.Y.fa</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.YMASKED.fa</font></td></tr>
+</table>>]
+7 [ shape=none, margin=0, label=<<table border="2" color="#D95757" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">fold</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">YchrWhole_single.fa</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.Y.fa</font></td></tr>
+</table>>]
+8 [ shape=none, margin=0, label=<<table border="2" color="#ADD957" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">single_line_whole</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">YchrWhole.fa</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">YchrWhole_single.fa</font></td></tr>
+</table>>]
+9 [ shape=none, margin=0, label=<<table border="2" color="#57D974" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">create_y_chromosome</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">Ychr1-10000_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr10001-2781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr12781480-22781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr22781480-32781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr2781480-12781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr32781480-42781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr42781480-52781479_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr52781480-56887902_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr56887903-57217415_noHeader.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Ychr57217416-57227415_noHeader.fa</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">YchrWhole.fa</font></td></tr>
+</table>>]
+10 [ shape=none, margin=0, label=<<table border="2" color="#D99157" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">ensembl_fasta</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left">  </td></tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.1.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.10.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.11.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.12.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.13.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.14.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.15.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.16.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.17.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.18.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.19.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.2.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.20.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.21.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.22.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.3.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.4.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.5.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.6.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.7.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.8.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.9.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.MT.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.X.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.Y.fa.gz</font></td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.nonchromosomal.fa.gz</font></td></tr>
+</table>>]
+11 [ shape=none, margin=0, label=<<table border="2" color="#57ADD9" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">ypars_masked_reference</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.1.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.10.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.11.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.12.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.13.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.14.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.15.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.16.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.17.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.18.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.19.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.2.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.20.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.21.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.22.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.3.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.4.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.5.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.6.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.7.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.8.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.9.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.MT.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.X.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.Y.fa.gz</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.nonchromosomal.fa.gz</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">GRCh38_YPARs_masked_reference.fa</font></td></tr>
+</table>>]
+12 [ shape=none, margin=0, label=<<table border="2" color="#D9CA57" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">create_reference_genomes</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.1.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.10.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.11.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.12.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.13.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.14.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.15.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.16.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.17.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.18.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.19.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.2.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.20.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.21.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.22.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.3.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.4.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.5.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.6.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.7.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.8.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.9.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.MT.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.X.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.Y.fa</font></td>
+</tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.nonchromosomal.fa</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">GRCh38_wholeGenome_reference.fa</font></td></tr>
+</table>>]
+13 [ shape=none, margin=0, label=<<table border="2" color="#57D990" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">fold_ychrmasked</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">YchrPARs-masked_single.fa</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna_rmYPARs.chromosome.Y.fa</font></td></tr>
+</table>>]
+14 [ shape=none, margin=0, label=<<table border="2" color="#57D957" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">single_line_pars</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">YchrPARs-masked.fa</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">YchrPARs-masked_single.fa</font></td></tr>
+</table>>]
+15 [ shape=none, margin=0, label=<<table border="2" color="#57CAD9" cellspacing="3" cellborder="0">
+<tr><td>
+<b><font point-size="18">hardmask_ychr</font></b>
+</td></tr>
+<hr/>
+<tr><td align="left"> <b><font point-size="14">&#8618; input</font></b> </td></tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna.chromosome.Y.fa</font></td>
+</tr>
+<hr/>
+<tr><td align="right"> <b><font point-size="14">output &rarr;</font></b> </td> </tr>
+<tr>
+<td align="left"><font face="monospace">Homo_sapiens.GRCh38.dna_rmY.chromosome.Y.fa</font></td></tr>
+</table>>]
+	7 -> 0
+	12 -> 0
+	10 -> 0
+	6 -> 0
+	8 -> 0
+	14 -> 0
+	9 -> 0
+	13 -> 0
+	2 -> 0
+	3 -> 0
+	1 -> 0
+	15 -> 0
+	11 -> 0
+	5 -> 0
+	4 -> 0
+	4 -> 1
+	2 -> 1
+	3 -> 2
+	2 -> 4
+	6 -> 5
+	10 -> 5
+	7 -> 6
+	8 -> 7
+	9 -> 8
+	2 -> 9
+	10 -> 11
+	7 -> 12
+	14 -> 13
+	1 -> 14
+	7 -> 15
+}            
