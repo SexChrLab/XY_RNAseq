@@ -1,0 +1,46 @@
+#!/bin/sh
+
+#----------
+# Gencode scc transcriptomes
+#----------
+
+# create a bed file of the transcript ids from the gene annotation file
+cat gencode.v29.annotation.gtf | awk 'OSF="\t" {if ($3=="transcript") {print  $1,$4-1,$3,$5,$7,$10,$16}}' | tr -d '";' > gencodeTranscripts.txt
+
+# get only the Y transcripts 
+cat Y_geneAnnotation.txt | awk 'OSF="\t" {if ($3=="transcript") {print  $1,$4-1,$3,$5,$7,$10,$16}}' | tr -d '";' > Y_transripts.txt
+
+#----- Y masked
+# identify the first and last Y transcript 
+cat Y_trapsricpts.txt | head -1
+cat Y_transcripts.txt | tail -1
+
+# grep the first and last Y transcript from the transcripts.fa.fai index file using nl for number lines
+cat gencode.v29.transcripts.fa.fai | nl | grep "ENSG00000228572.7_PAR_Y"
+cat gencode.v29.transcripts.fa.fai | nl | grep "ENSG00000227159.8_PAR_Y"
+
+# the start and end of the Y chromosome transcripts is from line 205760 to line 206657 in the gencode.v29.transcripts
+# Hard mask these regions using sed 
+sed -e '/^>/b;205760,206657s/[ATCG]/N/g' gencode.v29.transcripts.fa > gencode.v29.transcripts_Ymasked_XX.fa
+
+#----- Y PARs masked
+# Y PARs start and end locations 
+# PAR 1 start and end 
+# start
+chrY 253742 transcript 255091 + ENSG00000228572.7_PAR_Y AL954722.1
+chrY 2726340 transcript 2741125 + ENSG00000002586.19_PAR_Y CD99
+# PAR 1
+cat gencode.v29.transcripts.fa.fai | nl | grep "ENSG00000002586.19_PAR_Y" 
+cat gencode.v29.transcripts.fa.fai | nl | grep "ENSG00000228572.7_PAR_Y"
+# PAR 1 start and end 205760 205886
+
+
+# PAR 2 
+chrY 56954331 transcript 56968979 + ENSG00000168939.11_PAR_Y SPRY3
+chrY 57212183 transcript 57214397 - ENSG00000227159.8_PAR_Y DDX11L16
+
+# PAR 2 start and end 206625 206657
+sed -e '/^>/b;205760,205886s/[ATCG]/N/g' gencode.v29.transcripts.fa > gencode.v29.transcripts_Y_PARs_masked_XY.fa
+sed -e '/^>/b;206625,206657s/[ATCG]/N/g' gencode.v29.transcripts_Y_PARs_masked_XY.fa > gencode.v29.transcripts_YPARs_masked_XY.fa
+rm gencode.v29.transcripts_Y_PARs_masked_XY.fa
+
